@@ -1,0 +1,155 @@
+[
+  {
+    "case_id": "P01",
+    "vin": "WA1L2BFZ8PP065926",
+    "rubric_version": "0.1-development",
+    "evidence_support": 24,
+    "contradicted": 0,
+    "unknown": 76,
+    "coverage": 24,
+    "review_required": false,
+    "status": "development assessment; unvalidated weights",
+    "alerts": []
+  },
+  {
+    "case_id": "P02",
+    "vin": "4S4BTGLD4R3260366",
+    "rubric_version": "0.1-development",
+    "evidence_support": 24,
+    "contradicted": 0,
+    "unknown": 76,
+    "coverage": 24,
+    "review_required": false,
+    "status": "development assessment; unvalidated weights",
+    "alerts": [
+      {
+        "severity": "review",
+        "primary_rule": "B3",
+        "event_id": "P02-reported-front-damage",
+        "reason": "Commercial report records front minor damage dated 2024-12-26; repair scope and adequacy remain unverified. No contrary no-damage claim identified.",
+        "evidence_ids": [
+          "P02-history",
+          "P02-live"
+        ]
+      }
+    ]
+  },
+  {
+    "case_id": "P03",
+    "vin": "4S4BTGND4R3168770",
+    "rubric_version": "0.1-development",
+    "evidence_support": 24,
+    "contradicted": 0,
+    "unknown": 76,
+    "coverage": 24,
+    "review_required": false,
+    "status": "development assessment; unvalidated weights",
+    "alerts": []
+  },
+  {
+    "case_id": "P04",
+    "vin": "4S4BTACC5R3201136",
+    "rubric_version": "0.1-development",
+    "evidence_support": 16,
+    "contradicted": 0,
+    "unknown": 84,
+    "coverage": 16,
+    "review_required": false,
+    "status": "development assessment; unvalidated weights",
+    "alerts": [
+      {
+        "severity": "review",
+        "primary_rule": "D4",
+        "event_id": "P04-certification-scope",
+        "reason": "Pre-owned heading and CPO-benefit description require VIN-specific certification clarification; actual photos unavailable.",
+        "evidence_ids": [
+          "P04-live",
+          "P04-visual"
+        ]
+      }
+    ]
+  },
+  {
+    "case_id": "P05",
+    "vin": "1FMCU0KZ2NUB48630",
+    "rubric_version": "0.1-development",
+    "evidence_support": 12,
+    "contradicted": 0,
+    "unknown": 88,
+    "coverage": 12,
+    "review_required": false,
+    "status": "development assessment; unvalidated weights",
+    "alerts": []
+  },
+  {
+    "case_id": "P06",
+    "vin": "5FPYK3F70PB012249",
+    "rubric_version": "0.1-development",
+    "evidence_support": 16,
+    "contradicted": 0,
+    "unknown": 84,
+    "coverage": 16,
+    "review_required": false,
+    "status": "development assessment; unvalidated weights",
+    "alerts": []
+  },
+  {
+    "case_id": "P07",
+    "vin": "3CZRZ2H51RM731100",
+    "rubric_version": "0.1-development",
+    "evidence_support": 12,
+    "contradicted": 0,
+    "unknown": 88,
+    "coverage": 12,
+    "review_required": false,
+    "status": "development assessment; unvalidated weights",
+    "alerts": []
+  },
+  {
+    "case_id": "P08",
+    "vin": "19UDE4G71PA003492",
+    "rubric_version": "0.1-development",
+    "evidence_support": 16,
+    "contradicted": 0,
+    "unknown": 84,
+    "coverage": 16,
+    "review_required": false,
+    "status": "development assessment; unvalidated weights",
+    "alerts": []
+  },
+  {
+    "case_id": "P09",
+    "vin": "1C4RJKBG4P8816697",
+    "rubric_version": "0.1-development",
+    "evidence_support": 10,
+    "contradicted": 0,
+    "unknown": 90,
+    "coverage": 10,
+    "review_required": false,
+    "status": "development assessment; unvalidated weights",
+    "alerts": []
+  },
+  {
+    "case_id": "P10",
+    "vin": "JF2SKAMC8RH468314",
+    "rubric_version": "0.1-development",
+    "evidence_support": 12,
+    "contradicted": 0,
+    "unknown": 88,
+    "coverage": 12,
+    "review_required": false,
+    "status": "development assessment; unvalidated weights",
+    "alerts": [
+      {
+        "severity": "review",
+        "primary_rule": "C2",
+        "event_id": "P10-odometer-timing",
+        "reason": "Photo is 116 miles above ad; reconcile dates before any contradiction or rollback conclusion.",
+        "evidence_ids": [
+          "P10-live",
+          "P10-visual"
+        ]
+      }
+    ]
+  }
+]

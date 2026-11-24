@@ -1,0 +1,376 @@
+{
+  "version": "0.2-development",
+  "definition": "The extent to which available evidence supports a listing’s identity, material claims, disclosures, and proposed transaction.",
+  "interpretation": "Evidence-support index; not a probability of honesty, safety, or fraud. Weights are unvalidated design choices.",
+  "states": [
+    "supported",
+    "contradicted",
+    "unknown"
+  ],
+  "rules": [
+    {
+      "id": "A1",
+      "name": "VIN/specification identity",
+      "weight": 6,
+      "support_requirement": "VIN syntax/check-digit rules applicable to this VIN and compatible official decoded year/make/model/core powertrain; decode errors and known limitations resolved. Physical identity is outside this check.",
+      "contradiction_requirement": "A vehicle-attributed VIN/core specification claim conflicts with an unambiguous applicable official decode after naming conventions are reconciled.",
+      "unknown_when": "Decoder ambiguity, partial VIN, unresolved mismatch or missing independent decode.",
+      "next_action": "Compare listing VIN/core details with official decoder; separately verify physical VIN under E1/A3.",
+      "required_evidence_kinds": [
+        "official_vin_decode"
+      ],
+      "freshness_policy": "stable_vin_decode",
+      "whole_check": true
+    },
+    {
+      "id": "A2",
+      "name": "Seller identity",
+      "weight": 6,
+      "support_requirement": "Seller legal/DBA name, address and active applicable dealer license agree with official registry AND the listing domain/contact is independently linked through registry or manufacturer directory. A registry business-name match alone is insufficient. No phone call is required when that independent linkage exists.",
+      "contradiction_requirement": "Authoritative records establish that the claimed identity/license/domain relationship is materially false after DBA and tracking-number differences are resolved.",
+      "unknown_when": "Only seller-owned pages, name/address match without domain/contact linkage, unresolved group-level seller or unavailable registry.",
+      "next_action": "Match registry DBA/address/license and an independent domain/contact listing. Record differing phone numbers without assuming impersonation.",
+      "required_evidence_kinds": [
+        "official_dealer_license",
+        "independent_seller_contact"
+      ],
+      "freshness_policy": "dealer_license_query_days",
+      "whole_check": true
+    },
+    {
+      "id": "A3",
+      "name": "Authority to sell",
+      "weight": 5,
+      "support_requirement": "Current VIN-linked ownership/authorized dealer-agent chain, required transfer documents and material lien/release arrangements support the proposed seller authority, using secure verification.",
+      "contradiction_requirement": "Authenticated current owner/transfer authority conflicts with seller representation after authorized agency, inventory titling and date differences are reconciled.",
+      "unknown_when": "Title chain, authorization, transfer documents or applicable lien evidence missing.",
+      "next_action": "Verify current title/authorized seller chain and relevant lien/release process securely; avoid retaining unnecessary personal identifiers.",
+      "required_evidence_kinds": [
+        "title_authority_record"
+      ],
+      "freshness_policy": "title_history_query_days",
+      "whole_check": true
+    },
+    {
+      "id": "A4",
+      "name": "Possession/location",
+      "weight": 3,
+      "support_requirement": "Current dated VIN-linked vehicle/location observation independently connects the seller to possession at the stated location; ad and watermarks alone do not suffice.",
+      "contradiction_requirement": "Authenticated current VIN/location evidence materially conflicts with stated possession/location, after transit, agency and timing are resolved.",
+      "unknown_when": "No current attributable observation; old dealer photos or a live ad only.",
+      "next_action": "Obtain dated vehicle-specific location/possession evidence or independent inspection.",
+      "required_evidence_kinds": [
+        "current_possession_observation"
+      ],
+      "freshness_policy": "listing_and_current_odometer_days",
+      "whole_check": true
+    },
+    {
+      "id": "B1",
+      "name": "Title/brand disclosure",
+      "weight": 8,
+      "support_requirement": "Explicit current title/brand disclosure agrees with sufficiently scoped VIN-linked title/brand evidence. Record source coverage and any adverse brand; accurately disclosed branded title can pass.",
+      "contradiction_requirement": "Established relevant title/brand record conflicts with explicit disclosure, after branding/date/jurisdiction semantics are reconciled.",
+      "unknown_when": "No explicit disclosure, incomplete record scope, or only a clean-title boolean. A commercial report may corroborate covered events but is not represented as NMVTIS.",
+      "next_action": "Compare explicit disclosure with current relevant title/brand records, noting jurisdiction, report date and exclusions.",
+      "required_evidence_kinds": [
+        "title_brand_record"
+      ],
+      "freshness_policy": "title_history_query_days",
+      "whole_check": true
+    },
+    {
+      "id": "B2",
+      "name": "Theft/total-loss/salvage disclosure",
+      "weight": 6,
+      "support_requirement": "Explicit theft, total-loss and salvage disclosures agree with applicable scoped checks and dated vehicle-linked records; all applicable elements resolved. A single clean NICB response does not satisfy every element.",
+      "contradiction_requirement": "Covered theft/loss/salvage event materially conflicts with disclosure after event scope/date and recovery/settlement status are reconciled.",
+      "unknown_when": "No explicit disclosure, absent applicable checks or uncovered elements. Negative limited lookup is not an all-clear.",
+      "next_action": "Record applicable insurer/history query scopes and date; compare precise claims. Respect public lookup limits; no automatic paid report.",
+      "required_evidence_kinds": [
+        "theft_loss_salvage_record"
+      ],
+      "freshness_policy": "title_history_query_days",
+      "whole_check": true
+    },
+    {
+      "id": "B3",
+      "name": "Accident/structural/repair claims",
+      "weight": 7,
+      "support_requirement": "Explicit accident/damage/repair disclosures agree with scoped history; any reported damage has relevant repair/inspection evidence for material repair claims. A literal report-status claim may be corroborated but does not earn the whole check without required damage disclosure.",
+      "contradiction_requirement": "A material no-damage or repair assertion is contradicted by attributable history/inspection after scope/date reconciliation. Reported damage without a contrary assertion is a review question, not automatic failure.",
+      "unknown_when": "No disclosure, only no-events report, unresolved event/repair scope, or absolute never-damaged claim without adequate corroboration.",
+      "next_action": "Distinguish reported history from actual condition; reconcile damage events, repair documentation and independent inspection scope.",
+      "required_evidence_kinds": [
+        "damage_history_record",
+        "repair_inspection_record"
+      ],
+      "freshness_policy": "title_history_query_days",
+      "whole_check": true
+    },
+    {
+      "id": "B4",
+      "name": "Ownership/prior-use claims",
+      "weight": 4,
+      "support_requirement": "Both owner-count disclosure (including whether an estimate) AND prior-use disclosure agree with sufficient dated history; required prior-use categories include lease, rental, commercial/fleet where known.",
+      "contradiction_requirement": "A material owner-count or prior-use disclosure conflicts with sufficient history after dealer-title transfers and ownership-estimation differences are reconciled.",
+      "unknown_when": "One-owner claim verified but prior use omitted; owner-count flag false; incomplete history. No partial credit under whole-check rubric.",
+      "next_action": "Verify owner-count method and explicit prior-use disclosure separately, then decide the combined check.",
+      "required_evidence_kinds": [
+        "ownership_prior_use_record"
+      ],
+      "freshness_policy": "title_history_query_days",
+      "whole_check": true
+    },
+    {
+      "id": "C1",
+      "name": "Mileage timeline",
+      "weight": 8,
+      "support_requirement": "At least two dated mileage observations at different times, including one non-current-seller upstream origin, form a sufficiently informative nondecreasing sequence compatible with the listing claim after units/dates/precision are reconciled. C2 handles present photo agreement.",
+      "contradiction_requirement": "A material mileage-history claim remains incompatible with attributable dated records after units, dates, transcription and instrument replacement are checked.",
+      "unknown_when": "Sparse history, seller-only endpoints, uncertain dates/units, unresolved decrease or an unsupported tampering inference.",
+      "next_action": "Build dated original-unit timeline; resolve decreases and source dependence; record coverage gaps without claiming completeness.",
+      "required_evidence_kinds": [
+        "dated_mileage_history"
+      ],
+      "freshness_policy": "title_history_query_days",
+      "whole_check": true
+    },
+    {
+      "id": "C2",
+      "name": "Current mileage agreement",
+      "weight": 5,
+      "support_requirement": "Authenticated VIN-linked current odometer observation and ad/description refer to the same reading event or a documented reconciled update, with overlapping declared precision intervals; current observation within 7 days.",
+      "contradiction_requirement": "A material current reading claim conflicts with authenticated same-reference evidence after dates, units, precision and replacement are resolved.",
+      "unknown_when": "Any unexplained delta, missing capture date, dashboard clock alone, no VIN linkage or stale photo. No automatic small-gap tolerance.",
+      "next_action": "Record exact delta and units; request dated VIN-linked observation and reconcile the reading/publication events.",
+      "required_evidence_kinds": [
+        "current_odometer_observation"
+      ],
+      "freshness_policy": "listing_and_current_odometer_days",
+      "whole_check": true
+    },
+    {
+      "id": "C3",
+      "name": "Equipment/specification claims",
+      "weight": 4,
+      "support_requirement": "All enumerated material trim, drivetrain and option claims match suitable VIN-specific build/equipment evidence. Core identity already credited to A1 is not extra C3 support.",
+      "contradiction_requirement": "A specific material equipment/trim claim conflicts with VIN-specific build evidence or attributable actual equipment after package/model naming is resolved.",
+      "unknown_when": "Only core decode, generic trim defaults, unverified options, or conflicting descriptive wording.",
+      "next_action": "Compare claim inventory to VIN-specific build sheet/window sticker and physical equipment as necessary.",
+      "required_evidence_kinds": [
+        "vin_specific_equipment_record"
+      ],
+      "freshness_policy": "stable_vin_decode",
+      "whole_check": true
+    },
+    {
+      "id": "C4",
+      "name": "Cross-source/current-listing consistency",
+      "weight": 3,
+      "support_requirement": "Current availability and enumerated material claims agree across appropriately dated originating sources or an independent availability confirmation; syndicated copies recognized as one origin.",
+      "contradiction_requirement": "Same-reference material claims/availability conflict across attributable sources after source/date reconciliation.",
+      "unknown_when": "Only seller page plus aggregator copy, unconfirmed stock or unresolved timing. A removed ad alone does not establish deception.",
+      "next_action": "Record upstream origins, timestamps and stock confirmation; do not count copies as independent checks.",
+      "required_evidence_kinds": [
+        "independent_listing_confirmation"
+      ],
+      "freshness_policy": "listing_and_current_odometer_days",
+      "whole_check": true
+    },
+    {
+      "id": "D1",
+      "name": "Condition disclosure",
+      "weight": 5,
+      "support_requirement": "Current VIN-linked independent inspection/diagnostic scope addresses enumerated present-condition and disclosed-defect claims; relevant structural/flood/mechanical limits explicit.",
+      "contradiction_requirement": "A material condition assertion conflicts with scoped current inspection/diagnostic findings after intervening repair/date effects are resolved.",
+      "unknown_when": "Only photos/history, generic excellent-condition wording, missing inspection scope, outdated test or subsequent material change.",
+      "next_action": "Obtain dated independent inspection and relevant diagnostics; state what was and was not examined.",
+      "required_evidence_kinds": [
+        "independent_condition_inspection"
+      ],
+      "freshness_policy": "condition_and_battery_test_days",
+      "whole_check": true
+    },
+    {
+      "id": "D2",
+      "name": "Maintenance/repair claims",
+      "weight": 4,
+      "support_requirement": "Enumerated material maintenance/repair claims, including generic well-maintained assurance, are supported by adequate dated VIN-linked records relative to relevant service needs; reported entries have upstream provenance.",
+      "contradiction_requirement": "A specific service assertion conflicts with authenticated relevant records; absence of a receipt alone is not contradiction.",
+      "unknown_when": "No specific claims inventoried, unsubstantiated generic assurance, insufficient record coverage or seller assertion only.",
+      "next_action": "Map each service claim to dated VIN-linked invoice/record; disclose remaining service-history gaps.",
+      "required_evidence_kinds": [
+        "maintenance_record"
+      ],
+      "freshness_policy": "title_history_query_days",
+      "whole_check": true
+    },
+    {
+      "id": "D3",
+      "name": "Safety/recall disclosure",
+      "weight": 3,
+      "support_requirement": "Current official/manufacturer VIN-specific open-recall result and relevant completion evidence agree with explicit recall-status disclosures; lookup exclusions recorded. General model campaigns or commercial summaries alone do not satisfy this check.",
+      "contradiction_requirement": "VIN-specific unrepaired campaign materially conflicts with a no-open-recall or repair-completed assertion after update lag and repair evidence are reconciled.",
+      "unknown_when": "No completed current lookup, no explicit status disclosure, unresolved lag or only general warning. Open recall itself is not seller deception.",
+      "next_action": "Save dated official VIN result, exclusions and applicable repair evidence; distinguish model-level from VIN-level results.",
+      "required_evidence_kinds": [
+        "official_vin_recall_record"
+      ],
+      "freshness_policy": "recall_query_days",
+      "whole_check": true
+    },
+    {
+      "id": "D4",
+      "name": "Specialized condition claims",
+      "weight": 3,
+      "support_requirement": "For each applicable specialized area, material claims and relevant condition disclosures are supported by suitable VIN-linked evidence: battery diagnostics for EV/HEV/PHEV; actual CPO enrollment/checklist/coverage for certification; appropriate inspection for modification/special warranty claims.",
+      "contradiction_requirement": "A material specialized assertion conflicts with authenticated suitable diagnostics/enrollment/coverage evidence after test scope and dates are resolved.",
+      "unknown_when": "Battery charge/range display only, generic CPO boilerplate, missing VIN enrollment, insufficient warranty terms or unresolved applicability.",
+      "next_action": "Obtain appropriate battery test conditions/results or VIN-linked certification, modification or warranty documentation as applicable.",
+      "required_evidence_kinds": [
+        "specialized_condition_record"
+      ],
+      "freshness_policy": "condition_and_battery_test_days",
+      "whole_check": true
+    },
+    {
+      "id": "E1",
+      "name": "Vehicle-specific media",
+      "weight": 4,
+      "support_requirement": "Readable VIN in the reviewed photo sequence matches listing VIN and coherent vehicle views establish listing-media attribution, with no unresolved mixed/copy identity issue. This is not proof of possession or original authorship.",
+      "contradiction_requirement": "Attributable media clearly depict a different VIN/vehicle after legitimate stock illustrations and caption context are checked.",
+      "unknown_when": "Only filename/URL VIN, generic watermark, visually similar vehicle or unreadable physical VIN.",
+      "next_action": "Inspect physical VIN image and coherent exterior/interior sequence; flag unresolved stock/copied/mixed attribution.",
+      "required_evidence_kinds": [
+        "vehicle_vin_media"
+      ],
+      "freshness_policy": "vehicle_media_days",
+      "whole_check": true
+    },
+    {
+      "id": "E2",
+      "name": "Relevant visual coverage",
+      "weight": 3,
+      "support_requirement": "Predeclared relevant view checklist is complete and usable: all exterior sides/corners, front/rear cabin, cargo/bed as relevant, readable VIN and odometer, plus close-ups of disclosed visible defects. EV charging/battery-related visible claims and modified/certified claims need their relevant views/documents; images cannot replace diagnostics.",
+      "contradiction_requirement": "Only an explicit material assertion that all required views/evidence are supplied is demonstrably false. Missing views alone remain unknown.",
+      "unknown_when": "Any required view missing/obscured/unattributable. Number of photo URLs or polished presentation earns no credit.",
+      "next_action": "Use checklist before looking at score; record each required view as present, missing or unusable and why.",
+      "required_evidence_kinds": [
+        "visual_coverage_review"
+      ],
+      "freshness_policy": "vehicle_media_days",
+      "whole_check": true
+    },
+    {
+      "id": "E3",
+      "name": "Media/description agreement",
+      "weight": 3,
+      "support_requirement": "Every enumerated visually assessable material description claim matches attributable media; unobservable mechanical/structural claims excluded explicitly. VIN identity and odometer events already assigned to E1/A1/C2 add no repeated support/penalty.",
+      "contradiction_requirement": "A specific material visible claim conflicts with attributable imagery after captions, dates and variants are resolved.",
+      "unknown_when": "Incomplete claim inventory or attribution, limited views, unobservable assertions, unresolved mismatch.",
+      "next_action": "Compare visible claim inventory to numbered images; record limits and primary rule for each event.",
+      "required_evidence_kinds": [
+        "visual_claim_comparison"
+      ],
+      "freshness_policy": "vehicle_media_days",
+      "whole_check": true
+    },
+    {
+      "id": "F1",
+      "name": "Price/terms transparency",
+      "weight": 4,
+      "support_requirement": "Published cash purchase price, mandatory dealer charges, exclusions and material finance/trade/rebate/accessory conditions are explicit and arithmetically consistent. Published written terms suffice; a buyer order is stronger but not always required. Generic contradictory disclaimers must be reconciled.",
+      "contradiction_requirement": "Same-reference purchase-price/mandatory-charge claim conflicts with definite applicable written terms or documented quote after taxes, optional items and eligibility are reconciled.",
+      "unknown_when": "Unclear whether fee is included, conflicting destination/accessory boilerplate, incomplete material conditions or unresolved quote change. A low price alone is irrelevant.",
+      "next_action": "Save itemized published total and conditions; obtain itemized cash quote when inclusion or eligibility is unclear.",
+      "required_evidence_kinds": [
+        "published_price_terms"
+      ],
+      "freshness_policy": "listing_and_current_odometer_days",
+      "whole_check": true
+    },
+    {
+      "id": "F2",
+      "name": "Verification cooperation",
+      "weight": 3,
+      "support_requirement": "Documented actual seller response enables reasonable records and independent inspection, or a credible workable alternative; identities and dates tied to this listing.",
+      "contradiction_requirement": "Actual conduct establishes refusal/obstruction of reasonable verification without credible alternative after context is documented. Nonresponse alone requires context and remains unknown.",
+      "unknown_when": "No interaction, test-drive button only, or ambiguous/nonresponse. No automatic seller outreach.",
+      "next_action": "If separately authorized, record actual response to records/inspection request; otherwise leave unknown.",
+      "required_evidence_kinds": [
+        "observed_seller_interaction"
+      ],
+      "freshness_policy": "listing_and_current_odometer_days",
+      "whole_check": true
+    },
+    {
+      "id": "F3",
+      "name": "Transaction legitimacy",
+      "weight": 3,
+      "support_requirement": "Specific proposed legal payee, current authority, payment/escrow identity and transfer process independently verified and consistent; actual transaction proposal required.",
+      "contradiction_requirement": "Independently established impersonation, unauthorized payee/escrow or materially false transfer process conflicts with proposal after identity/context checks.",
+      "unknown_when": "No proposed payment/transfer details or unverified third-party assurance. Writing style, urgency alone or seller nationality is not a weighted finding.",
+      "next_action": "Before any payment, independently verify named payee, authority and escrow/transfer details; preserve safe evidence, not credentials.",
+      "required_evidence_kinds": [
+        "verified_transaction_proposal"
+      ],
+      "freshness_policy": "listing_and_current_odometer_days",
+      "whole_check": true
+    }
+  ],
+  "status": "proposed operational rules; unvalidated",
+  "supersedes": "0.1-development",
+  "weights_changed": false,
+  "policy": {
+    "decision_unit": "Whole check: supported only if every applicable required element is supported; contradicted only by an established, attributable material conflict; otherwise unknown. No model-created partial credit.",
+    "claim_inventory": "Before scoring, enumerate material claims with exact field/text locator and type: identity, history, present condition, equipment, terms or transaction. Record absence explicitly after full accessible listing review. Generic assurances are claims; absent evidence is not a negative fact.",
+    "source_scope": "Attach vehicle VIN, source origin, upstream origin where known, record/event date, access date, claim locator, scope and limitations. Seller-fed events in commercial reports keep seller provenance; syndication is not independent corroboration.",
+    "freshness": {
+      "design_choice_not_empirical_standard": true,
+      "listing_and_current_odometer_days": 7,
+      "recall_query_days": 7,
+      "dealer_license_query_days": 30,
+      "title_history_query_days": 30,
+      "condition_and_battery_test_days": 30,
+      "vehicle_media_days": 30,
+      "stable_vin_decode": "No arbitrary expiry; recheck if VIN/core claim changes or decoder errors/ambiguity remain.",
+      "historical_events": "Preserve event dates permanently; new query windows concern report freshness, not expiry of historical events.",
+      "invalidation": "New damage, repairs, mileage, seller, price/terms, VIN, or other material changes invalidate affected checks immediately even within a window.",
+      "time_basis": "Evaluate against assessment_at_utc. Future event dates, missing dates for time-sensitive claims, uncertain clocks or unidentified source dates cannot establish freshness. Access date alone does not date a photo/test.",
+      "sensitivity_plan": "Compare 1/7/30-day volatile-data windows and 7/30/90-day report/test windows in the next feasibility dataset."
+    },
+    "mileage": {
+      "canonical_unit": "miles; preserve original value/unit; kilometres / 1.609344",
+      "precision": "Represent explicit rounding as an interval from the published rounding method. Do not assume nearest-100 rounding for a precise integer.",
+      "absolute_tolerance_miles": 0,
+      "timeline": "At least two dated mileage observations at different times, with at least one non-current-seller upstream origin. Order by event date, not crawl date; append current claim as a claim, not an independent observation.",
+      "current_agreement": "Same-reference observation or an explicitly reconciled documented update; date/VIN linkage and precision intervals must agree.",
+      "discrepancy": "Any unexplained difference remains unknown with exact delta. No arbitrary small-gap forgiveness or automatic rollback finding. Investigate dates, units, transcription, instrument replacement and stale ads.",
+      "contradiction": "Only after attribution, timing, units and precision are resolved and the relevant material claim still conflicts. Record the specific conflicting claim; never translate a discrepancy into a fraud probability."
+    },
+    "applicability": {
+      "base_weights_total": 100,
+      "allowed_profiles": {
+        "full_100": {
+          "excluded": [],
+          "base_total": 100
+        },
+        "core_97": {
+          "excluded": [
+            "D4"
+          ],
+          "base_total": 97
+        }
+      },
+      "D4_required": "EV/PHEV/HEV battery-related condition screening, or any advertised CPO/certification, material modification, special warranty or other specialized condition claim. All applicable elements must be evaluated.",
+      "D4_exclusion": "Only ordinary combustion listing with complete accessible claim inventory, no advertised specialized claim/modification/certification, and documented profile decision/evidence. This says no such claim was identified, not that the vehicle has no hidden modification. Missing descriptions or uncertainty require full_100 and unknown D4.",
+      "normalization": "For core_97 multiply each included weight by 100/97; retain excluded D4 as applicability metadata, not a fourth check state.",
+      "comparison": "Do not rank different profiles together. Show profile, applicable base weight, T/D/U and coverage; round only presentation."
+    },
+    "deduplication": "Each decision event has one primary weighted check. Reuse sources for distinct factual events with different event IDs, but do not manufacture event IDs for repeated manifestations of the same fact. Secondary links have no extra points or penalty.",
+    "alerts": "Critical alerts require dated traceable evidence of a specific serious transaction/identity/material issue, reviewer rationale, and primary rule. Unknown questions produce review alerts, not critical fraud labels. Critical alerts take precedence over ranking, not a hidden numerical cap.",
+    "display": "Show evidence support T, contradicted weight D, unresolved U, coverage T+D, profile, rule version and assessment date. Unknown is points not yet supported, not a confirmed problem/deduction. No safe/unsafe thresholds, star-based credit or fraud probabilities. Unassessed/reassessment-pending has no numeric score. Cached results expire on affected-data changes or applicable freshness windows.",
+    "reviewer": "AI-assisted desk review is not independent human validation. Preserve individual labels and blind overlapping human reviews before adjudication."
+  }
+}

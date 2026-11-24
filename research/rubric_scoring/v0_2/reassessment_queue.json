@@ -1,0 +1,2204 @@
+{
+  "rubric_version": "0.2-development",
+  "assessment_status": "reassessment_pending; no v0.2 score should be displayed",
+  "source_assessment_revision": "desk-review-2026-11-23-r1",
+  "cases": [
+    {
+      "case_id": "P01",
+      "vin": "WA1L2BFZ8PP065926",
+      "listing_url": "https://www.flatironssubaru.com/inventory/used-2023-audi-q4-e-tron-premium-plus-quattro-4d-sport-utility-wa1l2bfz8pp065926/",
+      "prior_assessment_path": "../pilot_ten_listings.json",
+      "profile": "full_100",
+      "profile_decision": null,
+      "reviewer": null,
+      "assessment_at_utc": null,
+      "claim_inventory": [],
+      "evidence": [
+        {
+          "id": "P01-snapshot",
+          "kind": "provider_snapshot",
+          "captured_at_utc": "2026-11-24T03:04:55.560262+00:00",
+          "source_path": "/Users/YOUR_USERNAME/Documents/Codex/FirstPass/search_exports/search_20261124T030455638068Z_4e7ea727eca14874b64d99b427930cdc.json",
+          "listing_index": 0,
+          "independent": false
+        },
+        {
+          "id": "P01-live",
+          "kind": "seller_listing",
+          "captured_at_utc": "2026-11-24T03:35:19.482Z",
+          "url": "https://www.flatironssubaru.com/inventory/used-2023-audi-q4-e-tron-premium-plus-quattro-4d-sport-utility-wa1l2bfz8pp065926/",
+          "local_file": "evidence/P01_browser.json",
+          "independent": false
+        },
+        {
+          "id": "P01-vpic",
+          "kind": "official_vin_decode",
+          "captured_at_utc": "2026-11-24T03:34:22.699788+00:00",
+          "url": "https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVinValues/WA1L2BFZ8PP065926?format=json&modelyear=2023",
+          "local_file": "evidence/P01_vpic.json",
+          "independent": true
+        },
+        {
+          "id": "P01-visual",
+          "kind": "analyst_photo_review",
+          "captured_at_utc": "2026-11-24T06:42:27.343696+00:00",
+          "local_file": "evidence/P01_contact_sheet.jpg",
+          "independent": false,
+          "scope": "20 images reviewed: white Audi SUV; exterior, cabin, panoramic roof and cargo views. Image 13 reads 28,606 mi; displayed clock says 10/12/2026, which is not an independently authenticated capture date. No readable VIN label, underbody, battery test or damage close-ups."
+        },
+        {
+          "id": "P01-history",
+          "kind": "third_party_history_report",
+          "captured_at_utc": "2026-11-24T03:37:10.143Z",
+          "url": "https://www.carfax.com/vehiclehistory/ar20/EgzdnJr1GzEqRT_JBmpHlHSb3r9vqf5v8v-Uvzy5Y_2ORDRqJMLiFzWXp-tQXJiFUe3xu5HzWqtVG-1YfZKDbbimAcqo-_qmkBw",
+          "local_file": "evidence/history_access.json",
+          "independent": true,
+          "limitations": "Commercial report; underlying events may originate from seller. No-events result is not absence proof. Not NMVTIS/NICB or an inspection."
+        },
+        {
+          "id": "P01-license",
+          "kind": "official_dealer_license",
+          "captured_at_utc": "2026-11-24T03:40:12.857Z",
+          "url": "https://codor.mylicense.com/AID_Verification/Search.aspx?facility=Y",
+          "local_file": "evidence/license_details.json",
+          "independent": true,
+          "scope": "DBA, active license and address matched; no calls made; registry and marketing phone numbers can differ."
+        }
+      ],
+      "checks": {
+        "A1": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Compare listing VIN/core details with official decoder; separately verify physical VIN under E1/A3.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "A2": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Match registry DBA/address/license and an independent domain/contact listing. Record differing phone numbers without assuming impersonation.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "A3": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Verify current title/authorized seller chain and relevant lien/release process securely; avoid retaining unnecessary personal identifiers.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "A4": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Obtain dated vehicle-specific location/possession evidence or independent inspection.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "B1": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Compare explicit disclosure with current relevant title/brand records, noting jurisdiction, report date and exclusions.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "B2": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Record applicable insurer/history query scopes and date; compare precise claims. Respect public lookup limits; no automatic paid report.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "B3": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Distinguish reported history from actual condition; reconcile damage events, repair documentation and independent inspection scope.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "B4": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Verify owner-count method and explicit prior-use disclosure separately, then decide the combined check.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "C1": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Build dated original-unit timeline; resolve decreases and source dependence; record coverage gaps without claiming completeness.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "C2": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Record exact delta and units; request dated VIN-linked observation and reconcile the reading/publication events.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "C3": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Compare claim inventory to VIN-specific build sheet/window sticker and physical equipment as necessary.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "C4": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Record upstream origins, timestamps and stock confirmation; do not count copies as independent checks.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "D1": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Obtain dated independent inspection and relevant diagnostics; state what was and was not examined.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "D2": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Map each service claim to dated VIN-linked invoice/record; disclose remaining service-history gaps.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "D3": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Save dated official VIN result, exclusions and applicable repair evidence; distinguish model-level from VIN-level results.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "D4": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Obtain appropriate battery test conditions/results or VIN-linked certification, modification or warranty documentation as applicable.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "E1": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Inspect physical VIN image and coherent exterior/interior sequence; flag unresolved stock/copied/mixed attribution.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "E2": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Use checklist before looking at score; record each required view as present, missing or unusable and why.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "E3": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Compare visible claim inventory to numbered images; record limits and primary rule for each event.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "F1": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Save itemized published total and conditions; obtain itemized cash quote when inclusion or eligibility is unclear.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "F2": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "If separately authorized, record actual response to records/inspection request; otherwise leave unknown.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "F3": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Before any payment, independently verify named payee, authority and escrow/transfer details; preserve safe evidence, not credentials.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        }
+      },
+      "priority_rechecks": [
+        "A2: independent domain/contact linkage beyond registry name/address",
+        "C1: non-current-seller upstream mileage origin",
+        "E1: authenticated image date versus access date",
+        "F1: fee inclusion and applicable disclaimer terms",
+        "D4: documented profile and specialized-claim inventory"
+      ]
+    },
+    {
+      "case_id": "P02",
+      "vin": "4S4BTGLD4R3260366",
+      "listing_url": "https://www.flatironssubaru.com/inventory/certified-used-2024-subaru-outback-onyx-edition-xt-awd-4d-sport-utility-4s4btgld4r3260366/",
+      "prior_assessment_path": "../pilot_ten_listings.json",
+      "profile": "full_100",
+      "profile_decision": null,
+      "reviewer": null,
+      "assessment_at_utc": null,
+      "claim_inventory": [],
+      "evidence": [
+        {
+          "id": "P02-snapshot",
+          "kind": "provider_snapshot",
+          "captured_at_utc": "2026-11-24T03:04:55.560262+00:00",
+          "source_path": "/Users/YOUR_USERNAME/Documents/Codex/FirstPass/search_exports/search_20261124T030455638068Z_4e7ea727eca14874b64d99b427930cdc.json",
+          "listing_index": 1,
+          "independent": false
+        },
+        {
+          "id": "P02-live",
+          "kind": "seller_listing",
+          "captured_at_utc": "2026-11-24T03:35:20.346Z",
+          "url": "https://www.flatironssubaru.com/inventory/certified-used-2024-subaru-outback-onyx-edition-xt-awd-4d-sport-utility-4s4btgld4r3260366/",
+          "local_file": "evidence/P02_browser.json",
+          "independent": false
+        },
+        {
+          "id": "P02-vpic",
+          "kind": "official_vin_decode",
+          "captured_at_utc": "2026-11-24T03:34:23.044627+00:00",
+          "url": "https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVinValues/4S4BTGLD4R3260366?format=json&modelyear=2024",
+          "local_file": "evidence/P02_vpic.json",
+          "independent": true
+        },
+        {
+          "id": "P02-visual",
+          "kind": "analyst_photo_review",
+          "captured_at_utc": "2026-11-24T06:42:27.343696+00:00",
+          "local_file": "evidence/P02_contact_sheet.jpg",
+          "independent": false,
+          "scope": "20 images reviewed: black Outback, exterior/cabin/roof/cargo. Image 13 reads 28,168 mi. No readable VIN label, underbody or repair-detail close-ups."
+        },
+        {
+          "id": "P02-history",
+          "kind": "third_party_history_report",
+          "captured_at_utc": "2026-11-24T03:37:12.244Z",
+          "url": "https://www.carfax.com/vehiclehistory/ar20/p2ySZerWgAJbMV3n9SJGyHsJXmBiwkKEKJWnQ9KKtwC4bbOGTecJtYb0Y_LnHyMzN-2Q66Ayf9JxEtjd5E9MKEYPTGpfLMga-VE",
+          "local_file": "evidence/history_access.json",
+          "independent": true,
+          "limitations": "Commercial report; underlying events may originate from seller. No-events result is not absence proof. Not NMVTIS/NICB or an inspection."
+        },
+        {
+          "id": "P02-license",
+          "kind": "official_dealer_license",
+          "captured_at_utc": "2026-11-24T03:40:12.857Z",
+          "url": "https://codor.mylicense.com/AID_Verification/Search.aspx?facility=Y",
+          "local_file": "evidence/license_details.json",
+          "independent": true,
+          "scope": "DBA, active license and address matched; no calls made; registry and marketing phone numbers can differ."
+        }
+      ],
+      "checks": {
+        "A1": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Compare listing VIN/core details with official decoder; separately verify physical VIN under E1/A3.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "A2": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Match registry DBA/address/license and an independent domain/contact listing. Record differing phone numbers without assuming impersonation.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "A3": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Verify current title/authorized seller chain and relevant lien/release process securely; avoid retaining unnecessary personal identifiers.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "A4": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Obtain dated vehicle-specific location/possession evidence or independent inspection.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "B1": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Compare explicit disclosure with current relevant title/brand records, noting jurisdiction, report date and exclusions.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "B2": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Record applicable insurer/history query scopes and date; compare precise claims. Respect public lookup limits; no automatic paid report.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "B3": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Distinguish reported history from actual condition; reconcile damage events, repair documentation and independent inspection scope.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "B4": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Verify owner-count method and explicit prior-use disclosure separately, then decide the combined check.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "C1": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Build dated original-unit timeline; resolve decreases and source dependence; record coverage gaps without claiming completeness.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "C2": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Record exact delta and units; request dated VIN-linked observation and reconcile the reading/publication events.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "C3": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Compare claim inventory to VIN-specific build sheet/window sticker and physical equipment as necessary.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "C4": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Record upstream origins, timestamps and stock confirmation; do not count copies as independent checks.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "D1": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Obtain dated independent inspection and relevant diagnostics; state what was and was not examined.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "D2": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Map each service claim to dated VIN-linked invoice/record; disclose remaining service-history gaps.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "D3": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Save dated official VIN result, exclusions and applicable repair evidence; distinguish model-level from VIN-level results.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "D4": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Obtain appropriate battery test conditions/results or VIN-linked certification, modification or warranty documentation as applicable.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "E1": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Inspect physical VIN image and coherent exterior/interior sequence; flag unresolved stock/copied/mixed attribution.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "E2": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Use checklist before looking at score; record each required view as present, missing or unusable and why.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "E3": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Compare visible claim inventory to numbered images; record limits and primary rule for each event.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "F1": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Save itemized published total and conditions; obtain itemized cash quote when inclusion or eligibility is unclear.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "F2": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "If separately authorized, record actual response to records/inspection request; otherwise leave unknown.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "F3": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Before any payment, independently verify named payee, authority and escrow/transfer details; preserve safe evidence, not credentials.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        }
+      },
+      "priority_rechecks": [
+        "A2: independent domain/contact linkage beyond registry name/address",
+        "C1: non-current-seller upstream mileage origin",
+        "E1: authenticated image date versus access date",
+        "F1: fee inclusion and applicable disclaimer terms",
+        "D4: documented profile and specialized-claim inventory"
+      ]
+    },
+    {
+      "case_id": "P03",
+      "vin": "4S4BTGND4R3168770",
+      "listing_url": "https://www.flatironssubaru.com/inventory/used-2024-subaru-outback-limited-xt-awd-4d-sport-utility-4s4btgnd4r3168770/",
+      "prior_assessment_path": "../pilot_ten_listings.json",
+      "profile": "full_100",
+      "profile_decision": null,
+      "reviewer": null,
+      "assessment_at_utc": null,
+      "claim_inventory": [],
+      "evidence": [
+        {
+          "id": "P03-snapshot",
+          "kind": "provider_snapshot",
+          "captured_at_utc": "2026-11-24T03:04:55.560262+00:00",
+          "source_path": "/Users/YOUR_USERNAME/Documents/Codex/FirstPass/search_exports/search_20261124T030455638068Z_4e7ea727eca14874b64d99b427930cdc.json",
+          "listing_index": 2,
+          "independent": false
+        },
+        {
+          "id": "P03-live",
+          "kind": "seller_listing",
+          "captured_at_utc": "2026-11-24T03:35:34.580Z",
+          "url": "https://www.flatironssubaru.com/inventory/used-2024-subaru-outback-limited-xt-awd-4d-sport-utility-4s4btgnd4r3168770/",
+          "local_file": "evidence/P03_browser.json",
+          "independent": false
+        },
+        {
+          "id": "P03-vpic",
+          "kind": "official_vin_decode",
+          "captured_at_utc": "2026-11-24T03:34:23.477289+00:00",
+          "url": "https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVinValues/4S4BTGND4R3168770?format=json&modelyear=2024",
+          "local_file": "evidence/P03_vpic.json",
+          "independent": true
+        },
+        {
+          "id": "P03-visual",
+          "kind": "analyst_photo_review",
+          "captured_at_utc": "2026-11-24T06:42:27.343696+00:00",
+          "local_file": "evidence/P03_contact_sheet.jpg",
+          "independent": false,
+          "scope": "20 images reviewed: white Outback, cabin, roof and cargo. Image 13 reads 28,901 mi. No readable VIN label or underbody/repair-specific views."
+        },
+        {
+          "id": "P03-history",
+          "kind": "third_party_history_report",
+          "captured_at_utc": "2026-11-24T03:37:13.943Z",
+          "url": "https://www.carfax.com/vehiclehistory/ar20/CnIqG97jbgITOJquDafK7qMO25h6WSxEK4X9eIyAI6GTjp4aXSS6hvyTeNFaq7bgSneHRPVjOZ9jtxtgccNUEac9E_hlX2znYVU",
+          "local_file": "evidence/history_access.json",
+          "independent": true,
+          "limitations": "Commercial report; underlying events may originate from seller. No-events result is not absence proof. Not NMVTIS/NICB or an inspection."
+        },
+        {
+          "id": "P03-license",
+          "kind": "official_dealer_license",
+          "captured_at_utc": "2026-11-24T03:40:12.857Z",
+          "url": "https://codor.mylicense.com/AID_Verification/Search.aspx?facility=Y",
+          "local_file": "evidence/license_details.json",
+          "independent": true,
+          "scope": "DBA, active license and address matched; no calls made; registry and marketing phone numbers can differ."
+        }
+      ],
+      "checks": {
+        "A1": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Compare listing VIN/core details with official decoder; separately verify physical VIN under E1/A3.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "A2": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Match registry DBA/address/license and an independent domain/contact listing. Record differing phone numbers without assuming impersonation.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "A3": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Verify current title/authorized seller chain and relevant lien/release process securely; avoid retaining unnecessary personal identifiers.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "A4": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Obtain dated vehicle-specific location/possession evidence or independent inspection.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "B1": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Compare explicit disclosure with current relevant title/brand records, noting jurisdiction, report date and exclusions.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "B2": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Record applicable insurer/history query scopes and date; compare precise claims. Respect public lookup limits; no automatic paid report.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "B3": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Distinguish reported history from actual condition; reconcile damage events, repair documentation and independent inspection scope.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "B4": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Verify owner-count method and explicit prior-use disclosure separately, then decide the combined check.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "C1": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Build dated original-unit timeline; resolve decreases and source dependence; record coverage gaps without claiming completeness.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "C2": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Record exact delta and units; request dated VIN-linked observation and reconcile the reading/publication events.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "C3": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Compare claim inventory to VIN-specific build sheet/window sticker and physical equipment as necessary.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "C4": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Record upstream origins, timestamps and stock confirmation; do not count copies as independent checks.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "D1": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Obtain dated independent inspection and relevant diagnostics; state what was and was not examined.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "D2": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Map each service claim to dated VIN-linked invoice/record; disclose remaining service-history gaps.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "D3": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Save dated official VIN result, exclusions and applicable repair evidence; distinguish model-level from VIN-level results.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "D4": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Obtain appropriate battery test conditions/results or VIN-linked certification, modification or warranty documentation as applicable.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "E1": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Inspect physical VIN image and coherent exterior/interior sequence; flag unresolved stock/copied/mixed attribution.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "E2": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Use checklist before looking at score; record each required view as present, missing or unusable and why.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "E3": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Compare visible claim inventory to numbered images; record limits and primary rule for each event.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "F1": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Save itemized published total and conditions; obtain itemized cash quote when inclusion or eligibility is unclear.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "F2": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "If separately authorized, record actual response to records/inspection request; otherwise leave unknown.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "F3": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Before any payment, independently verify named payee, authority and escrow/transfer details; preserve safe evidence, not credentials.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        }
+      },
+      "priority_rechecks": [
+        "A2: independent domain/contact linkage beyond registry name/address",
+        "C1: non-current-seller upstream mileage origin",
+        "E1: authenticated image date versus access date",
+        "F1: fee inclusion and applicable disclaimer terms",
+        "D4: documented profile and specialized-claim inventory"
+      ]
+    },
+    {
+      "case_id": "P04",
+      "vin": "4S4BTACC5R3201136",
+      "listing_url": "https://www.flatironssubaru.com/inventory/used-2024-subaru-outback-premium-awd-4d-sport-utility-4s4btacc5r3201136/",
+      "prior_assessment_path": "../pilot_ten_listings.json",
+      "profile": "full_100",
+      "profile_decision": null,
+      "reviewer": null,
+      "assessment_at_utc": null,
+      "claim_inventory": [],
+      "evidence": [
+        {
+          "id": "P04-snapshot",
+          "kind": "provider_snapshot",
+          "captured_at_utc": "2026-11-24T03:04:55.560262+00:00",
+          "source_path": "/Users/YOUR_USERNAME/Documents/Codex/FirstPass/search_exports/search_20261124T030455638068Z_4e7ea727eca14874b64d99b427930cdc.json",
+          "listing_index": 3,
+          "independent": false
+        },
+        {
+          "id": "P04-live",
+          "kind": "seller_listing",
+          "captured_at_utc": "2026-11-24T03:35:36.540Z",
+          "url": "https://www.flatironssubaru.com/inventory/used-2024-subaru-outback-premium-awd-4d-sport-utility-4s4btacc5r3201136/",
+          "local_file": "evidence/P04_browser.json",
+          "independent": false
+        },
+        {
+          "id": "P04-vpic",
+          "kind": "official_vin_decode",
+          "captured_at_utc": "2026-11-24T03:34:23.840435+00:00",
+          "url": "https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVinValues/4S4BTACC5R3201136?format=json&modelyear=2024",
+          "local_file": "evidence/P04_vpic.json",
+          "independent": true
+        },
+        {
+          "id": "P04-visual",
+          "kind": "analyst_photo_review",
+          "captured_at_utc": "2026-11-24T06:42:27.343696+00:00",
+          "local_file": "evidence/P04_contact_sheet.jpg",
+          "independent": false,
+          "scope": "The single photo URL is a malformed coming-soon placeholder and failed retrieval; no vehicle image could be inspected. All relevant actual vehicle views remain unavailable."
+        },
+        {
+          "id": "P04-license",
+          "kind": "official_dealer_license",
+          "captured_at_utc": "2026-11-24T03:40:12.857Z",
+          "url": "https://codor.mylicense.com/AID_Verification/Search.aspx?facility=Y",
+          "local_file": "evidence/license_details.json",
+          "independent": true,
+          "scope": "DBA, active license and address matched; no calls made; registry and marketing phone numbers can differ."
+        }
+      ],
+      "checks": {
+        "A1": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Compare listing VIN/core details with official decoder; separately verify physical VIN under E1/A3.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "A2": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Match registry DBA/address/license and an independent domain/contact listing. Record differing phone numbers without assuming impersonation.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "A3": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Verify current title/authorized seller chain and relevant lien/release process securely; avoid retaining unnecessary personal identifiers.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "A4": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Obtain dated vehicle-specific location/possession evidence or independent inspection.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "B1": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Compare explicit disclosure with current relevant title/brand records, noting jurisdiction, report date and exclusions.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "B2": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Record applicable insurer/history query scopes and date; compare precise claims. Respect public lookup limits; no automatic paid report.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "B3": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Distinguish reported history from actual condition; reconcile damage events, repair documentation and independent inspection scope.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "B4": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Verify owner-count method and explicit prior-use disclosure separately, then decide the combined check.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "C1": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Build dated original-unit timeline; resolve decreases and source dependence; record coverage gaps without claiming completeness.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "C2": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Record exact delta and units; request dated VIN-linked observation and reconcile the reading/publication events.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "C3": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Compare claim inventory to VIN-specific build sheet/window sticker and physical equipment as necessary.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "C4": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Record upstream origins, timestamps and stock confirmation; do not count copies as independent checks.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "D1": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Obtain dated independent inspection and relevant diagnostics; state what was and was not examined.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "D2": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Map each service claim to dated VIN-linked invoice/record; disclose remaining service-history gaps.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "D3": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Save dated official VIN result, exclusions and applicable repair evidence; distinguish model-level from VIN-level results.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "D4": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Obtain appropriate battery test conditions/results or VIN-linked certification, modification or warranty documentation as applicable.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "E1": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Inspect physical VIN image and coherent exterior/interior sequence; flag unresolved stock/copied/mixed attribution.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "E2": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Use checklist before looking at score; record each required view as present, missing or unusable and why.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "E3": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Compare visible claim inventory to numbered images; record limits and primary rule for each event.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "F1": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Save itemized published total and conditions; obtain itemized cash quote when inclusion or eligibility is unclear.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "F2": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "If separately authorized, record actual response to records/inspection request; otherwise leave unknown.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "F3": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Before any payment, independently verify named payee, authority and escrow/transfer details; preserve safe evidence, not credentials.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        }
+      },
+      "priority_rechecks": [
+        "A2: independent domain/contact linkage beyond registry name/address",
+        "C1: non-current-seller upstream mileage origin",
+        "E1: authenticated image date versus access date",
+        "F1: fee inclusion and applicable disclaimer terms",
+        "D4: documented profile and specialized-claim inventory"
+      ]
+    },
+    {
+      "case_id": "P05",
+      "vin": "1FMCU0KZ2NUB48630",
+      "listing_url": "https://www.boulderh.com/inventory/2022-ford-escape-sel-plug-in-hybrid/1147361",
+      "prior_assessment_path": "../pilot_ten_listings.json",
+      "profile": "full_100",
+      "profile_decision": null,
+      "reviewer": null,
+      "assessment_at_utc": null,
+      "claim_inventory": [],
+      "evidence": [
+        {
+          "id": "P05-snapshot",
+          "kind": "provider_snapshot",
+          "captured_at_utc": "2026-11-24T03:04:55.560262+00:00",
+          "source_path": "/Users/YOUR_USERNAME/Documents/Codex/FirstPass/search_exports/search_20261124T030455638068Z_4e7ea727eca14874b64d99b427930cdc.json",
+          "listing_index": 38,
+          "independent": false
+        },
+        {
+          "id": "P05-live",
+          "kind": "seller_listing",
+          "captured_at_utc": "2026-11-24T03:35:41.695Z",
+          "url": "https://www.boulderh.com/inventory/2022-ford-escape-sel-plug-in-hybrid/1147361",
+          "local_file": "evidence/P05_browser.json",
+          "independent": false
+        },
+        {
+          "id": "P05-vpic",
+          "kind": "official_vin_decode",
+          "captured_at_utc": "2026-11-24T03:34:24.583217+00:00",
+          "url": "https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVinValues/1FMCU0KZ2NUB48630?format=json&modelyear=2022",
+          "local_file": "evidence/P05_vpic.json",
+          "independent": true
+        },
+        {
+          "id": "P05-visual",
+          "kind": "analyst_photo_review",
+          "captured_at_utc": "2026-11-24T06:42:27.343696+00:00",
+          "local_file": "evidence/P05_contact_sheet.jpg",
+          "independent": false,
+          "scope": "10 images reviewed: blue Ford SUV, cabin/cargo, panoramic roof, charging cable visible. Image 8 reads 16,461.1 mi and 11% charge. No readable VIN label, battery diagnostic or underbody. Charge percentage does not measure battery health."
+        },
+        {
+          "id": "P05-license",
+          "kind": "official_dealer_license",
+          "captured_at_utc": "2026-11-24T03:40:17.580Z",
+          "url": "https://codor.mylicense.com/AID_Verification/Search.aspx?facility=Y",
+          "local_file": "evidence/license_details.json",
+          "independent": true,
+          "scope": "DBA, active license and address matched; no calls made; registry and marketing phone numbers can differ."
+        }
+      ],
+      "checks": {
+        "A1": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Compare listing VIN/core details with official decoder; separately verify physical VIN under E1/A3.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "A2": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Match registry DBA/address/license and an independent domain/contact listing. Record differing phone numbers without assuming impersonation.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "A3": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Verify current title/authorized seller chain and relevant lien/release process securely; avoid retaining unnecessary personal identifiers.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "A4": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Obtain dated vehicle-specific location/possession evidence or independent inspection.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "B1": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Compare explicit disclosure with current relevant title/brand records, noting jurisdiction, report date and exclusions.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "B2": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Record applicable insurer/history query scopes and date; compare precise claims. Respect public lookup limits; no automatic paid report.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "B3": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Distinguish reported history from actual condition; reconcile damage events, repair documentation and independent inspection scope.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "B4": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Verify owner-count method and explicit prior-use disclosure separately, then decide the combined check.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "C1": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Build dated original-unit timeline; resolve decreases and source dependence; record coverage gaps without claiming completeness.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "C2": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Record exact delta and units; request dated VIN-linked observation and reconcile the reading/publication events.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "C3": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Compare claim inventory to VIN-specific build sheet/window sticker and physical equipment as necessary.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "C4": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Record upstream origins, timestamps and stock confirmation; do not count copies as independent checks.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "D1": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Obtain dated independent inspection and relevant diagnostics; state what was and was not examined.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "D2": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Map each service claim to dated VIN-linked invoice/record; disclose remaining service-history gaps.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "D3": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Save dated official VIN result, exclusions and applicable repair evidence; distinguish model-level from VIN-level results.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "D4": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Obtain appropriate battery test conditions/results or VIN-linked certification, modification or warranty documentation as applicable.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "E1": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Inspect physical VIN image and coherent exterior/interior sequence; flag unresolved stock/copied/mixed attribution.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "E2": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Use checklist before looking at score; record each required view as present, missing or unusable and why.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "E3": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Compare visible claim inventory to numbered images; record limits and primary rule for each event.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "F1": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Save itemized published total and conditions; obtain itemized cash quote when inclusion or eligibility is unclear.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "F2": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "If separately authorized, record actual response to records/inspection request; otherwise leave unknown.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "F3": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Before any payment, independently verify named payee, authority and escrow/transfer details; preserve safe evidence, not credentials.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        }
+      },
+      "priority_rechecks": [
+        "A2: independent domain/contact linkage beyond registry name/address",
+        "C1: non-current-seller upstream mileage origin",
+        "E1: authenticated image date versus access date",
+        "F1: fee inclusion and applicable disclaimer terms",
+        "D4: documented profile and specialized-claim inventory"
+      ]
+    },
+    {
+      "case_id": "P06",
+      "vin": "5FPYK3F70PB012249",
+      "listing_url": "https://www.fisherhonda.com/inventory/used-2023-honda-ridgeline-rtl-e-awd-4d-crew-cab-5fpyk3f70pb012249/",
+      "prior_assessment_path": "../pilot_ten_listings.json",
+      "profile": "full_100",
+      "profile_decision": null,
+      "reviewer": null,
+      "assessment_at_utc": null,
+      "claim_inventory": [],
+      "evidence": [
+        {
+          "id": "P06-snapshot",
+          "kind": "provider_snapshot",
+          "captured_at_utc": "2026-11-24T03:04:55.560262+00:00",
+          "source_path": "/Users/YOUR_USERNAME/Documents/Codex/FirstPass/search_exports/search_20261124T030455638068Z_4e7ea727eca14874b64d99b427930cdc.json",
+          "listing_index": 39,
+          "independent": false
+        },
+        {
+          "id": "P06-live",
+          "kind": "seller_listing",
+          "captured_at_utc": "2026-11-24T03:35:53.234Z",
+          "url": "https://www.fisherhonda.com/inventory/used-2023-honda-ridgeline-rtl-e-awd-4d-crew-cab-5fpyk3f70pb012249/",
+          "local_file": "evidence/P06_browser.json",
+          "independent": false
+        },
+        {
+          "id": "P06-vpic",
+          "kind": "official_vin_decode",
+          "captured_at_utc": "2026-11-24T03:34:25.004533+00:00",
+          "url": "https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVinValues/5FPYK3F70PB012249?format=json&modelyear=2023",
+          "local_file": "evidence/P06_vpic.json",
+          "independent": true
+        },
+        {
+          "id": "P06-visual",
+          "kind": "analyst_photo_review",
+          "captured_at_utc": "2026-11-24T06:42:27.343696+00:00",
+          "local_file": "evidence/P06_contact_sheet.jpg",
+          "independent": false,
+          "scope": "28 images reviewed including exterior, cabin, bed/under-bed compartment, roof, rear camera, odometer and VIN label. Image 19 reads 39,716 miles; image 28 label matches listing VIN. No underbody or inspection evidence."
+        },
+        {
+          "id": "P06-license",
+          "kind": "official_dealer_license",
+          "captured_at_utc": "2026-11-24T03:40:14.475Z",
+          "url": "https://codor.mylicense.com/AID_Verification/Search.aspx?facility=Y",
+          "local_file": "evidence/license_details.json",
+          "independent": true,
+          "scope": "DBA, active license and address matched; no calls made; registry and marketing phone numbers can differ."
+        }
+      ],
+      "checks": {
+        "A1": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Compare listing VIN/core details with official decoder; separately verify physical VIN under E1/A3.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "A2": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Match registry DBA/address/license and an independent domain/contact listing. Record differing phone numbers without assuming impersonation.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "A3": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Verify current title/authorized seller chain and relevant lien/release process securely; avoid retaining unnecessary personal identifiers.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "A4": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Obtain dated vehicle-specific location/possession evidence or independent inspection.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "B1": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Compare explicit disclosure with current relevant title/brand records, noting jurisdiction, report date and exclusions.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "B2": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Record applicable insurer/history query scopes and date; compare precise claims. Respect public lookup limits; no automatic paid report.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "B3": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Distinguish reported history from actual condition; reconcile damage events, repair documentation and independent inspection scope.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "B4": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Verify owner-count method and explicit prior-use disclosure separately, then decide the combined check.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "C1": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Build dated original-unit timeline; resolve decreases and source dependence; record coverage gaps without claiming completeness.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "C2": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Record exact delta and units; request dated VIN-linked observation and reconcile the reading/publication events.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "C3": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Compare claim inventory to VIN-specific build sheet/window sticker and physical equipment as necessary.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "C4": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Record upstream origins, timestamps and stock confirmation; do not count copies as independent checks.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "D1": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Obtain dated independent inspection and relevant diagnostics; state what was and was not examined.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "D2": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Map each service claim to dated VIN-linked invoice/record; disclose remaining service-history gaps.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "D3": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Save dated official VIN result, exclusions and applicable repair evidence; distinguish model-level from VIN-level results.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "D4": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Obtain appropriate battery test conditions/results or VIN-linked certification, modification or warranty documentation as applicable.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "E1": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Inspect physical VIN image and coherent exterior/interior sequence; flag unresolved stock/copied/mixed attribution.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "E2": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Use checklist before looking at score; record each required view as present, missing or unusable and why.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "E3": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Compare visible claim inventory to numbered images; record limits and primary rule for each event.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "F1": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Save itemized published total and conditions; obtain itemized cash quote when inclusion or eligibility is unclear.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "F2": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "If separately authorized, record actual response to records/inspection request; otherwise leave unknown.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "F3": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Before any payment, independently verify named payee, authority and escrow/transfer details; preserve safe evidence, not credentials.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        }
+      },
+      "priority_rechecks": [
+        "A2: independent domain/contact linkage beyond registry name/address",
+        "C1: non-current-seller upstream mileage origin",
+        "E1: authenticated image date versus access date",
+        "F1: fee inclusion and applicable disclaimer terms",
+        "D4: documented profile and specialized-claim inventory"
+      ]
+    },
+    {
+      "case_id": "P07",
+      "vin": "3CZRZ2H51RM731100",
+      "listing_url": "https://www.fisherhonda.com/inventory/used-2024-honda-hr-v-sport-awd-4d-sport-utility-3czrz2h51rm731100/",
+      "prior_assessment_path": "../pilot_ten_listings.json",
+      "profile": "full_100",
+      "profile_decision": null,
+      "reviewer": null,
+      "assessment_at_utc": null,
+      "claim_inventory": [],
+      "evidence": [
+        {
+          "id": "P07-snapshot",
+          "kind": "provider_snapshot",
+          "captured_at_utc": "2026-11-24T03:04:55.560262+00:00",
+          "source_path": "/Users/YOUR_USERNAME/Documents/Codex/FirstPass/search_exports/search_20261124T030455638068Z_4e7ea727eca14874b64d99b427930cdc.json",
+          "listing_index": 42,
+          "independent": false
+        },
+        {
+          "id": "P07-live",
+          "kind": "seller_listing",
+          "captured_at_utc": "2026-11-24T03:35:56.171Z",
+          "url": "https://www.fisherhonda.com/inventory/used-2024-honda-hr-v-sport-awd-4d-sport-utility-3czrz2h51rm731100/",
+          "local_file": "evidence/P07_browser.json",
+          "independent": false
+        },
+        {
+          "id": "P07-vpic",
+          "kind": "official_vin_decode",
+          "captured_at_utc": "2026-11-24T03:34:25.384817+00:00",
+          "url": "https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVinValues/3CZRZ2H51RM731100?format=json&modelyear=2024",
+          "local_file": "evidence/P07_vpic.json",
+          "independent": true
+        },
+        {
+          "id": "P07-visual",
+          "kind": "analyst_photo_review",
+          "captured_at_utc": "2026-11-24T06:42:27.343696+00:00",
+          "local_file": "evidence/P07_contact_sheet.jpg",
+          "independent": false,
+          "scope": "Four images reviewed: two exterior angles, front cabin and rear seats. No odometer, VIN label, engine bay, underbody or full exterior coverage."
+        },
+        {
+          "id": "P07-history",
+          "kind": "third_party_history_report",
+          "captured_at_utc": "2026-11-24T03:37:18.303Z",
+          "url": "https://www.carfax.com/vehiclehistory/ar20/EynQtM3Qi6_5q8MkHowSEBlmYYIhlMy4R11JDAijH1zM_U1YHUgL69LadiJlbKID_OZHWQql8gyHPuU7lzB2-2eQzqE2JoReq3k",
+          "local_file": "evidence/history_access.json",
+          "independent": true,
+          "limitations": "Commercial report; underlying events may originate from seller. No-events result is not absence proof. Not NMVTIS/NICB or an inspection."
+        },
+        {
+          "id": "P07-license",
+          "kind": "official_dealer_license",
+          "captured_at_utc": "2026-11-24T03:40:14.475Z",
+          "url": "https://codor.mylicense.com/AID_Verification/Search.aspx?facility=Y",
+          "local_file": "evidence/license_details.json",
+          "independent": true,
+          "scope": "DBA, active license and address matched; no calls made; registry and marketing phone numbers can differ."
+        }
+      ],
+      "checks": {
+        "A1": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Compare listing VIN/core details with official decoder; separately verify physical VIN under E1/A3.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "A2": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Match registry DBA/address/license and an independent domain/contact listing. Record differing phone numbers without assuming impersonation.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "A3": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Verify current title/authorized seller chain and relevant lien/release process securely; avoid retaining unnecessary personal identifiers.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "A4": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Obtain dated vehicle-specific location/possession evidence or independent inspection.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "B1": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Compare explicit disclosure with current relevant title/brand records, noting jurisdiction, report date and exclusions.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "B2": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Record applicable insurer/history query scopes and date; compare precise claims. Respect public lookup limits; no automatic paid report.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "B3": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Distinguish reported history from actual condition; reconcile damage events, repair documentation and independent inspection scope.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "B4": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Verify owner-count method and explicit prior-use disclosure separately, then decide the combined check.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "C1": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Build dated original-unit timeline; resolve decreases and source dependence; record coverage gaps without claiming completeness.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "C2": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Record exact delta and units; request dated VIN-linked observation and reconcile the reading/publication events.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "C3": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Compare claim inventory to VIN-specific build sheet/window sticker and physical equipment as necessary.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "C4": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Record upstream origins, timestamps and stock confirmation; do not count copies as independent checks.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "D1": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Obtain dated independent inspection and relevant diagnostics; state what was and was not examined.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "D2": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Map each service claim to dated VIN-linked invoice/record; disclose remaining service-history gaps.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "D3": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Save dated official VIN result, exclusions and applicable repair evidence; distinguish model-level from VIN-level results.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "D4": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Obtain appropriate battery test conditions/results or VIN-linked certification, modification or warranty documentation as applicable.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "E1": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Inspect physical VIN image and coherent exterior/interior sequence; flag unresolved stock/copied/mixed attribution.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "E2": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Use checklist before looking at score; record each required view as present, missing or unusable and why.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "E3": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Compare visible claim inventory to numbered images; record limits and primary rule for each event.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "F1": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Save itemized published total and conditions; obtain itemized cash quote when inclusion or eligibility is unclear.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "F2": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "If separately authorized, record actual response to records/inspection request; otherwise leave unknown.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "F3": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Before any payment, independently verify named payee, authority and escrow/transfer details; preserve safe evidence, not credentials.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        }
+      },
+      "priority_rechecks": [
+        "A2: independent domain/contact linkage beyond registry name/address",
+        "C1: non-current-seller upstream mileage origin",
+        "E1: authenticated image date versus access date",
+        "F1: fee inclusion and applicable disclaimer terms",
+        "D4: documented profile and specialized-claim inventory"
+      ]
+    },
+    {
+      "case_id": "P08",
+      "vin": "19UDE4G71PA003492",
+      "listing_url": "https://www.fisheracura.com/inventory/used-2023-acura-integra-a-spec-tech-package-fwd-4d-hatchback-19ude4g71pa003492/",
+      "prior_assessment_path": "../pilot_ten_listings.json",
+      "profile": "full_100",
+      "profile_decision": null,
+      "reviewer": null,
+      "assessment_at_utc": null,
+      "claim_inventory": [],
+      "evidence": [
+        {
+          "id": "P08-snapshot",
+          "kind": "provider_snapshot",
+          "captured_at_utc": "2026-11-24T03:04:55.560262+00:00",
+          "source_path": "/Users/YOUR_USERNAME/Documents/Codex/FirstPass/search_exports/search_20261124T030455638068Z_4e7ea727eca14874b64d99b427930cdc.json",
+          "listing_index": 44,
+          "independent": false
+        },
+        {
+          "id": "P08-live",
+          "kind": "seller_listing",
+          "captured_at_utc": "2026-11-24T03:36:03.046Z",
+          "url": "https://www.fisheracura.com/inventory/used-2023-acura-integra-a-spec-tech-package-fwd-4d-hatchback-19ude4g71pa003492/",
+          "local_file": "evidence/P08_browser.json",
+          "independent": false
+        },
+        {
+          "id": "P08-vpic",
+          "kind": "official_vin_decode",
+          "captured_at_utc": "2026-11-24T03:34:25.860947+00:00",
+          "url": "https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVinValues/19UDE4G71PA003492?format=json&modelyear=2023",
+          "local_file": "evidence/P08_vpic.json",
+          "independent": true
+        },
+        {
+          "id": "P08-visual",
+          "kind": "analyst_photo_review",
+          "captured_at_utc": "2026-11-24T06:42:27.343696+00:00",
+          "local_file": "evidence/P08_contact_sheet.jpg",
+          "independent": false,
+          "scope": "25 images reviewed: gray hatchback, cabin/cargo, manual shifter, roof, odometer and VIN label. Image 16 reads 34,620 miles; image 25 VIN matches listing. No underbody or service invoices."
+        },
+        {
+          "id": "P08-license",
+          "kind": "official_dealer_license",
+          "captured_at_utc": "2026-11-24T03:40:15.969Z",
+          "url": "https://codor.mylicense.com/AID_Verification/Search.aspx?facility=Y",
+          "local_file": "evidence/license_details.json",
+          "independent": true,
+          "scope": "DBA, active license and address matched; no calls made; registry and marketing phone numbers can differ."
+        }
+      ],
+      "checks": {
+        "A1": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Compare listing VIN/core details with official decoder; separately verify physical VIN under E1/A3.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "A2": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Match registry DBA/address/license and an independent domain/contact listing. Record differing phone numbers without assuming impersonation.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "A3": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Verify current title/authorized seller chain and relevant lien/release process securely; avoid retaining unnecessary personal identifiers.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "A4": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Obtain dated vehicle-specific location/possession evidence or independent inspection.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "B1": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Compare explicit disclosure with current relevant title/brand records, noting jurisdiction, report date and exclusions.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "B2": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Record applicable insurer/history query scopes and date; compare precise claims. Respect public lookup limits; no automatic paid report.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "B3": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Distinguish reported history from actual condition; reconcile damage events, repair documentation and independent inspection scope.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "B4": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Verify owner-count method and explicit prior-use disclosure separately, then decide the combined check.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "C1": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Build dated original-unit timeline; resolve decreases and source dependence; record coverage gaps without claiming completeness.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "C2": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Record exact delta and units; request dated VIN-linked observation and reconcile the reading/publication events.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "C3": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Compare claim inventory to VIN-specific build sheet/window sticker and physical equipment as necessary.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "C4": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Record upstream origins, timestamps and stock confirmation; do not count copies as independent checks.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "D1": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Obtain dated independent inspection and relevant diagnostics; state what was and was not examined.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "D2": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Map each service claim to dated VIN-linked invoice/record; disclose remaining service-history gaps.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "D3": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Save dated official VIN result, exclusions and applicable repair evidence; distinguish model-level from VIN-level results.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "D4": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Obtain appropriate battery test conditions/results or VIN-linked certification, modification or warranty documentation as applicable.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "E1": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Inspect physical VIN image and coherent exterior/interior sequence; flag unresolved stock/copied/mixed attribution.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "E2": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Use checklist before looking at score; record each required view as present, missing or unusable and why.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "E3": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Compare visible claim inventory to numbered images; record limits and primary rule for each event.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "F1": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Save itemized published total and conditions; obtain itemized cash quote when inclusion or eligibility is unclear.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "F2": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "If separately authorized, record actual response to records/inspection request; otherwise leave unknown.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "F3": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Before any payment, independently verify named payee, authority and escrow/transfer details; preserve safe evidence, not credentials.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        }
+      },
+      "priority_rechecks": [
+        "A2: independent domain/contact linkage beyond registry name/address",
+        "C1: non-current-seller upstream mileage origin",
+        "E1: authenticated image date versus access date",
+        "F1: fee inclusion and applicable disclaimer terms",
+        "D4: documented profile and specialized-claim inventory"
+      ]
+    },
+    {
+      "case_id": "P09",
+      "vin": "1C4RJKBG4P8816697",
+      "listing_url": "https://www.fisherauto.com/inventory/2023-jeep-grand-cherokee-l-limited-4wd-4d-sport-utility-1c4rjkbg4p8816697/",
+      "prior_assessment_path": "../pilot_ten_listings.json",
+      "profile": "full_100",
+      "profile_decision": null,
+      "reviewer": null,
+      "assessment_at_utc": null,
+      "claim_inventory": [],
+      "evidence": [
+        {
+          "id": "P09-snapshot",
+          "kind": "provider_snapshot",
+          "captured_at_utc": "2026-11-24T03:04:55.560262+00:00",
+          "source_path": "/Users/YOUR_USERNAME/Documents/Codex/FirstPass/search_exports/search_20261124T030455638068Z_4e7ea727eca14874b64d99b427930cdc.json",
+          "listing_index": 45,
+          "independent": false
+        },
+        {
+          "id": "P09-live",
+          "kind": "seller_listing",
+          "captured_at_utc": "2026-11-24T03:36:13.178Z",
+          "url": "https://www.fisherauto.com/inventory/2023-jeep-grand-cherokee-l-limited-4wd-4d-sport-utility-1c4rjkbg4p8816697/",
+          "local_file": "evidence/P09_browser.json",
+          "independent": false
+        },
+        {
+          "id": "P09-vpic",
+          "kind": "official_vin_decode",
+          "captured_at_utc": "2026-11-24T03:34:26.210388+00:00",
+          "url": "https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVinValues/1C4RJKBG4P8816697?format=json&modelyear=2023",
+          "local_file": "evidence/P09_vpic.json",
+          "independent": true
+        },
+        {
+          "id": "P09-visual",
+          "kind": "analyst_photo_review",
+          "captured_at_utc": "2026-11-24T06:42:27.343696+00:00",
+          "local_file": "evidence/P09_contact_sheet.jpg",
+          "independent": false,
+          "scope": "38 images reviewed: exterior, engine bay, cabin/three rows/cargo, navigation, rear camera, odometer and VIN label. Image 25 reads 25,272 mi; image 38 VIN matches listing. No underbody/structural inspection or repair close-ups."
+        }
+      ],
+      "checks": {
+        "A1": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Compare listing VIN/core details with official decoder; separately verify physical VIN under E1/A3.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "A2": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Match registry DBA/address/license and an independent domain/contact listing. Record differing phone numbers without assuming impersonation.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "A3": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Verify current title/authorized seller chain and relevant lien/release process securely; avoid retaining unnecessary personal identifiers.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "A4": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Obtain dated vehicle-specific location/possession evidence or independent inspection.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "B1": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Compare explicit disclosure with current relevant title/brand records, noting jurisdiction, report date and exclusions.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "B2": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Record applicable insurer/history query scopes and date; compare precise claims. Respect public lookup limits; no automatic paid report.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "B3": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Distinguish reported history from actual condition; reconcile damage events, repair documentation and independent inspection scope.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "B4": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Verify owner-count method and explicit prior-use disclosure separately, then decide the combined check.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "C1": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Build dated original-unit timeline; resolve decreases and source dependence; record coverage gaps without claiming completeness.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "C2": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Record exact delta and units; request dated VIN-linked observation and reconcile the reading/publication events.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "C3": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Compare claim inventory to VIN-specific build sheet/window sticker and physical equipment as necessary.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "C4": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Record upstream origins, timestamps and stock confirmation; do not count copies as independent checks.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "D1": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Obtain dated independent inspection and relevant diagnostics; state what was and was not examined.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "D2": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Map each service claim to dated VIN-linked invoice/record; disclose remaining service-history gaps.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "D3": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Save dated official VIN result, exclusions and applicable repair evidence; distinguish model-level from VIN-level results.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "D4": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Obtain appropriate battery test conditions/results or VIN-linked certification, modification or warranty documentation as applicable.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "E1": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Inspect physical VIN image and coherent exterior/interior sequence; flag unresolved stock/copied/mixed attribution.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "E2": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Use checklist before looking at score; record each required view as present, missing or unusable and why.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "E3": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Compare visible claim inventory to numbered images; record limits and primary rule for each event.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "F1": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Save itemized published total and conditions; obtain itemized cash quote when inclusion or eligibility is unclear.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "F2": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "If separately authorized, record actual response to records/inspection request; otherwise leave unknown.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "F3": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Before any payment, independently verify named payee, authority and escrow/transfer details; preserve safe evidence, not credentials.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        }
+      },
+      "priority_rechecks": [
+        "A2: independent domain/contact linkage beyond registry name/address",
+        "C1: non-current-seller upstream mileage origin",
+        "E1: authenticated image date versus access date",
+        "F1: fee inclusion and applicable disclaimer terms",
+        "D4: documented profile and specialized-claim inventory"
+      ]
+    },
+    {
+      "case_id": "P10",
+      "vin": "JF2SKAMC8RH468314",
+      "listing_url": "https://www.fowlerjeepboulder.com/inventory/used-2024-subaru-forester-touring-jf2skamc8rh468314-in-boulder-co",
+      "prior_assessment_path": "../pilot_ten_listings.json",
+      "profile": "full_100",
+      "profile_decision": null,
+      "reviewer": null,
+      "assessment_at_utc": null,
+      "claim_inventory": [],
+      "evidence": [
+        {
+          "id": "P10-snapshot",
+          "kind": "provider_snapshot",
+          "captured_at_utc": "2026-11-24T03:04:55.560262+00:00",
+          "source_path": "/Users/YOUR_USERNAME/Documents/Codex/FirstPass/search_exports/search_20261124T030455638068Z_4e7ea727eca14874b64d99b427930cdc.json",
+          "listing_index": 49,
+          "independent": false
+        },
+        {
+          "id": "P10-live",
+          "kind": "seller_listing",
+          "captured_at_utc": "2026-11-24T03:36:19.233Z",
+          "url": "https://www.fowlerjeepboulder.com/inventory/used-2024-subaru-forester-touring-jf2skamc8rh468314-in-boulder-co",
+          "local_file": "evidence/P10_browser.json",
+          "independent": false
+        },
+        {
+          "id": "P10-vpic",
+          "kind": "official_vin_decode",
+          "captured_at_utc": "2026-11-24T03:34:26.813496+00:00",
+          "url": "https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVinValues/JF2SKAMC8RH468314?format=json&modelyear=2024",
+          "local_file": "evidence/P10_vpic.json",
+          "independent": true
+        },
+        {
+          "id": "P10-visual",
+          "kind": "analyst_photo_review",
+          "captured_at_utc": "2026-11-24T06:42:27.343696+00:00",
+          "local_file": "evidence/P10_contact_sheet.jpg",
+          "independent": false,
+          "scope": "30 images reviewed: exterior, cabin/cargo, roof, engine, tires, odometer and Buyers Guide. Image 18 reads 18,271 mi, 116 above ad. Image 30 shows as-is/no dealer warranty checked. No readable VIN label or dated odometer linkage. Hero scenic background differs from lot views; editing is not proof of deception."
+        },
+        {
+          "id": "P10-license",
+          "kind": "official_dealer_license",
+          "captured_at_utc": "2026-11-24T03:40:00.513Z",
+          "url": "https://codor.mylicense.com/AID_Verification/Search.aspx?facility=Y",
+          "local_file": "evidence/license_details.json",
+          "independent": true,
+          "scope": "DBA, active license and address matched; no calls made; registry and marketing phone numbers can differ."
+        }
+      ],
+      "checks": {
+        "A1": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Compare listing VIN/core details with official decoder; separately verify physical VIN under E1/A3.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "A2": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Match registry DBA/address/license and an independent domain/contact listing. Record differing phone numbers without assuming impersonation.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "A3": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Verify current title/authorized seller chain and relevant lien/release process securely; avoid retaining unnecessary personal identifiers.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "A4": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Obtain dated vehicle-specific location/possession evidence or independent inspection.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "B1": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Compare explicit disclosure with current relevant title/brand records, noting jurisdiction, report date and exclusions.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "B2": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Record applicable insurer/history query scopes and date; compare precise claims. Respect public lookup limits; no automatic paid report.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "B3": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Distinguish reported history from actual condition; reconcile damage events, repair documentation and independent inspection scope.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "B4": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Verify owner-count method and explicit prior-use disclosure separately, then decide the combined check.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "C1": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Build dated original-unit timeline; resolve decreases and source dependence; record coverage gaps without claiming completeness.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "C2": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Record exact delta and units; request dated VIN-linked observation and reconcile the reading/publication events.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "C3": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Compare claim inventory to VIN-specific build sheet/window sticker and physical equipment as necessary.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "C4": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Record upstream origins, timestamps and stock confirmation; do not count copies as independent checks.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "D1": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Obtain dated independent inspection and relevant diagnostics; state what was and was not examined.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "D2": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Map each service claim to dated VIN-linked invoice/record; disclose remaining service-history gaps.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "D3": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Save dated official VIN result, exclusions and applicable repair evidence; distinguish model-level from VIN-level results.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "D4": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Obtain appropriate battery test conditions/results or VIN-linked certification, modification or warranty documentation as applicable.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "E1": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Inspect physical VIN image and coherent exterior/interior sequence; flag unresolved stock/copied/mixed attribution.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "E2": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Use checklist before looking at score; record each required view as present, missing or unusable and why.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "E3": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Compare visible claim inventory to numbered images; record limits and primary rule for each event.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "F1": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Save itemized published total and conditions; obtain itemized cash quote when inclusion or eligibility is unclear.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "F2": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "If separately authorized, record actual response to records/inspection request; otherwise leave unknown.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        },
+        "F3": {
+          "state": "unknown",
+          "reason": "Pending v0.2 reassessment; v0.1 label not automatically carried forward.",
+          "next_action": "Before any payment, independently verify named payee, authority and escrow/transfer details; preserve safe evidence, not credentials.",
+          "evidence_ids": [],
+          "primary_event_ids": []
+        }
+      },
+      "priority_rechecks": [
+        "A2: independent domain/contact linkage beyond registry name/address",
+        "C1: non-current-seller upstream mileage origin",
+        "E1: authenticated image date versus access date",
+        "F1: fee inclusion and applicable disclaimer terms",
+        "D4: documented profile and specialized-claim inventory"
+      ]
+    }
+  ]
+}

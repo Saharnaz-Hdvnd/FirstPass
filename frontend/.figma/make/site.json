@@ -1,0 +1,10 @@
+{
+  "description": "Search used-car listings by location, budget, mileage, and vehicle preferences, with exact matches and near misses clearly explained for easier comparison.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

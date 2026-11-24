@@ -1,0 +1,3357 @@
+{
+  "rubric_version": "0.1-development",
+  "source_snapshot": "/Users/YOUR_USERNAME/Documents/Codex/FirstPass/search_exports/search_20261124T030455638068Z_4e7ea727eca14874b64d99b427930cdc.json",
+  "source_sha256": "974cb92ddb22998135eeccd9fd7d5d0ed8fd71962748181f3b280c7552506705",
+  "sampling": "Purposive development sample: first four consecutive listings plus six covering all other seller labels and sparse media. Not representative or held out. Seller labels may refer to related businesses.",
+  "profile": "All 22 checks retained pending manual applicability review; no automatic N/A decisions.",
+  "cases": [
+    {
+      "case_id": "P01",
+      "selection_reason": "EV; specialized battery evidence needed",
+      "source_listing_index_zero_based": 0,
+      "vin": "WA1L2BFZ8PP065926",
+      "provider_listing_id": "WA1L2BFZ8PP065926-14c61094-441b",
+      "heading": "Pre-Owned 2023 Audi Q4 e-tron Premium Plus",
+      "listing_url": "https://www.flatironssubaru.com/inventory/used-2023-audi-q4-e-tron-premium-plus-quattro-4d-sport-utility-wa1l2bfz8pp065926/",
+      "dealer": "Flatirons Subaru",
+      "photo_url_count": 20,
+      "evidence": [
+        {
+          "id": "P01-snapshot",
+          "kind": "provider_snapshot",
+          "captured_at_utc": "2026-11-24T03:04:55.560262+00:00",
+          "source_path": "/Users/YOUR_USERNAME/Documents/Codex/FirstPass/search_exports/search_20261124T030455638068Z_4e7ea727eca14874b64d99b427930cdc.json",
+          "listing_index": 0,
+          "independent": false
+        },
+        {
+          "id": "P01-live",
+          "kind": "seller_listing",
+          "captured_at_utc": "2026-11-24T03:35:19.482Z",
+          "url": "https://www.flatironssubaru.com/inventory/used-2023-audi-q4-e-tron-premium-plus-quattro-4d-sport-utility-wa1l2bfz8pp065926/",
+          "local_file": "evidence/P01_browser.json",
+          "independent": false
+        },
+        {
+          "id": "P01-vpic",
+          "kind": "official_vin_decode",
+          "captured_at_utc": "2026-11-24T03:34:22.699788+00:00",
+          "url": "https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVinValues/WA1L2BFZ8PP065926?format=json&modelyear=2023",
+          "local_file": "evidence/P01_vpic.json",
+          "independent": true
+        },
+        {
+          "id": "P01-visual",
+          "kind": "analyst_photo_review",
+          "captured_at_utc": "2026-11-24T06:42:27.343696+00:00",
+          "local_file": "evidence/P01_contact_sheet.jpg",
+          "independent": false,
+          "scope": "20 images reviewed: white Audi SUV; exterior, cabin, panoramic roof and cargo views. Image 13 reads 28,606 mi; displayed clock says 10/12/2026, which is not an independently authenticated capture date. No readable VIN label, underbody, battery test or damage close-ups."
+        },
+        {
+          "id": "P01-history",
+          "kind": "third_party_history_report",
+          "captured_at_utc": "2026-11-24T03:37:10.143Z",
+          "url": "https://www.carfax.com/vehiclehistory/ar20/EgzdnJr1GzEqRT_JBmpHlHSb3r9vqf5v8v-Uvzy5Y_2ORDRqJMLiFzWXp-tQXJiFUe3xu5HzWqtVG-1YfZKDbbimAcqo-_qmkBw",
+          "local_file": "evidence/history_access.json",
+          "independent": true,
+          "limitations": "Commercial report; underlying events may originate from seller. No-events result is not absence proof. Not NMVTIS/NICB or an inspection."
+        },
+        {
+          "id": "P01-license",
+          "kind": "official_dealer_license",
+          "captured_at_utc": "2026-11-24T03:40:12.857Z",
+          "url": "https://codor.mylicense.com/AID_Verification/Search.aspx?facility=Y",
+          "local_file": "evidence/license_details.json",
+          "independent": true,
+          "scope": "DBA, active license and address matched; no calls made; registry and marketing phone numbers can differ."
+        }
+      ],
+      "assessment_status": "First desk-review pass completed; unresolved evidence remains unknown",
+      "reviewer": "Codex assisted desk review; requires independent human review",
+      "checks": {
+        "A1": {
+          "state": "supported",
+          "evidence_ids": [
+            "P01-vpic",
+            "P01-live"
+          ],
+          "reason": "NHTSA clean VIN decode (error 0); year 2023, make AUDI, model Q4 and core powertrain compatible. This validates a claimed VIN/specification combination, not physical VIN authenticity, title or options.",
+          "next_action": "Compare physical dashboard/door VIN and ownership documents before purchase.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00",
+          "primary_event_ids": [
+            "P01-core-identity"
+          ]
+        },
+        "A2": {
+          "state": "supported",
+          "evidence_ids": [
+            "P01-license",
+            "P01-live"
+          ],
+          "reason": "Official active dealer DBA and listed location match. Independent registry contact recorded; no phone call or confirmation of this website operator was performed. Scope is business identity, not transaction authority.",
+          "next_action": "Use the registry contact to independently confirm the specific listing before a transaction.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00",
+          "primary_event_ids": [
+            "P01-business-registry-match"
+          ]
+        },
+        "A3": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P01-live",
+            "P01-history"
+          ],
+          "reason": "No current vehicle title/consignment/authorization chain inspected. Historical dealer-title entries do not establish present authority.",
+          "next_action": "Securely review current title chain and dealer transfer/consignment authorization; do not collect unnecessary personal identifiers.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "A4": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P01-live",
+            "P01-visual"
+          ],
+          "reason": "Dealer-branded photos and a live page do not establish current possession or actual stock availability.",
+          "next_action": "Obtain current vehicle-specific VIN-linked location evidence or inspect in person.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "B1": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P01-live",
+            "P01-history"
+          ],
+          "reason": "No current title or approved-provider NMVTIS report obtained. CARFAX observations, where available, are source-limited; explicit current title/brand disclosure still needed.",
+          "next_action": "Obtain explicit title/brand disclosure and a relevant current title/brand record; use an existing free report if supplied, no automatic purchase.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "B2": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P01-live"
+          ],
+          "reason": "No direct NICB theft/salvage lookup or comprehensive applicable total-loss disclosure comparison completed. Provider clean-title booleans are not sufficient.",
+          "next_action": "Check applicable free insurer records within public usage limits and obtain seller disclosure; record query scope and date. A clean lookup is not a guarantee.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "B3": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P01-live",
+            "P01-history"
+          ],
+          "reason": "Dated report readings rise from 8 (2023-08-23), 5,047 (2024-04-18), 8,148 (2024-08-16), 19,691 (2025-10-31) to 28,600 (2026-10-09). Report estimates one personal-lease owner; no damage or adverse title brand reported within its scope.",
+          "next_action": "Reconcile explicit damage disclosures with report events, repair records and an independent inspection; no-event records cannot prove no damage.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "B4": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P01-live",
+            "P01-history"
+          ],
+          "reason": "Owner-count assertions may match a report estimate, but prior-use disclosures and full rule requirements remain incomplete. Lease history is noted where available; no-owner flag is not a multi-owner finding.",
+          "next_action": "Clarify owner-count methodology and prior lease/rental/commercial use; record exact material claims before awarding this combined check.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "C1": {
+          "state": "supported",
+          "evidence_ids": [
+            "P01-live",
+            "P01-history"
+          ],
+          "reason": "Available dated mileage sequence is nondecreasing in miles and ends at the advertised value. This is timeline consistency within available records, not proof against tampering. Dated report readings rise from 8 (2023-08-23), 5,047 (2024-04-18), 8,148 (2024-08-16), 19,691 (2025-10-31) to 28,600 (2026-10-09). Report estimates one personal-lease owner; no damage or adverse title brand reported within its scope.",
+          "next_action": "Obtain a current VIN-linked odometer observation; investigate any subsequent unexplained decrease.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00",
+          "primary_event_ids": [
+            "P01-historical-mileage-sequence"
+          ]
+        },
+        "C2": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P01-live",
+            "P01-visual"
+          ],
+          "reason": "Ad/snapshot: 28,600 miles; photo 13: 28,606 miles; difference +6. Photo date/vehicle capture chain not authenticated. Small increases may reflect ordinary use or stale text; no rollback established.",
+          "next_action": "Obtain dated VIN-linked current odometer photo and reconcile publication times. No tolerance was predeclared, so do not invent one now.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "C3": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P01-live",
+            "P01-visual"
+          ],
+          "reason": "Core decoder identity has been credited only to A1. Full trim/options claims are not independently verified; visible features cover only a subset.",
+          "next_action": "Compare material trim/options claims against VIN-specific build sheet/window sticker and actual equipment.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "C4": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P01-snapshot",
+            "P01-live"
+          ],
+          "reason": "Snapshot and live seller source were compared, but they are not independent origins. Current availability and multi-source claim completeness are not verified.",
+          "next_action": "Compare appropriately dated origins, separate syndicated copies, and independently confirm availability.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "D1": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P01-live",
+            "P01-visual"
+          ],
+          "reason": "No independent current mechanical/structural/flood inspection obtained. Photos and history reports cannot establish absence of defects.",
+          "next_action": "Obtain independent pre-purchase inspection and diagnostics, with scope and date recorded.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "D2": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P01-live",
+            "P01-history"
+          ],
+          "reason": "No direct dated maintenance invoices substantiating specific claims were inspected. Commercial service entries are informative but not a complete maintenance record.",
+          "next_action": "Obtain dated VIN-linked invoices and compare each specific maintenance claim; do not treat a generic well-maintained assertion as verified.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "D3": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P01-live"
+          ],
+          "reason": "Official NHTSA bulk VIN form submitted, but no completed result was captured before browser-session interruption. Commercial recall summaries are not substituted for current official VIN checks.",
+          "next_action": "Repeat current official VIN-specific recall lookup; save actual result and exclusions. Confirm completion evidence for any claimed repairs.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "D4": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P01-live"
+          ],
+          "reason": "Battery or certification requirements apply where claimed; scope remains unverified. Ordinary combustion cases retained under fixed pilot profile pending applicability review.",
+          "next_action": "VIN-linked battery state-of-health/capacity diagnostic with test conditions; remaining battery warranty confirmation.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "E1": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P01-visual",
+            "P01-live"
+          ],
+          "reason": "Images visually fit the advertised vehicle type, but no authenticated full-vehicle VIN/dated image chain establishes attribution.",
+          "next_action": "Obtain VIN-linked current full-vehicle photos and inspect any copied/mixed-vehicle concern.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "E2": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P01-visual"
+          ],
+          "reason": "20 images reviewed: white Audi SUV; exterior, cabin, panoramic roof and cargo views. Image 13 reads 28,606 mi; displayed clock says 10/12/2026, which is not an independently authenticated capture date. No readable VIN label, underbody, battery test or damage close-ups.",
+          "next_action": "Obtain missing views listed in visual review. Required view set was not predeclared in v0.1; do not create a threshold after seeing scores.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "E3": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P01-visual",
+            "P01-live"
+          ],
+          "reason": "Visible color/body/cabin broadly fit description, but full material-claim comparison and attribution limits remain. Mileage discrepancies assigned only to C2.",
+          "next_action": "Verify relevant visible details against exact claims; avoid inferring structural/mechanical health from appearance.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "F1": {
+          "state": "supported",
+          "evidence_ids": [
+            "P01-live",
+            "P01-snapshot"
+          ],
+          "reason": "Written vehicle price plus disclosed handling equals stated cash total and snapshot; tax/title/license excluded explicitly; financing example separate. $27,700 vehicle + $699 handling = $28,399 cash total; applicable tax/title/license excluded. Finance example shown separately.",
+          "next_action": "Obtain a final buyer order; this score covers the published terms only and does not guarantee a later quote.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00",
+          "primary_event_ids": [
+            "P01-published-price-transparency"
+          ]
+        },
+        "F2": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P01-live"
+          ],
+          "reason": "No seller interaction conducted; a test-drive or report link is not demonstrated cooperation.",
+          "next_action": "If authorized later, request records and independent-inspection access; record actual responses.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "F3": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P01-live"
+          ],
+          "reason": "No proposed payee, escrow, deposit or title-transfer process inspected.",
+          "next_action": "Before payment, independently verify legal payee, transfer authority and proposed payment/escrow process.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        }
+      },
+      "alerts": [],
+      "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00",
+      "current_claims": [
+        "Dealer describes a one-owner CARFAX history without reported damage.",
+        "White quattro EV, 28,600 miles; heated/leather seats and panoramic roof advertised.",
+        "No numerical battery-health or capacity claim found."
+      ],
+      "visual_review": "20 images reviewed: white Audi SUV; exterior, cabin, panoramic roof and cargo views. Image 13 reads 28,606 mi; displayed clock says 10/12/2026, which is not an independently authenticated capture date. No readable VIN label, underbody, battery test or damage close-ups.",
+      "history_review": "Dated report readings rise from 8 (2023-08-23), 5,047 (2024-04-18), 8,148 (2024-08-16), 19,691 (2025-10-31) to 28,600 (2026-10-09). Report estimates one personal-lease owner; no damage or adverse title brand reported within its scope.",
+      "pricing_review": "$27,700 vehicle + $699 handling = $28,399 cash total; applicable tax/title/license excluded. Finance example shown separately.",
+      "documents_needed": [
+        "VIN-linked battery state-of-health/capacity diagnostic with test conditions; remaining battery warranty confirmation."
+      ],
+      "frozen_snapshot_summary": {
+        "price": 28399,
+        "miles": 28600,
+        "heading": "Pre-Owned 2023 Audi Q4 e-tron Premium Plus",
+        "carfax_1_owner": true,
+        "carfax_clean_title": true,
+        "ref_miles": 28600,
+        "ref_miles_dt": 1795060920,
+        "last_seen_at_date": "2026-11-22T03:33:58.000Z"
+      },
+      "current_access": {
+        "accessed_at_utc": "2026-11-24T03:35:19.482Z",
+        "local_date_denver": "2026-11-23T20:35:19.482000-07:00",
+        "url": "https://www.flatironssubaru.com/inventory/used-2023-audi-q4-e-tron-premium-plus-quattro-4d-sport-utility-wa1l2bfz8pp065926/",
+        "status": "Vehicle-specific page rendered; listing existence is not confirmed availability"
+      },
+      "data_quality_notes": [
+        {
+          "field": "provider.build.made_in",
+          "provider_value": "USA",
+          "official_plant_country": "GERMANY",
+          "interpretation": "Provider country field disagrees with official plant country; semantics/provenance need review. No matching seller country claim found; not a seller-deception finding.",
+          "primary_rule": "A1",
+          "scored_as_contradiction": false
+        }
+      ],
+      "applicability": {
+        "profile": "fixed-all-22-development",
+        "excluded_checks": [],
+        "decision": "No weights changed. D4 may be inapplicable to ordinary unmodified non-certified combustion cases, but full claims/applicability protocol is not settled; no missing check reclassified N/A."
+      },
+      "time_log": {
+        "retrieval_minutes_recorded": 0.006,
+        "active_review_minutes": null,
+        "reason": "Review and image comparison were interleaved across cases; no reliable active-time timer was used. Retrieval time is not screening-study time.",
+        "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+      },
+      "unavailable_sources": [
+        "Current title/approved NMVTIS report not obtained; no purchase.",
+        "Direct NICB query not completed; public limits and full applicability require separate lookup.",
+        "Current official VIN recall result not captured.",
+        "Inspection, title authority and seller-interaction/payment evidence unavailable."
+      ]
+    },
+    {
+      "case_id": "P02",
+      "selection_reason": "Certification claim; verify scope",
+      "source_listing_index_zero_based": 1,
+      "vin": "4S4BTGLD4R3260366",
+      "provider_listing_id": "4S4BTGLD4R3260366-0ffd194e-86c4",
+      "heading": "Certified Pre-Owned 2024 Subaru Outback Onyx Edition XT",
+      "listing_url": "https://www.flatironssubaru.com/inventory/certified-used-2024-subaru-outback-onyx-edition-xt-awd-4d-sport-utility-4s4btgld4r3260366/",
+      "dealer": "Flatirons Subaru",
+      "photo_url_count": 20,
+      "evidence": [
+        {
+          "id": "P02-snapshot",
+          "kind": "provider_snapshot",
+          "captured_at_utc": "2026-11-24T03:04:55.560262+00:00",
+          "source_path": "/Users/YOUR_USERNAME/Documents/Codex/FirstPass/search_exports/search_20261124T030455638068Z_4e7ea727eca14874b64d99b427930cdc.json",
+          "listing_index": 1,
+          "independent": false
+        },
+        {
+          "id": "P02-live",
+          "kind": "seller_listing",
+          "captured_at_utc": "2026-11-24T03:35:20.346Z",
+          "url": "https://www.flatironssubaru.com/inventory/certified-used-2024-subaru-outback-onyx-edition-xt-awd-4d-sport-utility-4s4btgld4r3260366/",
+          "local_file": "evidence/P02_browser.json",
+          "independent": false
+        },
+        {
+          "id": "P02-vpic",
+          "kind": "official_vin_decode",
+          "captured_at_utc": "2026-11-24T03:34:23.044627+00:00",
+          "url": "https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVinValues/4S4BTGLD4R3260366?format=json&modelyear=2024",
+          "local_file": "evidence/P02_vpic.json",
+          "independent": true
+        },
+        {
+          "id": "P02-visual",
+          "kind": "analyst_photo_review",
+          "captured_at_utc": "2026-11-24T06:42:27.343696+00:00",
+          "local_file": "evidence/P02_contact_sheet.jpg",
+          "independent": false,
+          "scope": "20 images reviewed: black Outback, exterior/cabin/roof/cargo. Image 13 reads 28,168 mi. No readable VIN label, underbody or repair-detail close-ups."
+        },
+        {
+          "id": "P02-history",
+          "kind": "third_party_history_report",
+          "captured_at_utc": "2026-11-24T03:37:12.244Z",
+          "url": "https://www.carfax.com/vehiclehistory/ar20/p2ySZerWgAJbMV3n9SJGyHsJXmBiwkKEKJWnQ9KKtwC4bbOGTecJtYb0Y_LnHyMzN-2Q66Ayf9JxEtjd5E9MKEYPTGpfLMga-VE",
+          "local_file": "evidence/history_access.json",
+          "independent": true,
+          "limitations": "Commercial report; underlying events may originate from seller. No-events result is not absence proof. Not NMVTIS/NICB or an inspection."
+        },
+        {
+          "id": "P02-license",
+          "kind": "official_dealer_license",
+          "captured_at_utc": "2026-11-24T03:40:12.857Z",
+          "url": "https://codor.mylicense.com/AID_Verification/Search.aspx?facility=Y",
+          "local_file": "evidence/license_details.json",
+          "independent": true,
+          "scope": "DBA, active license and address matched; no calls made; registry and marketing phone numbers can differ."
+        }
+      ],
+      "assessment_status": "First desk-review pass completed; unresolved evidence remains unknown",
+      "reviewer": "Codex assisted desk review; requires independent human review",
+      "checks": {
+        "A1": {
+          "state": "supported",
+          "evidence_ids": [
+            "P02-vpic",
+            "P02-live"
+          ],
+          "reason": "NHTSA clean VIN decode (error 0); year 2024, make SUBARU, model Outback and core powertrain compatible. This validates a claimed VIN/specification combination, not physical VIN authenticity, title or options.",
+          "next_action": "Compare physical dashboard/door VIN and ownership documents before purchase.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00",
+          "primary_event_ids": [
+            "P02-core-identity"
+          ]
+        },
+        "A2": {
+          "state": "supported",
+          "evidence_ids": [
+            "P02-license",
+            "P02-live"
+          ],
+          "reason": "Official active dealer DBA and listed location match. Independent registry contact recorded; no phone call or confirmation of this website operator was performed. Scope is business identity, not transaction authority.",
+          "next_action": "Use the registry contact to independently confirm the specific listing before a transaction.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00",
+          "primary_event_ids": [
+            "P02-business-registry-match"
+          ]
+        },
+        "A3": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P02-live",
+            "P02-history"
+          ],
+          "reason": "No current vehicle title/consignment/authorization chain inspected. Historical dealer-title entries do not establish present authority.",
+          "next_action": "Securely review current title chain and dealer transfer/consignment authorization; do not collect unnecessary personal identifiers.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "A4": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P02-live",
+            "P02-visual"
+          ],
+          "reason": "Dealer-branded photos and a live page do not establish current possession or actual stock availability.",
+          "next_action": "Obtain current vehicle-specific VIN-linked location evidence or inspect in person.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "B1": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P02-live",
+            "P02-history"
+          ],
+          "reason": "No current title or approved-provider NMVTIS report obtained. CARFAX observations, where available, are source-limited; explicit current title/brand disclosure still needed.",
+          "next_action": "Obtain explicit title/brand disclosure and a relevant current title/brand record; use an existing free report if supplied, no automatic purchase.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "B2": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P02-live"
+          ],
+          "reason": "No direct NICB theft/salvage lookup or comprehensive applicable total-loss disclosure comparison completed. Provider clean-title booleans are not sufficient.",
+          "next_action": "Check applicable free insurer records within public usage limits and obtain seller disclosure; record query scope and date. A clean lookup is not a guarantee.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "B3": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P02-live",
+            "P02-history"
+          ],
+          "reason": "Report records front minor damage on 2024-12-26, without an adverse title brand reported. One personal-lease owner estimated. Readings increase from 1 (2024-03-12), 5 (2024-04-08), 5,925 (2024-09-26), 9,346 (2025-02-25), 15,861 (2025-09-29), 20,000 (2026-01-22), 25,032 (2026-07-01) to 28,166 (2026-10-19).",
+          "next_action": "Reconcile explicit damage disclosures with report events, repair records and an independent inspection; no-event records cannot prove no damage.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "B4": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P02-live",
+            "P02-history"
+          ],
+          "reason": "Owner-count assertions may match a report estimate, but prior-use disclosures and full rule requirements remain incomplete. Lease history is noted where available; no-owner flag is not a multi-owner finding.",
+          "next_action": "Clarify owner-count methodology and prior lease/rental/commercial use; record exact material claims before awarding this combined check.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "C1": {
+          "state": "supported",
+          "evidence_ids": [
+            "P02-live",
+            "P02-history"
+          ],
+          "reason": "Available dated mileage sequence is nondecreasing in miles and ends at the advertised value. This is timeline consistency within available records, not proof against tampering. Report records front minor damage on 2024-12-26, without an adverse title brand reported. One personal-lease owner estimated. Readings increase from 1 (2024-03-12), 5 (2024-04-08), 5,925 (2024-09-26), 9,346 (2025-02-25), 15,861 (2025-09-29), 20,000 (2026-01-22), 25,032 (2026-07-01) to 28,166 (2026-10-19).",
+          "next_action": "Obtain a current VIN-linked odometer observation; investigate any subsequent unexplained decrease.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00",
+          "primary_event_ids": [
+            "P02-historical-mileage-sequence"
+          ]
+        },
+        "C2": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P02-live",
+            "P02-visual"
+          ],
+          "reason": "Ad/snapshot: 28,166 miles; photo 13: 28,168 miles; difference +2. Photo date/vehicle capture chain not authenticated. Small increases may reflect ordinary use or stale text; no rollback established.",
+          "next_action": "Obtain dated VIN-linked current odometer photo and reconcile publication times. No tolerance was predeclared, so do not invent one now.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "C3": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P02-live",
+            "P02-visual"
+          ],
+          "reason": "Core decoder identity has been credited only to A1. Full trim/options claims are not independently verified; visible features cover only a subset.",
+          "next_action": "Compare material trim/options claims against VIN-specific build sheet/window sticker and actual equipment.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "C4": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P02-snapshot",
+            "P02-live"
+          ],
+          "reason": "Snapshot and live seller source were compared, but they are not independent origins. Current availability and multi-source claim completeness are not verified.",
+          "next_action": "Compare appropriately dated origins, separate syndicated copies, and independently confirm availability.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "D1": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P02-live",
+            "P02-visual"
+          ],
+          "reason": "No independent current mechanical/structural/flood inspection obtained. Photos and history reports cannot establish absence of defects.",
+          "next_action": "Obtain independent pre-purchase inspection and diagnostics, with scope and date recorded.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "D2": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P02-live",
+            "P02-history"
+          ],
+          "reason": "No direct dated maintenance invoices substantiating specific claims were inspected. Commercial service entries are informative but not a complete maintenance record.",
+          "next_action": "Obtain dated VIN-linked invoices and compare each specific maintenance claim; do not treat a generic well-maintained assertion as verified.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "D3": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P02-live"
+          ],
+          "reason": "Official NHTSA bulk VIN form submitted, but no completed result was captured before browser-session interruption. Commercial recall summaries are not substituted for current official VIN checks.",
+          "next_action": "Repeat current official VIN-specific recall lookup; save actual result and exclusions. Confirm completion evidence for any claimed repairs.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "D4": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P02-live"
+          ],
+          "reason": "Battery or certification requirements apply where claimed; scope remains unverified. Ordinary combustion cases retained under fixed pilot profile pending applicability review.",
+          "next_action": "Front-damage repair invoice, photos and collision-specialist inspection.; VIN-specific Subaru CPO enrollment, signed 152-point checklist, original in-service date and warranty terms.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "E1": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P02-visual",
+            "P02-live"
+          ],
+          "reason": "Images visually fit the advertised vehicle type, but no authenticated full-vehicle VIN/dated image chain establishes attribution.",
+          "next_action": "Obtain VIN-linked current full-vehicle photos and inspect any copied/mixed-vehicle concern.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "E2": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P02-visual"
+          ],
+          "reason": "20 images reviewed: black Outback, exterior/cabin/roof/cargo. Image 13 reads 28,168 mi. No readable VIN label, underbody or repair-detail close-ups.",
+          "next_action": "Obtain missing views listed in visual review. Required view set was not predeclared in v0.1; do not create a threshold after seeing scores.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "E3": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P02-visual",
+            "P02-live"
+          ],
+          "reason": "Visible color/body/cabin broadly fit description, but full material-claim comparison and attribution limits remain. Mileage discrepancies assigned only to C2.",
+          "next_action": "Verify relevant visible details against exact claims; avoid inferring structural/mechanical health from appearance.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "F1": {
+          "state": "supported",
+          "evidence_ids": [
+            "P02-live",
+            "P02-snapshot"
+          ],
+          "reason": "Written vehicle price plus disclosed handling equals stated cash total and snapshot; tax/title/license excluded explicitly; financing example separate. $31,412 vehicle + $699 handling = $32,111 cash total; applicable tax/title/license excluded.",
+          "next_action": "Obtain a final buyer order; this score covers the published terms only and does not guarantee a later quote.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00",
+          "primary_event_ids": [
+            "P02-published-price-transparency"
+          ]
+        },
+        "F2": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P02-live"
+          ],
+          "reason": "No seller interaction conducted; a test-drive or report link is not demonstrated cooperation.",
+          "next_action": "If authorized later, request records and independent-inspection access; record actual responses.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "F3": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P02-live"
+          ],
+          "reason": "No proposed payee, escrow, deposit or title-transfer process inspected.",
+          "next_action": "Before payment, independently verify legal payee, transfer authority and proposed payment/escrow process.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        }
+      },
+      "alerts": [
+        {
+          "severity": "review",
+          "primary_rule": "B3",
+          "event_id": "P02-reported-front-damage",
+          "reason": "Commercial report records front minor damage dated 2024-12-26; repair scope and adequacy remain unverified. No contrary no-damage claim identified.",
+          "evidence_ids": [
+            "P02-history",
+            "P02-live"
+          ]
+        }
+      ],
+      "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00",
+      "current_claims": [
+        "One-owner history and Subaru certified status advertised.",
+        "152-point inspection, transferable powertrain coverage and zero deductible described.",
+        "No clean-CARFAX assertion in captured description."
+      ],
+      "visual_review": "20 images reviewed: black Outback, exterior/cabin/roof/cargo. Image 13 reads 28,168 mi. No readable VIN label, underbody or repair-detail close-ups.",
+      "history_review": "Report records front minor damage on 2024-12-26, without an adverse title brand reported. One personal-lease owner estimated. Readings increase from 1 (2024-03-12), 5 (2024-04-08), 5,925 (2024-09-26), 9,346 (2025-02-25), 15,861 (2025-09-29), 20,000 (2026-01-22), 25,032 (2026-07-01) to 28,166 (2026-10-19).",
+      "pricing_review": "$31,412 vehicle + $699 handling = $32,111 cash total; applicable tax/title/license excluded.",
+      "documents_needed": [
+        "Front-damage repair invoice, photos and collision-specialist inspection.",
+        "VIN-specific Subaru CPO enrollment, signed 152-point checklist, original in-service date and warranty terms."
+      ],
+      "frozen_snapshot_summary": {
+        "price": 32111,
+        "miles": 28166,
+        "heading": "Certified Pre-Owned 2024 Subaru Outback Onyx Edition XT",
+        "carfax_1_owner": true,
+        "carfax_clean_title": false,
+        "ref_miles": 28166,
+        "ref_miles_dt": 1794886552,
+        "last_seen_at_date": "2026-11-22T03:33:56.000Z"
+      },
+      "current_access": {
+        "accessed_at_utc": "2026-11-24T03:35:20.346Z",
+        "local_date_denver": "2026-11-23T20:35:20.346000-07:00",
+        "url": "https://www.flatironssubaru.com/inventory/certified-used-2024-subaru-outback-onyx-edition-xt-awd-4d-sport-utility-4s4btgld4r3260366/",
+        "status": "Vehicle-specific page rendered; listing existence is not confirmed availability"
+      },
+      "data_quality_notes": [],
+      "applicability": {
+        "profile": "fixed-all-22-development",
+        "excluded_checks": [],
+        "decision": "No weights changed. D4 may be inapplicable to ordinary unmodified non-certified combustion cases, but full claims/applicability protocol is not settled; no missing check reclassified N/A."
+      },
+      "time_log": {
+        "retrieval_minutes_recorded": 0.019,
+        "active_review_minutes": null,
+        "reason": "Review and image comparison were interleaved across cases; no reliable active-time timer was used. Retrieval time is not screening-study time.",
+        "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+      },
+      "unavailable_sources": [
+        "Current title/approved NMVTIS report not obtained; no purchase.",
+        "Direct NICB query not completed; public limits and full applicability require separate lookup.",
+        "Current official VIN recall result not captured.",
+        "Inspection, title authority and seller-interaction/payment evidence unavailable."
+      ]
+    },
+    {
+      "case_id": "P03",
+      "selection_reason": "Consecutive baseline listing",
+      "source_listing_index_zero_based": 2,
+      "vin": "4S4BTGND4R3168770",
+      "provider_listing_id": "4S4BTGND4R3168770-9e75237d-2700",
+      "heading": "Pre-Owned 2024 Subaru Outback Limited XT",
+      "listing_url": "https://www.flatironssubaru.com/inventory/used-2024-subaru-outback-limited-xt-awd-4d-sport-utility-4s4btgnd4r3168770/",
+      "dealer": "Flatirons Subaru",
+      "photo_url_count": 20,
+      "evidence": [
+        {
+          "id": "P03-snapshot",
+          "kind": "provider_snapshot",
+          "captured_at_utc": "2026-11-24T03:04:55.560262+00:00",
+          "source_path": "/Users/YOUR_USERNAME/Documents/Codex/FirstPass/search_exports/search_20261124T030455638068Z_4e7ea727eca14874b64d99b427930cdc.json",
+          "listing_index": 2,
+          "independent": false
+        },
+        {
+          "id": "P03-live",
+          "kind": "seller_listing",
+          "captured_at_utc": "2026-11-24T03:35:34.580Z",
+          "url": "https://www.flatironssubaru.com/inventory/used-2024-subaru-outback-limited-xt-awd-4d-sport-utility-4s4btgnd4r3168770/",
+          "local_file": "evidence/P03_browser.json",
+          "independent": false
+        },
+        {
+          "id": "P03-vpic",
+          "kind": "official_vin_decode",
+          "captured_at_utc": "2026-11-24T03:34:23.477289+00:00",
+          "url": "https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVinValues/4S4BTGND4R3168770?format=json&modelyear=2024",
+          "local_file": "evidence/P03_vpic.json",
+          "independent": true
+        },
+        {
+          "id": "P03-visual",
+          "kind": "analyst_photo_review",
+          "captured_at_utc": "2026-11-24T06:42:27.343696+00:00",
+          "local_file": "evidence/P03_contact_sheet.jpg",
+          "independent": false,
+          "scope": "20 images reviewed: white Outback, cabin, roof and cargo. Image 13 reads 28,901 mi. No readable VIN label or underbody/repair-specific views."
+        },
+        {
+          "id": "P03-history",
+          "kind": "third_party_history_report",
+          "captured_at_utc": "2026-11-24T03:37:13.943Z",
+          "url": "https://www.carfax.com/vehiclehistory/ar20/CnIqG97jbgITOJquDafK7qMO25h6WSxEK4X9eIyAI6GTjp4aXSS6hvyTeNFaq7bgSneHRPVjOZ9jtxtgccNUEac9E_hlX2znYVU",
+          "local_file": "evidence/history_access.json",
+          "independent": true,
+          "limitations": "Commercial report; underlying events may originate from seller. No-events result is not absence proof. Not NMVTIS/NICB or an inspection."
+        },
+        {
+          "id": "P03-license",
+          "kind": "official_dealer_license",
+          "captured_at_utc": "2026-11-24T03:40:12.857Z",
+          "url": "https://codor.mylicense.com/AID_Verification/Search.aspx?facility=Y",
+          "local_file": "evidence/license_details.json",
+          "independent": true,
+          "scope": "DBA, active license and address matched; no calls made; registry and marketing phone numbers can differ."
+        }
+      ],
+      "assessment_status": "First desk-review pass completed; unresolved evidence remains unknown",
+      "reviewer": "Codex assisted desk review; requires independent human review",
+      "checks": {
+        "A1": {
+          "state": "supported",
+          "evidence_ids": [
+            "P03-vpic",
+            "P03-live"
+          ],
+          "reason": "NHTSA clean VIN decode (error 0); year 2024, make SUBARU, model Outback and core powertrain compatible. This validates a claimed VIN/specification combination, not physical VIN authenticity, title or options.",
+          "next_action": "Compare physical dashboard/door VIN and ownership documents before purchase.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00",
+          "primary_event_ids": [
+            "P03-core-identity"
+          ]
+        },
+        "A2": {
+          "state": "supported",
+          "evidence_ids": [
+            "P03-license",
+            "P03-live"
+          ],
+          "reason": "Official active dealer DBA and listed location match. Independent registry contact recorded; no phone call or confirmation of this website operator was performed. Scope is business identity, not transaction authority.",
+          "next_action": "Use the registry contact to independently confirm the specific listing before a transaction.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00",
+          "primary_event_ids": [
+            "P03-business-registry-match"
+          ]
+        },
+        "A3": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P03-live",
+            "P03-history"
+          ],
+          "reason": "No current vehicle title/consignment/authorization chain inspected. Historical dealer-title entries do not establish present authority.",
+          "next_action": "Securely review current title chain and dealer transfer/consignment authorization; do not collect unnecessary personal identifiers.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "A4": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P03-live",
+            "P03-visual"
+          ],
+          "reason": "Dealer-branded photos and a live page do not establish current possession or actual stock availability.",
+          "next_action": "Obtain current vehicle-specific VIN-linked location evidence or inspect in person.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "B1": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P03-live",
+            "P03-history"
+          ],
+          "reason": "No current title or approved-provider NMVTIS report obtained. CARFAX observations, where available, are source-limited; explicit current title/brand disclosure still needed.",
+          "next_action": "Obtain explicit title/brand disclosure and a relevant current title/brand record; use an existing free report if supplied, no automatic purchase.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "B2": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P03-live"
+          ],
+          "reason": "No direct NICB theft/salvage lookup or comprehensive applicable total-loss disclosure comparison completed. Provider clean-title booleans are not sufficient.",
+          "next_action": "Check applicable free insurer records within public usage limits and obtain seller disclosure; record query scope and date. A clean lookup is not a guarantee.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "B3": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P03-live",
+            "P03-history"
+          ],
+          "reason": "Readings increase: 5 (2023-10-03), 19 (2023-12-11), 3,530 (2024-06-06), 8,231 (2024-08-19), 13,261 (2025-04-04), 28,893 (2026-10-26), 28,895 (2026-11-18), 28,896 (2026-11-19). Estimated one personal-lease owner; title update says dealer took title while in inventory (2026-11-17), which does not independently establish current transfer authority.",
+          "next_action": "Reconcile explicit damage disclosures with report events, repair records and an independent inspection; no-event records cannot prove no damage.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "B4": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P03-live",
+            "P03-history"
+          ],
+          "reason": "Owner-count assertions may match a report estimate, but prior-use disclosures and full rule requirements remain incomplete. Lease history is noted where available; no-owner flag is not a multi-owner finding.",
+          "next_action": "Clarify owner-count methodology and prior lease/rental/commercial use; record exact material claims before awarding this combined check.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "C1": {
+          "state": "supported",
+          "evidence_ids": [
+            "P03-live",
+            "P03-history"
+          ],
+          "reason": "Available dated mileage sequence is nondecreasing in miles and ends at the advertised value. This is timeline consistency within available records, not proof against tampering. Readings increase: 5 (2023-10-03), 19 (2023-12-11), 3,530 (2024-06-06), 8,231 (2024-08-19), 13,261 (2025-04-04), 28,893 (2026-10-26), 28,895 (2026-11-18), 28,896 (2026-11-19). Estimated one personal-lease owner; title update says dealer took title while in inventory (2026-11-17), which does not independently establish current transfer authority.",
+          "next_action": "Obtain a current VIN-linked odometer observation; investigate any subsequent unexplained decrease.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00",
+          "primary_event_ids": [
+            "P03-historical-mileage-sequence"
+          ]
+        },
+        "C2": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P03-live",
+            "P03-visual"
+          ],
+          "reason": "Ad/snapshot: 28,896 miles; photo 13: 28,901 miles; difference +5. Photo date/vehicle capture chain not authenticated. Small increases may reflect ordinary use or stale text; no rollback established.",
+          "next_action": "Obtain dated VIN-linked current odometer photo and reconcile publication times. No tolerance was predeclared, so do not invent one now.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "C3": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P03-live",
+            "P03-visual"
+          ],
+          "reason": "Core decoder identity has been credited only to A1. Full trim/options claims are not independently verified; visible features cover only a subset.",
+          "next_action": "Compare material trim/options claims against VIN-specific build sheet/window sticker and actual equipment.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "C4": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P03-snapshot",
+            "P03-live"
+          ],
+          "reason": "Snapshot and live seller source were compared, but they are not independent origins. Current availability and multi-source claim completeness are not verified.",
+          "next_action": "Compare appropriately dated origins, separate syndicated copies, and independently confirm availability.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "D1": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P03-live",
+            "P03-visual"
+          ],
+          "reason": "No independent current mechanical/structural/flood inspection obtained. Photos and history reports cannot establish absence of defects.",
+          "next_action": "Obtain independent pre-purchase inspection and diagnostics, with scope and date recorded.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "D2": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P03-live",
+            "P03-history"
+          ],
+          "reason": "No direct dated maintenance invoices substantiating specific claims were inspected. Commercial service entries are informative but not a complete maintenance record.",
+          "next_action": "Obtain dated VIN-linked invoices and compare each specific maintenance claim; do not treat a generic well-maintained assertion as verified.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "D3": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P03-live"
+          ],
+          "reason": "Official NHTSA bulk VIN form submitted, but no completed result was captured before browser-session interruption. Commercial recall summaries are not substituted for current official VIN checks.",
+          "next_action": "Repeat current official VIN-specific recall lookup; save actual result and exclusions. Confirm completion evidence for any claimed repairs.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "D4": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P03-live"
+          ],
+          "reason": "Battery or certification requirements apply where claimed; scope remains unverified. Ordinary combustion cases retained under fixed pilot profile pending applicability review.",
+          "next_action": "Current odometer photograph with reliable date and VIN linkage.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "E1": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P03-visual",
+            "P03-live"
+          ],
+          "reason": "Images visually fit the advertised vehicle type, but no authenticated full-vehicle VIN/dated image chain establishes attribution.",
+          "next_action": "Obtain VIN-linked current full-vehicle photos and inspect any copied/mixed-vehicle concern.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "E2": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P03-visual"
+          ],
+          "reason": "20 images reviewed: white Outback, cabin, roof and cargo. Image 13 reads 28,901 mi. No readable VIN label or underbody/repair-specific views.",
+          "next_action": "Obtain missing views listed in visual review. Required view set was not predeclared in v0.1; do not create a threshold after seeing scores.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "E3": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P03-visual",
+            "P03-live"
+          ],
+          "reason": "Visible color/body/cabin broadly fit description, but full material-claim comparison and attribution limits remain. Mileage discrepancies assigned only to C2.",
+          "next_action": "Verify relevant visible details against exact claims; avoid inferring structural/mechanical health from appearance.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "F1": {
+          "state": "supported",
+          "evidence_ids": [
+            "P03-live",
+            "P03-snapshot"
+          ],
+          "reason": "Written vehicle price plus disclosed handling equals stated cash total and snapshot; tax/title/license excluded explicitly; financing example separate. $30,272 vehicle + $699 handling = $30,971 cash total; applicable tax/title/license excluded.",
+          "next_action": "Obtain a final buyer order; this score covers the published terms only and does not guarantee a later quote.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00",
+          "primary_event_ids": [
+            "P03-published-price-transparency"
+          ]
+        },
+        "F2": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P03-live"
+          ],
+          "reason": "No seller interaction conducted; a test-drive or report link is not demonstrated cooperation.",
+          "next_action": "If authorized later, request records and independent-inspection access; record actual responses.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "F3": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P03-live"
+          ],
+          "reason": "No proposed payee, escrow, deposit or title-transfer process inspected.",
+          "next_action": "Before payment, independently verify legal payee, transfer authority and proposed payment/escrow process.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        }
+      },
+      "alerts": [],
+      "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00",
+      "current_claims": [
+        "One-owner CARFAX history without reported damage advertised.",
+        "White AWD Limited XT, 2.4L engine, navigation, heated seats and moonroof advertised."
+      ],
+      "visual_review": "20 images reviewed: white Outback, cabin, roof and cargo. Image 13 reads 28,901 mi. No readable VIN label or underbody/repair-specific views.",
+      "history_review": "Readings increase: 5 (2023-10-03), 19 (2023-12-11), 3,530 (2024-06-06), 8,231 (2024-08-19), 13,261 (2025-04-04), 28,893 (2026-10-26), 28,895 (2026-11-18), 28,896 (2026-11-19). Estimated one personal-lease owner; title update says dealer took title while in inventory (2026-11-17), which does not independently establish current transfer authority.",
+      "pricing_review": "$30,272 vehicle + $699 handling = $30,971 cash total; applicable tax/title/license excluded.",
+      "documents_needed": [
+        "Current odometer photograph with reliable date and VIN linkage."
+      ],
+      "frozen_snapshot_summary": {
+        "price": 30971,
+        "miles": 28896,
+        "heading": "Pre-Owned 2024 Subaru Outback Limited XT",
+        "carfax_1_owner": true,
+        "carfax_clean_title": true,
+        "ref_miles": null,
+        "ref_miles_dt": null,
+        "last_seen_at_date": "2026-11-22T03:33:56.000Z"
+      },
+      "current_access": {
+        "accessed_at_utc": "2026-11-24T03:35:34.580Z",
+        "local_date_denver": "2026-11-23T20:35:34.580000-07:00",
+        "url": "https://www.flatironssubaru.com/inventory/used-2024-subaru-outback-limited-xt-awd-4d-sport-utility-4s4btgnd4r3168770/",
+        "status": "Vehicle-specific page rendered; listing existence is not confirmed availability"
+      },
+      "data_quality_notes": [],
+      "applicability": {
+        "profile": "fixed-all-22-development",
+        "excluded_checks": [],
+        "decision": "No weights changed. D4 may be inapplicable to ordinary unmodified non-certified combustion cases, but full claims/applicability protocol is not settled; no missing check reclassified N/A."
+      },
+      "time_log": {
+        "retrieval_minutes_recorded": 0.044,
+        "active_review_minutes": null,
+        "reason": "Review and image comparison were interleaved across cases; no reliable active-time timer was used. Retrieval time is not screening-study time.",
+        "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+      },
+      "unavailable_sources": [
+        "Current title/approved NMVTIS report not obtained; no purchase.",
+        "Direct NICB query not completed; public limits and full applicability require separate lookup.",
+        "Current official VIN recall result not captured.",
+        "Inspection, title authority and seller-interaction/payment evidence unavailable."
+      ]
+    },
+    {
+      "case_id": "P04",
+      "selection_reason": "Sparse photo set: only one URL",
+      "source_listing_index_zero_based": 3,
+      "vin": "4S4BTACC5R3201136",
+      "provider_listing_id": "4S4BTACC5R3201136-0ff9df07-2b7c",
+      "heading": "Pre-Owned 2024 Subaru Outback Premium",
+      "listing_url": "https://www.flatironssubaru.com/inventory/used-2024-subaru-outback-premium-awd-4d-sport-utility-4s4btacc5r3201136/",
+      "dealer": "Flatirons Subaru",
+      "photo_url_count": 1,
+      "evidence": [
+        {
+          "id": "P04-snapshot",
+          "kind": "provider_snapshot",
+          "captured_at_utc": "2026-11-24T03:04:55.560262+00:00",
+          "source_path": "/Users/YOUR_USERNAME/Documents/Codex/FirstPass/search_exports/search_20261124T030455638068Z_4e7ea727eca14874b64d99b427930cdc.json",
+          "listing_index": 3,
+          "independent": false
+        },
+        {
+          "id": "P04-live",
+          "kind": "seller_listing",
+          "captured_at_utc": "2026-11-24T03:35:36.540Z",
+          "url": "https://www.flatironssubaru.com/inventory/used-2024-subaru-outback-premium-awd-4d-sport-utility-4s4btacc5r3201136/",
+          "local_file": "evidence/P04_browser.json",
+          "independent": false
+        },
+        {
+          "id": "P04-vpic",
+          "kind": "official_vin_decode",
+          "captured_at_utc": "2026-11-24T03:34:23.840435+00:00",
+          "url": "https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVinValues/4S4BTACC5R3201136?format=json&modelyear=2024",
+          "local_file": "evidence/P04_vpic.json",
+          "independent": true
+        },
+        {
+          "id": "P04-visual",
+          "kind": "analyst_photo_review",
+          "captured_at_utc": "2026-11-24T06:42:27.343696+00:00",
+          "local_file": "evidence/P04_contact_sheet.jpg",
+          "independent": false,
+          "scope": "The single photo URL is a malformed coming-soon placeholder and failed retrieval; no vehicle image could be inspected. All relevant actual vehicle views remain unavailable."
+        },
+        {
+          "id": "P04-license",
+          "kind": "official_dealer_license",
+          "captured_at_utc": "2026-11-24T03:40:12.857Z",
+          "url": "https://codor.mylicense.com/AID_Verification/Search.aspx?facility=Y",
+          "local_file": "evidence/license_details.json",
+          "independent": true,
+          "scope": "DBA, active license and address matched; no calls made; registry and marketing phone numbers can differ."
+        }
+      ],
+      "assessment_status": "First desk-review pass completed; unresolved evidence remains unknown",
+      "reviewer": "Codex assisted desk review; requires independent human review",
+      "checks": {
+        "A1": {
+          "state": "supported",
+          "evidence_ids": [
+            "P04-vpic",
+            "P04-live"
+          ],
+          "reason": "NHTSA clean VIN decode (error 0); year 2024, make SUBARU, model Outback and core powertrain compatible. This validates a claimed VIN/specification combination, not physical VIN authenticity, title or options.",
+          "next_action": "Compare physical dashboard/door VIN and ownership documents before purchase.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00",
+          "primary_event_ids": [
+            "P04-core-identity"
+          ]
+        },
+        "A2": {
+          "state": "supported",
+          "evidence_ids": [
+            "P04-license",
+            "P04-live"
+          ],
+          "reason": "Official active dealer DBA and listed location match. Independent registry contact recorded; no phone call or confirmation of this website operator was performed. Scope is business identity, not transaction authority.",
+          "next_action": "Use the registry contact to independently confirm the specific listing before a transaction.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00",
+          "primary_event_ids": [
+            "P04-business-registry-match"
+          ]
+        },
+        "A3": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P04-live"
+          ],
+          "reason": "No current vehicle title/consignment/authorization chain inspected. Historical dealer-title entries do not establish present authority.",
+          "next_action": "Securely review current title chain and dealer transfer/consignment authorization; do not collect unnecessary personal identifiers.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "A4": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P04-live",
+            "P04-visual"
+          ],
+          "reason": "Dealer-branded photos and a live page do not establish current possession or actual stock availability.",
+          "next_action": "Obtain current vehicle-specific VIN-linked location evidence or inspect in person.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "B1": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P04-live"
+          ],
+          "reason": "No current title or approved-provider NMVTIS report obtained. CARFAX observations, where available, are source-limited; explicit current title/brand disclosure still needed.",
+          "next_action": "Obtain explicit title/brand disclosure and a relevant current title/brand record; use an existing free report if supplied, no automatic purchase.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "B2": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P04-live"
+          ],
+          "reason": "No direct NICB theft/salvage lookup or comprehensive applicable total-loss disclosure comparison completed. Provider clean-title booleans are not sufficient.",
+          "next_action": "Check applicable free insurer records within public usage limits and obtain seller disclosure; record query scope and date. A clean lookup is not a guarantee.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "B3": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P04-live"
+          ],
+          "reason": "Linked report stopped at a verification screen; no title, ownership or dated mileage records obtained. False/true provider flags are not independent records.",
+          "next_action": "Reconcile explicit damage disclosures with report events, repair records and an independent inspection; no-event records cannot prove no damage.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "B4": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P04-live"
+          ],
+          "reason": "Owner-count assertions may match a report estimate, but prior-use disclosures and full rule requirements remain incomplete. Lease history is noted where available; no-owner flag is not a multi-owner finding.",
+          "next_action": "Clarify owner-count methodology and prior lease/rental/commercial use; record exact material claims before awarding this combined check.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "C1": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P04-live"
+          ],
+          "reason": "Linked report stopped at a verification screen; no title, ownership or dated mileage records obtained. False/true provider flags are not independent records.",
+          "next_action": "Obtain sufficiently informative dated mileage evidence; normalize units and reconcile timing or instrument changes.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "C2": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P04-live",
+            "P04-visual"
+          ],
+          "reason": "No readable current vehicle-linked odometer image available.",
+          "next_action": "Obtain dated VIN-linked odometer photograph and compare with current listing.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "C3": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P04-live",
+            "P04-visual"
+          ],
+          "reason": "Core decoder identity has been credited only to A1. Full trim/options claims are not independently verified; visible features cover only a subset.",
+          "next_action": "Compare material trim/options claims against VIN-specific build sheet/window sticker and actual equipment.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "C4": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P04-snapshot",
+            "P04-live"
+          ],
+          "reason": "Snapshot and live seller source were compared, but they are not independent origins. Current availability and multi-source claim completeness are not verified.",
+          "next_action": "Compare appropriately dated origins, separate syndicated copies, and independently confirm availability.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "D1": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P04-live",
+            "P04-visual"
+          ],
+          "reason": "No independent current mechanical/structural/flood inspection obtained. Photos and history reports cannot establish absence of defects.",
+          "next_action": "Obtain independent pre-purchase inspection and diagnostics, with scope and date recorded.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "D2": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P04-live"
+          ],
+          "reason": "No direct dated maintenance invoices substantiating specific claims were inspected. Commercial service entries are informative but not a complete maintenance record.",
+          "next_action": "Obtain dated VIN-linked invoices and compare each specific maintenance claim; do not treat a generic well-maintained assertion as verified.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "D3": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P04-live"
+          ],
+          "reason": "Official NHTSA bulk VIN form submitted, but no completed result was captured before browser-session interruption. Commercial recall summaries are not substituted for current official VIN checks.",
+          "next_action": "Repeat current official VIN-specific recall lookup; save actual result and exclusions. Confirm completion evidence for any claimed repairs.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "D4": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P04-live"
+          ],
+          "reason": "Battery or certification requirements apply where claimed; scope remains unverified. Ordinary combustion cases retained under fixed pilot profile pending applicability review.",
+          "next_action": "Actual exterior, interior, VIN and odometer images.; VIN-specific CPO enrollment, signed 152-point checklist, in-service date and coverage terms.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "E1": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P04-visual",
+            "P04-live"
+          ],
+          "reason": "Images visually fit the advertised vehicle type, but no authenticated full-vehicle VIN/dated image chain establishes attribution.",
+          "next_action": "Obtain VIN-linked current full-vehicle photos and inspect any copied/mixed-vehicle concern.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "E2": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P04-visual"
+          ],
+          "reason": "The single photo URL is a malformed coming-soon placeholder and failed retrieval; no vehicle image could be inspected. All relevant actual vehicle views remain unavailable.",
+          "next_action": "Obtain missing views listed in visual review. Required view set was not predeclared in v0.1; do not create a threshold after seeing scores.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "E3": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P04-visual",
+            "P04-live"
+          ],
+          "reason": "Visible color/body/cabin broadly fit description, but full material-claim comparison and attribution limits remain. Mileage discrepancies assigned only to C2.",
+          "next_action": "Verify relevant visible details against exact claims; avoid inferring structural/mechanical health from appearance.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "F1": {
+          "state": "supported",
+          "evidence_ids": [
+            "P04-live",
+            "P04-snapshot"
+          ],
+          "reason": "Written vehicle price plus disclosed handling equals stated cash total and snapshot; tax/title/license excluded explicitly; financing example separate. $28,018 vehicle + $699 handling = $28,717 cash total; applicable tax/title/license excluded.",
+          "next_action": "Obtain a final buyer order; this score covers the published terms only and does not guarantee a later quote.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00",
+          "primary_event_ids": [
+            "P04-published-price-transparency"
+          ]
+        },
+        "F2": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P04-live"
+          ],
+          "reason": "No seller interaction conducted; a test-drive or report link is not demonstrated cooperation.",
+          "next_action": "If authorized later, request records and independent-inspection access; record actual responses.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "F3": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P04-live"
+          ],
+          "reason": "No proposed payee, escrow, deposit or title-transfer process inspected.",
+          "next_action": "Before payment, independently verify legal payee, transfer authority and proposed payment/escrow process.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        }
+      },
+      "alerts": [
+        {
+          "severity": "review",
+          "primary_rule": "D4",
+          "event_id": "P04-certification-scope",
+          "reason": "Pre-owned heading and CPO-benefit description require VIN-specific certification clarification; actual photos unavailable.",
+          "evidence_ids": [
+            "P04-live",
+            "P04-visual"
+          ]
+        }
+      ],
+      "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00",
+      "current_claims": [
+        "One-owner CARFAX history without reported damage advertised.",
+        "Heading says pre-owned; description also advertises Subaru CPO benefits and a 152-point inspection. Certification scope requires clarification."
+      ],
+      "visual_review": "The single photo URL is a malformed coming-soon placeholder and failed retrieval; no vehicle image could be inspected. All relevant actual vehicle views remain unavailable.",
+      "history_review": "Linked report stopped at a verification screen; no title, ownership or dated mileage records obtained. False/true provider flags are not independent records.",
+      "pricing_review": "$28,018 vehicle + $699 handling = $28,717 cash total; applicable tax/title/license excluded.",
+      "documents_needed": [
+        "Actual exterior, interior, VIN and odometer images.",
+        "VIN-specific CPO enrollment, signed 152-point checklist, in-service date and coverage terms."
+      ],
+      "frozen_snapshot_summary": {
+        "price": 28717,
+        "miles": 29662,
+        "heading": "Pre-Owned 2024 Subaru Outback Premium",
+        "carfax_1_owner": true,
+        "carfax_clean_title": true,
+        "ref_miles": null,
+        "ref_miles_dt": null,
+        "last_seen_at_date": "2026-11-22T03:33:50.000Z"
+      },
+      "current_access": {
+        "accessed_at_utc": "2026-11-24T03:35:36.540Z",
+        "local_date_denver": "2026-11-23T20:35:36.540000-07:00",
+        "url": "https://www.flatironssubaru.com/inventory/used-2024-subaru-outback-premium-awd-4d-sport-utility-4s4btacc5r3201136/",
+        "status": "Vehicle-specific page rendered; listing existence is not confirmed availability"
+      },
+      "data_quality_notes": [],
+      "applicability": {
+        "profile": "fixed-all-22-development",
+        "excluded_checks": [],
+        "decision": "No weights changed. D4 may be inapplicable to ordinary unmodified non-certified combustion cases, but full claims/applicability protocol is not settled; no missing check reclassified N/A."
+      },
+      "time_log": {
+        "retrieval_minutes_recorded": 0.037,
+        "active_review_minutes": null,
+        "reason": "Review and image comparison were interleaved across cases; no reliable active-time timer was used. Retrieval time is not screening-study time.",
+        "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+      },
+      "unavailable_sources": [
+        "Current title/approved NMVTIS report not obtained; no purchase.",
+        "Direct NICB query not completed; public limits and full applicability require separate lookup.",
+        "Current official VIN recall result not captured.",
+        "Inspection, title authority and seller-interaction/payment evidence unavailable.",
+        "Dealer-linked history report stopped at verification screen; challenge not bypassed.",
+        "Malformed placeholder photo URL; no actual vehicle photos accessible."
+      ]
+    },
+    {
+      "case_id": "P05",
+      "selection_reason": "Plug-in hybrid; different seller",
+      "source_listing_index_zero_based": 38,
+      "vin": "1FMCU0KZ2NUB48630",
+      "provider_listing_id": "1FMCU0KZ2NUB48630-330c6aa6-b51c",
+      "heading": "2022 Ford Escape SEL Plug-In Hybrid",
+      "listing_url": "https://www.boulderh.com/inventory/2022-ford-escape-sel-plug-in-hybrid/1147361",
+      "dealer": "Boulder Hybrids",
+      "photo_url_count": 10,
+      "evidence": [
+        {
+          "id": "P05-snapshot",
+          "kind": "provider_snapshot",
+          "captured_at_utc": "2026-11-24T03:04:55.560262+00:00",
+          "source_path": "/Users/YOUR_USERNAME/Documents/Codex/FirstPass/search_exports/search_20261124T030455638068Z_4e7ea727eca14874b64d99b427930cdc.json",
+          "listing_index": 38,
+          "independent": false
+        },
+        {
+          "id": "P05-live",
+          "kind": "seller_listing",
+          "captured_at_utc": "2026-11-24T03:35:41.695Z",
+          "url": "https://www.boulderh.com/inventory/2022-ford-escape-sel-plug-in-hybrid/1147361",
+          "local_file": "evidence/P05_browser.json",
+          "independent": false
+        },
+        {
+          "id": "P05-vpic",
+          "kind": "official_vin_decode",
+          "captured_at_utc": "2026-11-24T03:34:24.583217+00:00",
+          "url": "https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVinValues/1FMCU0KZ2NUB48630?format=json&modelyear=2022",
+          "local_file": "evidence/P05_vpic.json",
+          "independent": true
+        },
+        {
+          "id": "P05-visual",
+          "kind": "analyst_photo_review",
+          "captured_at_utc": "2026-11-24T06:42:27.343696+00:00",
+          "local_file": "evidence/P05_contact_sheet.jpg",
+          "independent": false,
+          "scope": "10 images reviewed: blue Ford SUV, cabin/cargo, panoramic roof, charging cable visible. Image 8 reads 16,461.1 mi and 11% charge. No readable VIN label, battery diagnostic or underbody. Charge percentage does not measure battery health."
+        },
+        {
+          "id": "P05-license",
+          "kind": "official_dealer_license",
+          "captured_at_utc": "2026-11-24T03:40:17.580Z",
+          "url": "https://codor.mylicense.com/AID_Verification/Search.aspx?facility=Y",
+          "local_file": "evidence/license_details.json",
+          "independent": true,
+          "scope": "DBA, active license and address matched; no calls made; registry and marketing phone numbers can differ."
+        }
+      ],
+      "assessment_status": "First desk-review pass completed; unresolved evidence remains unknown",
+      "reviewer": "Codex assisted desk review; requires independent human review",
+      "checks": {
+        "A1": {
+          "state": "supported",
+          "evidence_ids": [
+            "P05-vpic",
+            "P05-live"
+          ],
+          "reason": "NHTSA clean VIN decode (error 0); year 2022, make FORD, model Escape and core powertrain compatible. This validates a claimed VIN/specification combination, not physical VIN authenticity, title or options.",
+          "next_action": "Compare physical dashboard/door VIN and ownership documents before purchase.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00",
+          "primary_event_ids": [
+            "P05-core-identity"
+          ]
+        },
+        "A2": {
+          "state": "supported",
+          "evidence_ids": [
+            "P05-license",
+            "P05-live"
+          ],
+          "reason": "Official active dealer DBA and listed location match. Independent registry contact recorded; no phone call or confirmation of this website operator was performed. Scope is business identity, not transaction authority.",
+          "next_action": "Use the registry contact to independently confirm the specific listing before a transaction.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00",
+          "primary_event_ids": [
+            "P05-business-registry-match"
+          ]
+        },
+        "A3": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P05-live"
+          ],
+          "reason": "No current vehicle title/consignment/authorization chain inspected. Historical dealer-title entries do not establish present authority.",
+          "next_action": "Securely review current title chain and dealer transfer/consignment authorization; do not collect unnecessary personal identifiers.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "A4": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P05-live",
+            "P05-visual"
+          ],
+          "reason": "Dealer-branded photos and a live page do not establish current possession or actual stock availability.",
+          "next_action": "Obtain current vehicle-specific VIN-linked location evidence or inspect in person.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "B1": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P05-live"
+          ],
+          "reason": "No current title or approved-provider NMVTIS report obtained. CARFAX observations, where available, are source-limited; explicit current title/brand disclosure still needed.",
+          "next_action": "Obtain explicit title/brand disclosure and a relevant current title/brand record; use an existing free report if supplied, no automatic purchase.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "B2": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P05-live"
+          ],
+          "reason": "No direct NICB theft/salvage lookup or comprehensive applicable total-loss disclosure comparison completed. Provider clean-title booleans are not sufficient.",
+          "next_action": "Check applicable free insurer records within public usage limits and obtain seller disclosure; record query scope and date. A clean lookup is not a guarantee.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "B3": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P05-live"
+          ],
+          "reason": "No direct report linked in the captured page; ownership and historic mileage claims remain uncorroborated.",
+          "next_action": "Reconcile explicit damage disclosures with report events, repair records and an independent inspection; no-event records cannot prove no damage.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "B4": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P05-live"
+          ],
+          "reason": "Owner-count assertions may match a report estimate, but prior-use disclosures and full rule requirements remain incomplete. Lease history is noted where available; no-owner flag is not a multi-owner finding.",
+          "next_action": "Clarify owner-count methodology and prior lease/rental/commercial use; record exact material claims before awarding this combined check.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "C1": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P05-live"
+          ],
+          "reason": "No direct report linked in the captured page; ownership and historic mileage claims remain uncorroborated.",
+          "next_action": "Obtain sufficiently informative dated mileage evidence; normalize units and reconcile timing or instrument changes.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "C2": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P05-live",
+            "P05-visual"
+          ],
+          "reason": "Ad/snapshot: 16,453 miles; photo 8: 16,461.1 miles; difference +8.1. Photo date/vehicle capture chain not authenticated. Small increases may reflect ordinary use or stale text; no rollback established.",
+          "next_action": "Obtain dated VIN-linked current odometer photo and reconcile publication times. No tolerance was predeclared, so do not invent one now.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "C3": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P05-live",
+            "P05-visual"
+          ],
+          "reason": "Core decoder identity has been credited only to A1. Full trim/options claims are not independently verified; visible features cover only a subset.",
+          "next_action": "Compare material trim/options claims against VIN-specific build sheet/window sticker and actual equipment.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "C4": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P05-snapshot",
+            "P05-live"
+          ],
+          "reason": "Snapshot and live seller source were compared, but they are not independent origins. Current availability and multi-source claim completeness are not verified.",
+          "next_action": "Compare appropriately dated origins, separate syndicated copies, and independently confirm availability.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "D1": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P05-live",
+            "P05-visual"
+          ],
+          "reason": "No independent current mechanical/structural/flood inspection obtained. Photos and history reports cannot establish absence of defects.",
+          "next_action": "Obtain independent pre-purchase inspection and diagnostics, with scope and date recorded.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "D2": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P05-live"
+          ],
+          "reason": "No direct dated maintenance invoices substantiating specific claims were inspected. Commercial service entries are informative but not a complete maintenance record.",
+          "next_action": "Obtain dated VIN-linked invoices and compare each specific maintenance claim; do not treat a generic well-maintained assertion as verified.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "D3": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P05-live"
+          ],
+          "reason": "Official NHTSA bulk VIN form submitted, but no completed result was captured before browser-session interruption. Commercial recall summaries are not substituted for current official VIN checks.",
+          "next_action": "Repeat current official VIN-specific recall lookup; save actual result and exclusions. Confirm completion evidence for any claimed repairs.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "D4": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P05-live"
+          ],
+          "reason": "Battery or certification requirements apply where claimed; scope remains unverified. Ordinary combustion cases retained under fixed pilot profile pending applicability review.",
+          "next_action": "Dated owner/mileage history report supplied free by seller, if available.; VIN-linked battery diagnostic and documented range-test conditions.; Written cash total, all mandatory fees and current exchange-program eligibility terms.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "E1": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P05-visual",
+            "P05-live"
+          ],
+          "reason": "Images visually fit the advertised vehicle type, but no authenticated full-vehicle VIN/dated image chain establishes attribution.",
+          "next_action": "Obtain VIN-linked current full-vehicle photos and inspect any copied/mixed-vehicle concern.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "E2": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P05-visual"
+          ],
+          "reason": "10 images reviewed: blue Ford SUV, cabin/cargo, panoramic roof, charging cable visible. Image 8 reads 16,461.1 mi and 11% charge. No readable VIN label, battery diagnostic or underbody. Charge percentage does not measure battery health.",
+          "next_action": "Obtain missing views listed in visual review. Required view set was not predeclared in v0.1; do not create a threshold after seeing scores.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "E3": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P05-visual",
+            "P05-live"
+          ],
+          "reason": "Visible color/body/cabin broadly fit description, but full material-claim comparison and attribution limits remain. Mileage discrepancies assigned only to C2.",
+          "next_action": "Verify relevant visible details against exact claims; avoid inferring structural/mechanical health from appearance.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "F1": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P05-live",
+            "P05-snapshot"
+          ],
+          "reason": "$23,988 asking price displayed; exchange-program savings are described as conditional. No complete itemized fee/total purchase terms obtained. Eligibility and current program funding were not checked.",
+          "next_action": "Obtain written itemized cash price, mandatory charges, exclusions and any financing/trade/rebate conditions.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "F2": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P05-live"
+          ],
+          "reason": "No seller interaction conducted; a test-drive or report link is not demonstrated cooperation.",
+          "next_action": "If authorized later, request records and independent-inspection access; record actual responses.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "F3": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P05-live"
+          ],
+          "reason": "No proposed payee, escrow, deposit or title-transfer process inspected.",
+          "next_action": "Before payment, independently verify legal payee, transfer authority and proposed payment/escrow process.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        }
+      },
+      "alerts": [],
+      "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00",
+      "current_claims": [
+        "One previous owner and favorable CARFAX history asserted.",
+        "Plug-in operation up to 40 miles and ordinary 120V charging advertised; this is not battery-health verification.",
+        "Conditional $6,000 vehicle-exchange savings advertised for eligible households with a qualifying trade."
+      ],
+      "visual_review": "10 images reviewed: blue Ford SUV, cabin/cargo, panoramic roof, charging cable visible. Image 8 reads 16,461.1 mi and 11% charge. No readable VIN label, battery diagnostic or underbody. Charge percentage does not measure battery health.",
+      "history_review": "No direct report linked in the captured page; ownership and historic mileage claims remain uncorroborated.",
+      "pricing_review": "$23,988 asking price displayed; exchange-program savings are described as conditional. No complete itemized fee/total purchase terms obtained. Eligibility and current program funding were not checked.",
+      "documents_needed": [
+        "Dated owner/mileage history report supplied free by seller, if available.",
+        "VIN-linked battery diagnostic and documented range-test conditions.",
+        "Written cash total, all mandatory fees and current exchange-program eligibility terms."
+      ],
+      "frozen_snapshot_summary": {
+        "price": 23988,
+        "miles": 16453,
+        "heading": "2022 Ford Escape SEL Plug-In Hybrid",
+        "carfax_1_owner": false,
+        "carfax_clean_title": false,
+        "ref_miles": null,
+        "ref_miles_dt": null,
+        "last_seen_at_date": "2026-11-22T04:27:12.000Z"
+      },
+      "current_access": {
+        "accessed_at_utc": "2026-11-24T03:35:41.695Z",
+        "local_date_denver": "2026-11-23T20:35:41.695000-07:00",
+        "url": "https://www.boulderh.com/inventory/2022-ford-escape-sel-plug-in-hybrid/1147361",
+        "status": "Vehicle-specific page rendered; listing existence is not confirmed availability"
+      },
+      "data_quality_notes": [],
+      "applicability": {
+        "profile": "fixed-all-22-development",
+        "excluded_checks": [],
+        "decision": "No weights changed. D4 may be inapplicable to ordinary unmodified non-certified combustion cases, but full claims/applicability protocol is not settled; no missing check reclassified N/A."
+      },
+      "time_log": {
+        "retrieval_minutes_recorded": 0.091,
+        "active_review_minutes": null,
+        "reason": "Review and image comparison were interleaved across cases; no reliable active-time timer was used. Retrieval time is not screening-study time.",
+        "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+      },
+      "unavailable_sources": [
+        "Current title/approved NMVTIS report not obtained; no purchase.",
+        "Direct NICB query not completed; public limits and full applicability require separate lookup.",
+        "Current official VIN recall result not captured.",
+        "Inspection, title authority and seller-interaction/payment evidence unavailable.",
+        "No direct history report link found in captured listing"
+      ]
+    },
+    {
+      "case_id": "P06",
+      "selection_reason": "Additional dealer and vehicle type",
+      "source_listing_index_zero_based": 39,
+      "vin": "5FPYK3F70PB012249",
+      "provider_listing_id": "5FPYK3F70PB012249-87d46610-4b42",
+      "heading": "Pre-Owned 2023 Honda Ridgeline RTL-E",
+      "listing_url": "https://www.fisherhonda.com/inventory/used-2023-honda-ridgeline-rtl-e-awd-4d-crew-cab-5fpyk3f70pb012249/",
+      "dealer": "Fisher Honda",
+      "photo_url_count": 28,
+      "evidence": [
+        {
+          "id": "P06-snapshot",
+          "kind": "provider_snapshot",
+          "captured_at_utc": "2026-11-24T03:04:55.560262+00:00",
+          "source_path": "/Users/YOUR_USERNAME/Documents/Codex/FirstPass/search_exports/search_20261124T030455638068Z_4e7ea727eca14874b64d99b427930cdc.json",
+          "listing_index": 39,
+          "independent": false
+        },
+        {
+          "id": "P06-live",
+          "kind": "seller_listing",
+          "captured_at_utc": "2026-11-24T03:35:53.234Z",
+          "url": "https://www.fisherhonda.com/inventory/used-2023-honda-ridgeline-rtl-e-awd-4d-crew-cab-5fpyk3f70pb012249/",
+          "local_file": "evidence/P06_browser.json",
+          "independent": false
+        },
+        {
+          "id": "P06-vpic",
+          "kind": "official_vin_decode",
+          "captured_at_utc": "2026-11-24T03:34:25.004533+00:00",
+          "url": "https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVinValues/5FPYK3F70PB012249?format=json&modelyear=2023",
+          "local_file": "evidence/P06_vpic.json",
+          "independent": true
+        },
+        {
+          "id": "P06-visual",
+          "kind": "analyst_photo_review",
+          "captured_at_utc": "2026-11-24T06:42:27.343696+00:00",
+          "local_file": "evidence/P06_contact_sheet.jpg",
+          "independent": false,
+          "scope": "28 images reviewed including exterior, cabin, bed/under-bed compartment, roof, rear camera, odometer and VIN label. Image 19 reads 39,716 miles; image 28 label matches listing VIN. No underbody or inspection evidence."
+        },
+        {
+          "id": "P06-license",
+          "kind": "official_dealer_license",
+          "captured_at_utc": "2026-11-24T03:40:14.475Z",
+          "url": "https://codor.mylicense.com/AID_Verification/Search.aspx?facility=Y",
+          "local_file": "evidence/license_details.json",
+          "independent": true,
+          "scope": "DBA, active license and address matched; no calls made; registry and marketing phone numbers can differ."
+        }
+      ],
+      "assessment_status": "First desk-review pass completed; unresolved evidence remains unknown",
+      "reviewer": "Codex assisted desk review; requires independent human review",
+      "checks": {
+        "A1": {
+          "state": "supported",
+          "evidence_ids": [
+            "P06-vpic",
+            "P06-live"
+          ],
+          "reason": "NHTSA clean VIN decode (error 0); year 2023, make HONDA, model Ridgeline and core powertrain compatible. This validates a claimed VIN/specification combination, not physical VIN authenticity, title or options.",
+          "next_action": "Compare physical dashboard/door VIN and ownership documents before purchase.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00",
+          "primary_event_ids": [
+            "P06-core-identity"
+          ]
+        },
+        "A2": {
+          "state": "supported",
+          "evidence_ids": [
+            "P06-license",
+            "P06-live"
+          ],
+          "reason": "Official active dealer DBA and listed location match. Independent registry contact recorded; no phone call or confirmation of this website operator was performed. Scope is business identity, not transaction authority.",
+          "next_action": "Use the registry contact to independently confirm the specific listing before a transaction.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00",
+          "primary_event_ids": [
+            "P06-business-registry-match"
+          ]
+        },
+        "A3": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P06-live"
+          ],
+          "reason": "No current vehicle title/consignment/authorization chain inspected. Historical dealer-title entries do not establish present authority.",
+          "next_action": "Securely review current title chain and dealer transfer/consignment authorization; do not collect unnecessary personal identifiers.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "A4": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P06-live",
+            "P06-visual"
+          ],
+          "reason": "Dealer-branded photos and a live page do not establish current possession or actual stock availability.",
+          "next_action": "Obtain current vehicle-specific VIN-linked location evidence or inspect in person.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "B1": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P06-live"
+          ],
+          "reason": "No current title or approved-provider NMVTIS report obtained. CARFAX observations, where available, are source-limited; explicit current title/brand disclosure still needed.",
+          "next_action": "Obtain explicit title/brand disclosure and a relevant current title/brand record; use an existing free report if supplied, no automatic purchase.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "B2": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P06-live"
+          ],
+          "reason": "No direct NICB theft/salvage lookup or comprehensive applicable total-loss disclosure comparison completed. Provider clean-title booleans are not sufficient.",
+          "next_action": "Check applicable free insurer records within public usage limits and obtain seller disclosure; record query scope and date. A clean lookup is not a guarantee.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "B3": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P06-live"
+          ],
+          "reason": "Linked free report stopped at a verification screen. No dated mileage timeline obtained.",
+          "next_action": "Reconcile explicit damage disclosures with report events, repair records and an independent inspection; no-event records cannot prove no damage.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "B4": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P06-live"
+          ],
+          "reason": "Owner-count assertions may match a report estimate, but prior-use disclosures and full rule requirements remain incomplete. Lease history is noted where available; no-owner flag is not a multi-owner finding.",
+          "next_action": "Clarify owner-count methodology and prior lease/rental/commercial use; record exact material claims before awarding this combined check.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "C1": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P06-live"
+          ],
+          "reason": "Linked free report stopped at a verification screen. No dated mileage timeline obtained.",
+          "next_action": "Obtain sufficiently informative dated mileage evidence; normalize units and reconcile timing or instrument changes.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "C2": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P06-live",
+            "P06-visual"
+          ],
+          "reason": "Ad/snapshot: 39,715 miles; photo 19: 39,716 miles; difference +1. Photo date/vehicle capture chain not authenticated. Small increases may reflect ordinary use or stale text; no rollback established.",
+          "next_action": "Obtain dated VIN-linked current odometer photo and reconcile publication times. No tolerance was predeclared, so do not invent one now.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "C3": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P06-live",
+            "P06-visual"
+          ],
+          "reason": "Core decoder identity has been credited only to A1. Full trim/options claims are not independently verified; visible features cover only a subset.",
+          "next_action": "Compare material trim/options claims against VIN-specific build sheet/window sticker and actual equipment.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "C4": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P06-snapshot",
+            "P06-live"
+          ],
+          "reason": "Snapshot and live seller source were compared, but they are not independent origins. Current availability and multi-source claim completeness are not verified.",
+          "next_action": "Compare appropriately dated origins, separate syndicated copies, and independently confirm availability.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "D1": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P06-live",
+            "P06-visual"
+          ],
+          "reason": "No independent current mechanical/structural/flood inspection obtained. Photos and history reports cannot establish absence of defects.",
+          "next_action": "Obtain independent pre-purchase inspection and diagnostics, with scope and date recorded.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "D2": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P06-live"
+          ],
+          "reason": "No direct dated maintenance invoices substantiating specific claims were inspected. Commercial service entries are informative but not a complete maintenance record.",
+          "next_action": "Obtain dated VIN-linked invoices and compare each specific maintenance claim; do not treat a generic well-maintained assertion as verified.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "D3": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P06-live"
+          ],
+          "reason": "Official NHTSA bulk VIN form submitted, but no completed result was captured before browser-session interruption. Commercial recall summaries are not substituted for current official VIN checks.",
+          "next_action": "Repeat current official VIN-specific recall lookup; save actual result and exclusions. Confirm completion evidence for any claimed repairs.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "D4": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P06-live"
+          ],
+          "reason": "Battery or certification requirements apply where claimed; scope remains unverified. Ordinary combustion cases retained under fixed pilot profile pending applicability review.",
+          "next_action": "VIN-specific build sheet for climate-control/options wording.; Itemized buyer order and dated vehicle-linked history.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "E1": {
+          "state": "supported",
+          "evidence_ids": [
+            "P06-visual",
+            "P06-live"
+          ],
+          "reason": "Readable VIN label in reviewed dealer-hosted image matches listing VIN; exterior and cabin sequence visually coherent. This is listing-media attribution, not proof of possession or original authorship.",
+          "next_action": "Confirm physical VIN and current images at inspection; reverse-image provenance not established.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00",
+          "primary_event_ids": [
+            "P06-photo-vin-attribution"
+          ]
+        },
+        "E2": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P06-visual"
+          ],
+          "reason": "28 images reviewed including exterior, cabin, bed/under-bed compartment, roof, rear camera, odometer and VIN label. Image 19 reads 39,716 miles; image 28 label matches listing VIN. No underbody or inspection evidence.",
+          "next_action": "Obtain missing views listed in visual review. Required view set was not predeclared in v0.1; do not create a threshold after seeing scores.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "E3": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P06-visual",
+            "P06-live"
+          ],
+          "reason": "Visible color/body/cabin broadly fit description, but full material-claim comparison and attribution limits remain. Mileage discrepancies assigned only to C2.",
+          "next_action": "Verify relevant visible details against exact claims; avoid inferring structural/mechanical health from appearance.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "F1": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P06-live",
+            "P06-snapshot"
+          ],
+          "reason": "$32,291 price and $699 handling displayed separately; their sum is $32,990, matching snapshot. Written confirmation of fee inclusion and full applicable conditions remains needed.",
+          "next_action": "Obtain written itemized cash price, mandatory charges, exclusions and any financing/trade/rebate conditions.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "F2": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P06-live"
+          ],
+          "reason": "No seller interaction conducted; a test-drive or report link is not demonstrated cooperation.",
+          "next_action": "If authorized later, request records and independent-inspection access; record actual responses.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "F3": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P06-live"
+          ],
+          "reason": "No proposed payee, escrow, deposit or title-transfer process inspected.",
+          "next_action": "Before payment, independently verify legal payee, transfer authority and proposed payment/escrow process.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        }
+      },
+      "alerts": [],
+      "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00",
+      "current_claims": [
+        "Blue RTL-E AWD pickup, gray leather, 3.5L V6, nine-speed automatic and numerous equipment features advertised.",
+        "Description refers both to three-zone and dual-zone climate control; equipment wording needs reconciliation."
+      ],
+      "visual_review": "28 images reviewed including exterior, cabin, bed/under-bed compartment, roof, rear camera, odometer and VIN label. Image 19 reads 39,716 miles; image 28 label matches listing VIN. No underbody or inspection evidence.",
+      "history_review": "Linked free report stopped at a verification screen. No dated mileage timeline obtained.",
+      "pricing_review": "$32,291 price and $699 handling displayed separately; their sum is $32,990, matching snapshot. Written confirmation of fee inclusion and full applicable conditions remains needed.",
+      "documents_needed": [
+        "VIN-specific build sheet for climate-control/options wording.",
+        "Itemized buyer order and dated vehicle-linked history."
+      ],
+      "frozen_snapshot_summary": {
+        "price": 32990,
+        "miles": 39715,
+        "heading": "Pre-Owned 2023 Honda Ridgeline RTL-E",
+        "carfax_1_owner": false,
+        "carfax_clean_title": false,
+        "ref_miles": 39715,
+        "ref_miles_dt": 1793168290,
+        "last_seen_at_date": "2026-11-22T06:18:50.000Z"
+      },
+      "current_access": {
+        "accessed_at_utc": "2026-11-24T03:35:53.234Z",
+        "local_date_denver": "2026-11-23T20:35:53.234000-07:00",
+        "url": "https://www.fisherhonda.com/inventory/used-2023-honda-ridgeline-rtl-e-awd-4d-crew-cab-5fpyk3f70pb012249/",
+        "status": "Vehicle-specific page rendered; listing existence is not confirmed availability"
+      },
+      "data_quality_notes": [],
+      "applicability": {
+        "profile": "fixed-all-22-development",
+        "excluded_checks": [],
+        "decision": "No weights changed. D4 may be inapplicable to ordinary unmodified non-certified combustion cases, but full claims/applicability protocol is not settled; no missing check reclassified N/A."
+      },
+      "time_log": {
+        "retrieval_minutes_recorded": 0.115,
+        "active_review_minutes": null,
+        "reason": "Review and image comparison were interleaved across cases; no reliable active-time timer was used. Retrieval time is not screening-study time.",
+        "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+      },
+      "unavailable_sources": [
+        "Current title/approved NMVTIS report not obtained; no purchase.",
+        "Direct NICB query not completed; public limits and full applicability require separate lookup.",
+        "Current official VIN recall result not captured.",
+        "Inspection, title authority and seller-interaction/payment evidence unavailable.",
+        "Dealer-linked history report stopped at verification screen; challenge not bypassed."
+      ]
+    },
+    {
+      "case_id": "P07",
+      "selection_reason": "Four photo URLs; coverage must be inspected",
+      "source_listing_index_zero_based": 42,
+      "vin": "3CZRZ2H51RM731100",
+      "provider_listing_id": "3CZRZ2H51RM731100-c753a2db-3349",
+      "heading": "Pre-Owned 2024 Honda HR-V Sport",
+      "listing_url": "https://www.fisherhonda.com/inventory/used-2024-honda-hr-v-sport-awd-4d-sport-utility-3czrz2h51rm731100/",
+      "dealer": "Fisher Honda",
+      "photo_url_count": 4,
+      "evidence": [
+        {
+          "id": "P07-snapshot",
+          "kind": "provider_snapshot",
+          "captured_at_utc": "2026-11-24T03:04:55.560262+00:00",
+          "source_path": "/Users/YOUR_USERNAME/Documents/Codex/FirstPass/search_exports/search_20261124T030455638068Z_4e7ea727eca14874b64d99b427930cdc.json",
+          "listing_index": 42,
+          "independent": false
+        },
+        {
+          "id": "P07-live",
+          "kind": "seller_listing",
+          "captured_at_utc": "2026-11-24T03:35:56.171Z",
+          "url": "https://www.fisherhonda.com/inventory/used-2024-honda-hr-v-sport-awd-4d-sport-utility-3czrz2h51rm731100/",
+          "local_file": "evidence/P07_browser.json",
+          "independent": false
+        },
+        {
+          "id": "P07-vpic",
+          "kind": "official_vin_decode",
+          "captured_at_utc": "2026-11-24T03:34:25.384817+00:00",
+          "url": "https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVinValues/3CZRZ2H51RM731100?format=json&modelyear=2024",
+          "local_file": "evidence/P07_vpic.json",
+          "independent": true
+        },
+        {
+          "id": "P07-visual",
+          "kind": "analyst_photo_review",
+          "captured_at_utc": "2026-11-24T06:42:27.343696+00:00",
+          "local_file": "evidence/P07_contact_sheet.jpg",
+          "independent": false,
+          "scope": "Four images reviewed: two exterior angles, front cabin and rear seats. No odometer, VIN label, engine bay, underbody or full exterior coverage."
+        },
+        {
+          "id": "P07-history",
+          "kind": "third_party_history_report",
+          "captured_at_utc": "2026-11-24T03:37:18.303Z",
+          "url": "https://www.carfax.com/vehiclehistory/ar20/EynQtM3Qi6_5q8MkHowSEBlmYYIhlMy4R11JDAijH1zM_U1YHUgL69LadiJlbKID_OZHWQql8gyHPuU7lzB2-2eQzqE2JoReq3k",
+          "local_file": "evidence/history_access.json",
+          "independent": true,
+          "limitations": "Commercial report; underlying events may originate from seller. No-events result is not absence proof. Not NMVTIS/NICB or an inspection."
+        },
+        {
+          "id": "P07-license",
+          "kind": "official_dealer_license",
+          "captured_at_utc": "2026-11-24T03:40:14.475Z",
+          "url": "https://codor.mylicense.com/AID_Verification/Search.aspx?facility=Y",
+          "local_file": "evidence/license_details.json",
+          "independent": true,
+          "scope": "DBA, active license and address matched; no calls made; registry and marketing phone numbers can differ."
+        }
+      ],
+      "assessment_status": "First desk-review pass completed; unresolved evidence remains unknown",
+      "reviewer": "Codex assisted desk review; requires independent human review",
+      "checks": {
+        "A1": {
+          "state": "supported",
+          "evidence_ids": [
+            "P07-vpic",
+            "P07-live"
+          ],
+          "reason": "NHTSA clean VIN decode (error 0); year 2024, make HONDA, model HR-V and core powertrain compatible. This validates a claimed VIN/specification combination, not physical VIN authenticity, title or options.",
+          "next_action": "Compare physical dashboard/door VIN and ownership documents before purchase.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00",
+          "primary_event_ids": [
+            "P07-core-identity"
+          ]
+        },
+        "A2": {
+          "state": "supported",
+          "evidence_ids": [
+            "P07-license",
+            "P07-live"
+          ],
+          "reason": "Official active dealer DBA and listed location match. Independent registry contact recorded; no phone call or confirmation of this website operator was performed. Scope is business identity, not transaction authority.",
+          "next_action": "Use the registry contact to independently confirm the specific listing before a transaction.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00",
+          "primary_event_ids": [
+            "P07-business-registry-match"
+          ]
+        },
+        "A3": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P07-live",
+            "P07-history"
+          ],
+          "reason": "No current vehicle title/consignment/authorization chain inspected. Historical dealer-title entries do not establish present authority.",
+          "next_action": "Securely review current title chain and dealer transfer/consignment authorization; do not collect unnecessary personal identifiers.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "A4": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P07-live",
+            "P07-visual"
+          ],
+          "reason": "Dealer-branded photos and a live page do not establish current possession or actual stock availability.",
+          "next_action": "Obtain current vehicle-specific VIN-linked location evidence or inspect in person.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "B1": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P07-live",
+            "P07-history"
+          ],
+          "reason": "No current title or approved-provider NMVTIS report obtained. CARFAX observations, where available, are source-limited; explicit current title/brand disclosure still needed.",
+          "next_action": "Obtain explicit title/brand disclosure and a relevant current title/brand record; use an existing free report if supplied, no automatic purchase.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "B2": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P07-live"
+          ],
+          "reason": "No direct NICB theft/salvage lookup or comprehensive applicable total-loss disclosure comparison completed. Provider clean-title booleans are not sufficient.",
+          "next_action": "Check applicable free insurer records within public usage limits and obtain seller disclosure; record query scope and date. A clean lookup is not a guarantee.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "B3": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P07-live",
+            "P07-history"
+          ],
+          "reason": "Report readings rise from 1 (2023-10-24), 50 (2023-11-13), 4,107 (2024-02-29), 8,939 (2024-06-17), 17,115 (2025-05-12) to 23,827 (2026-04-06). Current ad says 32,406; a later, higher ad reading does not indicate rollback, but the seven-month gap lacks current corroboration. Report estimates one personal-lease owner.",
+          "next_action": "Reconcile explicit damage disclosures with report events, repair records and an independent inspection; no-event records cannot prove no damage.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "B4": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P07-live",
+            "P07-history"
+          ],
+          "reason": "Owner-count assertions may match a report estimate, but prior-use disclosures and full rule requirements remain incomplete. Lease history is noted where available; no-owner flag is not a multi-owner finding.",
+          "next_action": "Clarify owner-count methodology and prior lease/rental/commercial use; record exact material claims before awarding this combined check.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "C1": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P07-live",
+            "P07-history"
+          ],
+          "reason": "Report readings rise from 1 (2023-10-24), 50 (2023-11-13), 4,107 (2024-02-29), 8,939 (2024-06-17), 17,115 (2025-05-12) to 23,827 (2026-04-06). Current ad says 32,406; a later, higher ad reading does not indicate rollback, but the seven-month gap lacks current corroboration. Report estimates one personal-lease owner.",
+          "next_action": "Obtain sufficiently informative dated mileage evidence; normalize units and reconcile timing or instrument changes.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "C2": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P07-live",
+            "P07-visual"
+          ],
+          "reason": "No readable current vehicle-linked odometer image available.",
+          "next_action": "Obtain dated VIN-linked odometer photograph and compare with current listing.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "C3": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P07-live",
+            "P07-visual"
+          ],
+          "reason": "Core decoder identity has been credited only to A1. Full trim/options claims are not independently verified; visible features cover only a subset.",
+          "next_action": "Compare material trim/options claims against VIN-specific build sheet/window sticker and actual equipment.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "C4": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P07-snapshot",
+            "P07-live"
+          ],
+          "reason": "Snapshot and live seller source were compared, but they are not independent origins. Current availability and multi-source claim completeness are not verified.",
+          "next_action": "Compare appropriately dated origins, separate syndicated copies, and independently confirm availability.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "D1": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P07-live",
+            "P07-visual"
+          ],
+          "reason": "No independent current mechanical/structural/flood inspection obtained. Photos and history reports cannot establish absence of defects.",
+          "next_action": "Obtain independent pre-purchase inspection and diagnostics, with scope and date recorded.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "D2": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P07-live",
+            "P07-history"
+          ],
+          "reason": "No direct dated maintenance invoices substantiating specific claims were inspected. Commercial service entries are informative but not a complete maintenance record.",
+          "next_action": "Obtain dated VIN-linked invoices and compare each specific maintenance claim; do not treat a generic well-maintained assertion as verified.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "D3": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P07-live"
+          ],
+          "reason": "Official NHTSA bulk VIN form submitted, but no completed result was captured before browser-session interruption. Commercial recall summaries are not substituted for current official VIN checks.",
+          "next_action": "Repeat current official VIN-specific recall lookup; save actual result and exclusions. Confirm completion evidence for any claimed repairs.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "D4": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P07-live"
+          ],
+          "reason": "Battery or certification requirements apply where claimed; scope remains unverified. Ordinary combustion cases retained under fixed pilot profile pending applicability review.",
+          "next_action": "Current VIN-linked dated odometer photo and missing exterior views.; Itemized buyer order.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "E1": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P07-visual",
+            "P07-live"
+          ],
+          "reason": "Images visually fit the advertised vehicle type, but no authenticated full-vehicle VIN/dated image chain establishes attribution.",
+          "next_action": "Obtain VIN-linked current full-vehicle photos and inspect any copied/mixed-vehicle concern.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "E2": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P07-visual"
+          ],
+          "reason": "Four images reviewed: two exterior angles, front cabin and rear seats. No odometer, VIN label, engine bay, underbody or full exterior coverage.",
+          "next_action": "Obtain missing views listed in visual review. Required view set was not predeclared in v0.1; do not create a threshold after seeing scores.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "E3": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P07-visual",
+            "P07-live"
+          ],
+          "reason": "Visible color/body/cabin broadly fit description, but full material-claim comparison and attribution limits remain. Mileage discrepancies assigned only to C2.",
+          "next_action": "Verify relevant visible details against exact claims; avoid inferring structural/mechanical health from appearance.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "F1": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P07-live",
+            "P07-snapshot"
+          ],
+          "reason": "$25,291 price and $699 handling sum to snapshot $25,990; full written purchase terms not obtained.",
+          "next_action": "Obtain written itemized cash price, mandatory charges, exclusions and any financing/trade/rebate conditions.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "F2": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P07-live"
+          ],
+          "reason": "No seller interaction conducted; a test-drive or report link is not demonstrated cooperation.",
+          "next_action": "If authorized later, request records and independent-inspection access; record actual responses.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "F3": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P07-live"
+          ],
+          "reason": "No proposed payee, escrow, deposit or title-transfer process inspected.",
+          "next_action": "Before payment, independently verify legal payee, transfer authority and proposed payment/escrow process.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        }
+      },
+      "alerts": [],
+      "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00",
+      "current_claims": [
+        "Black HR-V Sport AWD, 2.0L engine, heated seats and adaptive cruise advertised.",
+        "Generic descriptions of reliability/performance do not establish present condition."
+      ],
+      "visual_review": "Four images reviewed: two exterior angles, front cabin and rear seats. No odometer, VIN label, engine bay, underbody or full exterior coverage.",
+      "history_review": "Report readings rise from 1 (2023-10-24), 50 (2023-11-13), 4,107 (2024-02-29), 8,939 (2024-06-17), 17,115 (2025-05-12) to 23,827 (2026-04-06). Current ad says 32,406; a later, higher ad reading does not indicate rollback, but the seven-month gap lacks current corroboration. Report estimates one personal-lease owner.",
+      "pricing_review": "$25,291 price and $699 handling sum to snapshot $25,990; full written purchase terms not obtained.",
+      "documents_needed": [
+        "Current VIN-linked dated odometer photo and missing exterior views.",
+        "Itemized buyer order."
+      ],
+      "frozen_snapshot_summary": {
+        "price": 25990,
+        "miles": 32406,
+        "heading": "Pre-Owned 2024 Honda HR-V Sport",
+        "carfax_1_owner": false,
+        "carfax_clean_title": false,
+        "ref_miles": 32406,
+        "ref_miles_dt": 1794981393,
+        "last_seen_at_date": "2026-11-22T06:18:48.000Z"
+      },
+      "current_access": {
+        "accessed_at_utc": "2026-11-24T03:35:56.171Z",
+        "local_date_denver": "2026-11-23T20:35:56.171000-07:00",
+        "url": "https://www.fisherhonda.com/inventory/used-2024-honda-hr-v-sport-awd-4d-sport-utility-3czrz2h51rm731100/",
+        "status": "Vehicle-specific page rendered; listing existence is not confirmed availability"
+      },
+      "data_quality_notes": [
+        {
+          "field": "provider.build.made_in",
+          "provider_value": "USA",
+          "official_plant_country": "MEXICO",
+          "interpretation": "Provider country field disagrees with official plant country; semantics/provenance need review. No matching seller country claim found; not a seller-deception finding.",
+          "primary_rule": "A1",
+          "scored_as_contradiction": false
+        }
+      ],
+      "applicability": {
+        "profile": "fixed-all-22-development",
+        "excluded_checks": [],
+        "decision": "No weights changed. D4 may be inapplicable to ordinary unmodified non-certified combustion cases, but full claims/applicability protocol is not settled; no missing check reclassified N/A."
+      },
+      "time_log": {
+        "retrieval_minutes_recorded": 0.055,
+        "active_review_minutes": null,
+        "reason": "Review and image comparison were interleaved across cases; no reliable active-time timer was used. Retrieval time is not screening-study time.",
+        "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+      },
+      "unavailable_sources": [
+        "Current title/approved NMVTIS report not obtained; no purchase.",
+        "Direct NICB query not completed; public limits and full applicability require separate lookup.",
+        "Current official VIN recall result not captured.",
+        "Inspection, title authority and seller-interaction/payment evidence unavailable."
+      ]
+    },
+    {
+      "case_id": "P08",
+      "selection_reason": "Additional seller and vehicle type",
+      "source_listing_index_zero_based": 44,
+      "vin": "19UDE4G71PA003492",
+      "provider_listing_id": "19UDE4G71PA003492-c947dc1e-aeae",
+      "heading": "Pre-Owned 2023 Acura Integra A-Spec Tech Package 4D Hatchback",
+      "listing_url": "https://www.fisheracura.com/inventory/used-2023-acura-integra-a-spec-tech-package-fwd-4d-hatchback-19ude4g71pa003492/",
+      "dealer": "Fisher Acura",
+      "photo_url_count": 25,
+      "evidence": [
+        {
+          "id": "P08-snapshot",
+          "kind": "provider_snapshot",
+          "captured_at_utc": "2026-11-24T03:04:55.560262+00:00",
+          "source_path": "/Users/YOUR_USERNAME/Documents/Codex/FirstPass/search_exports/search_20261124T030455638068Z_4e7ea727eca14874b64d99b427930cdc.json",
+          "listing_index": 44,
+          "independent": false
+        },
+        {
+          "id": "P08-live",
+          "kind": "seller_listing",
+          "captured_at_utc": "2026-11-24T03:36:03.046Z",
+          "url": "https://www.fisheracura.com/inventory/used-2023-acura-integra-a-spec-tech-package-fwd-4d-hatchback-19ude4g71pa003492/",
+          "local_file": "evidence/P08_browser.json",
+          "independent": false
+        },
+        {
+          "id": "P08-vpic",
+          "kind": "official_vin_decode",
+          "captured_at_utc": "2026-11-24T03:34:25.860947+00:00",
+          "url": "https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVinValues/19UDE4G71PA003492?format=json&modelyear=2023",
+          "local_file": "evidence/P08_vpic.json",
+          "independent": true
+        },
+        {
+          "id": "P08-visual",
+          "kind": "analyst_photo_review",
+          "captured_at_utc": "2026-11-24T06:42:27.343696+00:00",
+          "local_file": "evidence/P08_contact_sheet.jpg",
+          "independent": false,
+          "scope": "25 images reviewed: gray hatchback, cabin/cargo, manual shifter, roof, odometer and VIN label. Image 16 reads 34,620 miles; image 25 VIN matches listing. No underbody or service invoices."
+        },
+        {
+          "id": "P08-license",
+          "kind": "official_dealer_license",
+          "captured_at_utc": "2026-11-24T03:40:15.969Z",
+          "url": "https://codor.mylicense.com/AID_Verification/Search.aspx?facility=Y",
+          "local_file": "evidence/license_details.json",
+          "independent": true,
+          "scope": "DBA, active license and address matched; no calls made; registry and marketing phone numbers can differ."
+        }
+      ],
+      "assessment_status": "First desk-review pass completed; unresolved evidence remains unknown",
+      "reviewer": "Codex assisted desk review; requires independent human review",
+      "checks": {
+        "A1": {
+          "state": "supported",
+          "evidence_ids": [
+            "P08-vpic",
+            "P08-live"
+          ],
+          "reason": "NHTSA clean VIN decode (error 0); year 2023, make ACURA, model Integra and core powertrain compatible. This validates a claimed VIN/specification combination, not physical VIN authenticity, title or options.",
+          "next_action": "Compare physical dashboard/door VIN and ownership documents before purchase.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00",
+          "primary_event_ids": [
+            "P08-core-identity"
+          ]
+        },
+        "A2": {
+          "state": "supported",
+          "evidence_ids": [
+            "P08-license",
+            "P08-live"
+          ],
+          "reason": "Official active dealer DBA and listed location match. Independent registry contact recorded; no phone call or confirmation of this website operator was performed. Scope is business identity, not transaction authority.",
+          "next_action": "Use the registry contact to independently confirm the specific listing before a transaction.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00",
+          "primary_event_ids": [
+            "P08-business-registry-match"
+          ]
+        },
+        "A3": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P08-live"
+          ],
+          "reason": "No current vehicle title/consignment/authorization chain inspected. Historical dealer-title entries do not establish present authority.",
+          "next_action": "Securely review current title chain and dealer transfer/consignment authorization; do not collect unnecessary personal identifiers.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "A4": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P08-live",
+            "P08-visual"
+          ],
+          "reason": "Dealer-branded photos and a live page do not establish current possession or actual stock availability.",
+          "next_action": "Obtain current vehicle-specific VIN-linked location evidence or inspect in person.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "B1": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P08-live"
+          ],
+          "reason": "No current title or approved-provider NMVTIS report obtained. CARFAX observations, where available, are source-limited; explicit current title/brand disclosure still needed.",
+          "next_action": "Obtain explicit title/brand disclosure and a relevant current title/brand record; use an existing free report if supplied, no automatic purchase.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "B2": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P08-live"
+          ],
+          "reason": "No direct NICB theft/salvage lookup or comprehensive applicable total-loss disclosure comparison completed. Provider clean-title booleans are not sufficient.",
+          "next_action": "Check applicable free insurer records within public usage limits and obtain seller disclosure; record query scope and date. A clean lookup is not a guarantee.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "B3": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P08-live"
+          ],
+          "reason": "Free report stopped at verification screen; no dated mileage or maintenance history obtained.",
+          "next_action": "Reconcile explicit damage disclosures with report events, repair records and an independent inspection; no-event records cannot prove no damage.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "B4": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P08-live"
+          ],
+          "reason": "Owner-count assertions may match a report estimate, but prior-use disclosures and full rule requirements remain incomplete. Lease history is noted where available; no-owner flag is not a multi-owner finding.",
+          "next_action": "Clarify owner-count methodology and prior lease/rental/commercial use; record exact material claims before awarding this combined check.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "C1": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P08-live"
+          ],
+          "reason": "Free report stopped at verification screen; no dated mileage or maintenance history obtained.",
+          "next_action": "Obtain sufficiently informative dated mileage evidence; normalize units and reconcile timing or instrument changes.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "C2": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P08-live",
+            "P08-visual"
+          ],
+          "reason": "Ad/snapshot: 34,618 miles; photo 16: 34,620 miles; difference +2. Photo date/vehicle capture chain not authenticated. Small increases may reflect ordinary use or stale text; no rollback established.",
+          "next_action": "Obtain dated VIN-linked current odometer photo and reconcile publication times. No tolerance was predeclared, so do not invent one now.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "C3": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P08-live",
+            "P08-visual"
+          ],
+          "reason": "Core decoder identity has been credited only to A1. Full trim/options claims are not independently verified; visible features cover only a subset.",
+          "next_action": "Compare material trim/options claims against VIN-specific build sheet/window sticker and actual equipment.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "C4": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P08-snapshot",
+            "P08-live"
+          ],
+          "reason": "Snapshot and live seller source were compared, but they are not independent origins. Current availability and multi-source claim completeness are not verified.",
+          "next_action": "Compare appropriately dated origins, separate syndicated copies, and independently confirm availability.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "D1": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P08-live",
+            "P08-visual"
+          ],
+          "reason": "No independent current mechanical/structural/flood inspection obtained. Photos and history reports cannot establish absence of defects.",
+          "next_action": "Obtain independent pre-purchase inspection and diagnostics, with scope and date recorded.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "D2": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P08-live"
+          ],
+          "reason": "No direct dated maintenance invoices substantiating specific claims were inspected. Commercial service entries are informative but not a complete maintenance record.",
+          "next_action": "Obtain dated VIN-linked invoices and compare each specific maintenance claim; do not treat a generic well-maintained assertion as verified.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "D3": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P08-live"
+          ],
+          "reason": "Official NHTSA bulk VIN form submitted, but no completed result was captured before browser-session interruption. Commercial recall summaries are not substituted for current official VIN checks.",
+          "next_action": "Repeat current official VIN-specific recall lookup; save actual result and exclusions. Confirm completion evidence for any claimed repairs.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "D4": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P08-live"
+          ],
+          "reason": "Battery or certification requirements apply where claimed; scope remains unverified. Ordinary combustion cases retained under fixed pilot profile pending applicability review.",
+          "next_action": "Dated VIN-linked service records supporting maintenance assertion.; VIN build sheet for exact seating material/options.; Itemized price, handling/destination and accessory charges.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "E1": {
+          "state": "supported",
+          "evidence_ids": [
+            "P08-visual",
+            "P08-live"
+          ],
+          "reason": "Readable VIN label in reviewed dealer-hosted image matches listing VIN; exterior and cabin sequence visually coherent. This is listing-media attribution, not proof of possession or original authorship.",
+          "next_action": "Confirm physical VIN and current images at inspection; reverse-image provenance not established.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00",
+          "primary_event_ids": [
+            "P08-photo-vin-attribution"
+          ]
+        },
+        "E2": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P08-visual"
+          ],
+          "reason": "25 images reviewed: gray hatchback, cabin/cargo, manual shifter, roof, odometer and VIN label. Image 16 reads 34,620 miles; image 25 VIN matches listing. No underbody or service invoices.",
+          "next_action": "Obtain missing views listed in visual review. Required view set was not predeclared in v0.1; do not create a threshold after seeing scores.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "E3": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P08-visual",
+            "P08-live"
+          ],
+          "reason": "Visible color/body/cabin broadly fit description, but full material-claim comparison and attribution limits remain. Mileage discrepancies assigned only to C2.",
+          "next_action": "Verify relevant visible details against exact claims; avoid inferring structural/mechanical health from appearance.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "F1": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P08-live",
+            "P08-snapshot"
+          ],
+          "reason": "$28,293 and $699 handling displayed, summing to snapshot $28,992. Footer says prices include destination/handling, lists other model-level destination figures, and excludes installed accessories. A precise itemized cash quote is needed to reconcile applicability.",
+          "next_action": "Obtain written itemized cash price, mandatory charges, exclusions and any financing/trade/rebate conditions.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "F2": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P08-live"
+          ],
+          "reason": "No seller interaction conducted; a test-drive or report link is not demonstrated cooperation.",
+          "next_action": "If authorized later, request records and independent-inspection access; record actual responses.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "F3": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P08-live"
+          ],
+          "reason": "No proposed payee, escrow, deposit or title-transfer process inspected.",
+          "next_action": "Before payment, independently verify legal payee, transfer authority and proposed payment/escrow process.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        }
+      },
+      "alerts": [],
+      "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00",
+      "current_claims": [
+        "Gray six-speed manual Integra with A-Spec Tech package, suede/leather-related seating descriptions and extensive technology features advertised.",
+        "Dealer describes the vehicle as well maintained without supplying specific dated maintenance records."
+      ],
+      "visual_review": "25 images reviewed: gray hatchback, cabin/cargo, manual shifter, roof, odometer and VIN label. Image 16 reads 34,620 miles; image 25 VIN matches listing. No underbody or service invoices.",
+      "history_review": "Free report stopped at verification screen; no dated mileage or maintenance history obtained.",
+      "pricing_review": "$28,293 and $699 handling displayed, summing to snapshot $28,992. Footer says prices include destination/handling, lists other model-level destination figures, and excludes installed accessories. A precise itemized cash quote is needed to reconcile applicability.",
+      "documents_needed": [
+        "Dated VIN-linked service records supporting maintenance assertion.",
+        "VIN build sheet for exact seating material/options.",
+        "Itemized price, handling/destination and accessory charges."
+      ],
+      "frozen_snapshot_summary": {
+        "price": 28992,
+        "miles": 34618,
+        "heading": "Pre-Owned 2023 Acura Integra A-Spec Tech Package 4D Hatchback",
+        "carfax_1_owner": false,
+        "carfax_clean_title": false,
+        "ref_miles": 34618,
+        "ref_miles_dt": 1794550641,
+        "last_seen_at_date": "2026-11-22T05:51:47.000Z"
+      },
+      "current_access": {
+        "accessed_at_utc": "2026-11-24T03:36:03.046Z",
+        "local_date_denver": "2026-11-23T20:36:03.046000-07:00",
+        "url": "https://www.fisheracura.com/inventory/used-2023-acura-integra-a-spec-tech-package-fwd-4d-hatchback-19ude4g71pa003492/",
+        "status": "Vehicle-specific page rendered; listing existence is not confirmed availability"
+      },
+      "data_quality_notes": [],
+      "applicability": {
+        "profile": "fixed-all-22-development",
+        "excluded_checks": [],
+        "decision": "No weights changed. D4 may be inapplicable to ordinary unmodified non-certified combustion cases, but full claims/applicability protocol is not settled; no missing check reclassified N/A."
+      },
+      "time_log": {
+        "retrieval_minutes_recorded": 0.119,
+        "active_review_minutes": null,
+        "reason": "Review and image comparison were interleaved across cases; no reliable active-time timer was used. Retrieval time is not screening-study time.",
+        "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+      },
+      "unavailable_sources": [
+        "Current title/approved NMVTIS report not obtained; no purchase.",
+        "Direct NICB query not completed; public limits and full applicability require separate lookup.",
+        "Current official VIN recall result not captured.",
+        "Inspection, title authority and seller-interaction/payment evidence unavailable.",
+        "Dealer-linked history report stopped at verification screen; challenge not bypassed."
+      ]
+    },
+    {
+      "case_id": "P09",
+      "selection_reason": "Additional seller; equipment claims",
+      "source_listing_index_zero_based": 45,
+      "vin": "1C4RJKBG4P8816697",
+      "provider_listing_id": "1C4RJKBG4P8816697-ddd6b024-a6fb",
+      "heading": "Pre-Owned 2023 Jeep Grand Cherokee L Limited With Navigation & 4WD",
+      "listing_url": "https://www.fisherauto.com/inventory/2023-jeep-grand-cherokee-l-limited-4wd-4d-sport-utility-1c4rjkbg4p8816697/",
+      "dealer": "Fisher Auto Group Dealership",
+      "photo_url_count": 38,
+      "evidence": [
+        {
+          "id": "P09-snapshot",
+          "kind": "provider_snapshot",
+          "captured_at_utc": "2026-11-24T03:04:55.560262+00:00",
+          "source_path": "/Users/YOUR_USERNAME/Documents/Codex/FirstPass/search_exports/search_20261124T030455638068Z_4e7ea727eca14874b64d99b427930cdc.json",
+          "listing_index": 45,
+          "independent": false
+        },
+        {
+          "id": "P09-live",
+          "kind": "seller_listing",
+          "captured_at_utc": "2026-11-24T03:36:13.178Z",
+          "url": "https://www.fisherauto.com/inventory/2023-jeep-grand-cherokee-l-limited-4wd-4d-sport-utility-1c4rjkbg4p8816697/",
+          "local_file": "evidence/P09_browser.json",
+          "independent": false
+        },
+        {
+          "id": "P09-vpic",
+          "kind": "official_vin_decode",
+          "captured_at_utc": "2026-11-24T03:34:26.210388+00:00",
+          "url": "https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVinValues/1C4RJKBG4P8816697?format=json&modelyear=2023",
+          "local_file": "evidence/P09_vpic.json",
+          "independent": true
+        },
+        {
+          "id": "P09-visual",
+          "kind": "analyst_photo_review",
+          "captured_at_utc": "2026-11-24T06:42:27.343696+00:00",
+          "local_file": "evidence/P09_contact_sheet.jpg",
+          "independent": false,
+          "scope": "38 images reviewed: exterior, engine bay, cabin/three rows/cargo, navigation, rear camera, odometer and VIN label. Image 25 reads 25,272 mi; image 38 VIN matches listing. No underbody/structural inspection or repair close-ups."
+        }
+      ],
+      "assessment_status": "First desk-review pass completed; unresolved evidence remains unknown",
+      "reviewer": "Codex assisted desk review; requires independent human review",
+      "checks": {
+        "A1": {
+          "state": "supported",
+          "evidence_ids": [
+            "P09-vpic",
+            "P09-live"
+          ],
+          "reason": "NHTSA clean VIN decode (error 0); year 2023, make JEEP, model Grand Cherokee L and core powertrain compatible. This validates a claimed VIN/specification combination, not physical VIN authenticity, title or options.",
+          "next_action": "Compare physical dashboard/door VIN and ownership documents before purchase.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00",
+          "primary_event_ids": [
+            "P09-core-identity"
+          ]
+        },
+        "A2": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P09-live"
+          ],
+          "reason": "Fisher group label shares location with licensed Fisher Honda and Acura, but exact contracting legal seller was not established.",
+          "next_action": "Obtain buyer order identifying licensed legal seller; independently confirm through registry contact.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "A3": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P09-live"
+          ],
+          "reason": "No current vehicle title/consignment/authorization chain inspected. Historical dealer-title entries do not establish present authority.",
+          "next_action": "Securely review current title chain and dealer transfer/consignment authorization; do not collect unnecessary personal identifiers.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "A4": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P09-live",
+            "P09-visual"
+          ],
+          "reason": "Dealer-branded photos and a live page do not establish current possession or actual stock availability.",
+          "next_action": "Obtain current vehicle-specific VIN-linked location evidence or inspect in person.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "B1": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P09-live"
+          ],
+          "reason": "No current title or approved-provider NMVTIS report obtained. CARFAX observations, where available, are source-limited; explicit current title/brand disclosure still needed.",
+          "next_action": "Obtain explicit title/brand disclosure and a relevant current title/brand record; use an existing free report if supplied, no automatic purchase.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "B2": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P09-live"
+          ],
+          "reason": "No direct NICB theft/salvage lookup or comprehensive applicable total-loss disclosure comparison completed. Provider clean-title booleans are not sufficient.",
+          "next_action": "Check applicable free insurer records within public usage limits and obtain seller disclosure; record query scope and date. A clean lookup is not a guarantee.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "B3": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P09-live"
+          ],
+          "reason": "Free report stopped at verification screen. No dated mileage/maintenance timeline obtained.",
+          "next_action": "Reconcile explicit damage disclosures with report events, repair records and an independent inspection; no-event records cannot prove no damage.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "B4": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P09-live"
+          ],
+          "reason": "Owner-count assertions may match a report estimate, but prior-use disclosures and full rule requirements remain incomplete. Lease history is noted where available; no-owner flag is not a multi-owner finding.",
+          "next_action": "Clarify owner-count methodology and prior lease/rental/commercial use; record exact material claims before awarding this combined check.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "C1": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P09-live"
+          ],
+          "reason": "Free report stopped at verification screen. No dated mileage/maintenance timeline obtained.",
+          "next_action": "Obtain sufficiently informative dated mileage evidence; normalize units and reconcile timing or instrument changes.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "C2": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P09-live",
+            "P09-visual"
+          ],
+          "reason": "Ad/snapshot: 25,267 miles; photo 25: 25,272 miles; difference +5. Photo date/vehicle capture chain not authenticated. Small increases may reflect ordinary use or stale text; no rollback established.",
+          "next_action": "Obtain dated VIN-linked current odometer photo and reconcile publication times. No tolerance was predeclared, so do not invent one now.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "C3": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P09-live",
+            "P09-visual"
+          ],
+          "reason": "Core decoder identity has been credited only to A1. Full trim/options claims are not independently verified; visible features cover only a subset.",
+          "next_action": "Compare material trim/options claims against VIN-specific build sheet/window sticker and actual equipment.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "C4": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P09-snapshot",
+            "P09-live"
+          ],
+          "reason": "Snapshot and live seller source were compared, but they are not independent origins. Current availability and multi-source claim completeness are not verified.",
+          "next_action": "Compare appropriately dated origins, separate syndicated copies, and independently confirm availability.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "D1": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P09-live",
+            "P09-visual"
+          ],
+          "reason": "No independent current mechanical/structural/flood inspection obtained. Photos and history reports cannot establish absence of defects.",
+          "next_action": "Obtain independent pre-purchase inspection and diagnostics, with scope and date recorded.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "D2": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P09-live"
+          ],
+          "reason": "No direct dated maintenance invoices substantiating specific claims were inspected. Commercial service entries are informative but not a complete maintenance record.",
+          "next_action": "Obtain dated VIN-linked invoices and compare each specific maintenance claim; do not treat a generic well-maintained assertion as verified.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "D3": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P09-live"
+          ],
+          "reason": "Official NHTSA bulk VIN form submitted, but no completed result was captured before browser-session interruption. Commercial recall summaries are not substituted for current official VIN checks.",
+          "next_action": "Repeat current official VIN-specific recall lookup; save actual result and exclusions. Confirm completion evidence for any claimed repairs.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "D4": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P09-live"
+          ],
+          "reason": "Battery or certification requirements apply where claimed; scope remains unverified. Ordinary combustion cases retained under fixed pilot profile pending applicability review.",
+          "next_action": "Dated VIN-linked service records.; Buyer order identifying the actual licensed Fisher legal seller and all charges.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "E1": {
+          "state": "supported",
+          "evidence_ids": [
+            "P09-visual",
+            "P09-live"
+          ],
+          "reason": "Readable VIN label in reviewed dealer-hosted image matches listing VIN; exterior and cabin sequence visually coherent. This is listing-media attribution, not proof of possession or original authorship.",
+          "next_action": "Confirm physical VIN and current images at inspection; reverse-image provenance not established.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00",
+          "primary_event_ids": [
+            "P09-photo-vin-attribution"
+          ]
+        },
+        "E2": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P09-visual"
+          ],
+          "reason": "38 images reviewed: exterior, engine bay, cabin/three rows/cargo, navigation, rear camera, odometer and VIN label. Image 25 reads 25,272 mi; image 38 VIN matches listing. No underbody/structural inspection or repair close-ups.",
+          "next_action": "Obtain missing views listed in visual review. Required view set was not predeclared in v0.1; do not create a threshold after seeing scores.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "E3": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P09-visual",
+            "P09-live"
+          ],
+          "reason": "Visible color/body/cabin broadly fit description, but full material-claim comparison and attribution limits remain. Mileage discrepancies assigned only to C2.",
+          "next_action": "Verify relevant visible details against exact claims; avoid inferring structural/mechanical health from appearance.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "F1": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P09-live",
+            "P09-snapshot"
+          ],
+          "reason": "$32,291 price + $699 displayed handling sums to snapshot $32,990. Itemized terms required. Group-level seller label is not a unique licensed legal selling entity.",
+          "next_action": "Obtain written itemized cash price, mandatory charges, exclusions and any financing/trade/rebate conditions.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "F2": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P09-live"
+          ],
+          "reason": "No seller interaction conducted; a test-drive or report link is not demonstrated cooperation.",
+          "next_action": "If authorized later, request records and independent-inspection access; record actual responses.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "F3": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P09-live"
+          ],
+          "reason": "No proposed payee, escrow, deposit or title-transfer process inspected.",
+          "next_action": "Before payment, independently verify legal payee, transfer authority and proposed payment/escrow process.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        }
+      },
+      "alerts": [],
+      "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00",
+      "current_claims": [
+        "Gray 4WD Jeep, three rows, towing equipment and navigation advertised.",
+        "Well-maintained condition and future reliability are described without specific service documents."
+      ],
+      "visual_review": "38 images reviewed: exterior, engine bay, cabin/three rows/cargo, navigation, rear camera, odometer and VIN label. Image 25 reads 25,272 mi; image 38 VIN matches listing. No underbody/structural inspection or repair close-ups.",
+      "history_review": "Free report stopped at verification screen. No dated mileage/maintenance timeline obtained.",
+      "pricing_review": "$32,291 price + $699 displayed handling sums to snapshot $32,990. Itemized terms required. Group-level seller label is not a unique licensed legal selling entity.",
+      "documents_needed": [
+        "Dated VIN-linked service records.",
+        "Buyer order identifying the actual licensed Fisher legal seller and all charges."
+      ],
+      "frozen_snapshot_summary": {
+        "price": 32990,
+        "miles": 25267,
+        "heading": "Pre-Owned 2023 Jeep Grand Cherokee L Limited With Navigation & 4WD",
+        "carfax_1_owner": false,
+        "carfax_clean_title": false,
+        "ref_miles": 25267,
+        "ref_miles_dt": 1794803187,
+        "last_seen_at_date": "2026-11-22T05:25:36.000Z"
+      },
+      "current_access": {
+        "accessed_at_utc": "2026-11-24T03:36:13.178Z",
+        "local_date_denver": "2026-11-23T20:36:13.178000-07:00",
+        "url": "https://www.fisherauto.com/inventory/2023-jeep-grand-cherokee-l-limited-4wd-4d-sport-utility-1c4rjkbg4p8816697/",
+        "status": "Vehicle-specific page rendered; listing existence is not confirmed availability"
+      },
+      "data_quality_notes": [],
+      "applicability": {
+        "profile": "fixed-all-22-development",
+        "excluded_checks": [],
+        "decision": "No weights changed. D4 may be inapplicable to ordinary unmodified non-certified combustion cases, but full claims/applicability protocol is not settled; no missing check reclassified N/A."
+      },
+      "time_log": {
+        "retrieval_minutes_recorded": 0.1,
+        "active_review_minutes": null,
+        "reason": "Review and image comparison were interleaved across cases; no reliable active-time timer was used. Retrieval time is not screening-study time.",
+        "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+      },
+      "unavailable_sources": [
+        "Current title/approved NMVTIS report not obtained; no purchase.",
+        "Direct NICB query not completed; public limits and full applicability require separate lookup.",
+        "Current official VIN recall result not captured.",
+        "Inspection, title authority and seller-interaction/payment evidence unavailable.",
+        "Dealer-linked history report stopped at verification screen; challenge not bypassed."
+      ]
+    },
+    {
+      "case_id": "P10",
+      "selection_reason": "Additional seller; compare ordinary baseline",
+      "source_listing_index_zero_based": 49,
+      "vin": "JF2SKAMC8RH468314",
+      "provider_listing_id": "JF2SKAMC8RH468314-0ce81f0b-f152",
+      "heading": "2024 Subaru Forester Touring",
+      "listing_url": "https://www.fowlerjeepboulder.com/inventory/used-2024-subaru-forester-touring-jf2skamc8rh468314-in-boulder-co",
+      "dealer": "Fowler Jeep Of Boulder",
+      "photo_url_count": 30,
+      "evidence": [
+        {
+          "id": "P10-snapshot",
+          "kind": "provider_snapshot",
+          "captured_at_utc": "2026-11-24T03:04:55.560262+00:00",
+          "source_path": "/Users/YOUR_USERNAME/Documents/Codex/FirstPass/search_exports/search_20261124T030455638068Z_4e7ea727eca14874b64d99b427930cdc.json",
+          "listing_index": 49,
+          "independent": false
+        },
+        {
+          "id": "P10-live",
+          "kind": "seller_listing",
+          "captured_at_utc": "2026-11-24T03:36:19.233Z",
+          "url": "https://www.fowlerjeepboulder.com/inventory/used-2024-subaru-forester-touring-jf2skamc8rh468314-in-boulder-co",
+          "local_file": "evidence/P10_browser.json",
+          "independent": false
+        },
+        {
+          "id": "P10-vpic",
+          "kind": "official_vin_decode",
+          "captured_at_utc": "2026-11-24T03:34:26.813496+00:00",
+          "url": "https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVinValues/JF2SKAMC8RH468314?format=json&modelyear=2024",
+          "local_file": "evidence/P10_vpic.json",
+          "independent": true
+        },
+        {
+          "id": "P10-visual",
+          "kind": "analyst_photo_review",
+          "captured_at_utc": "2026-11-24T06:42:27.343696+00:00",
+          "local_file": "evidence/P10_contact_sheet.jpg",
+          "independent": false,
+          "scope": "30 images reviewed: exterior, cabin/cargo, roof, engine, tires, odometer and Buyers Guide. Image 18 reads 18,271 mi, 116 above ad. Image 30 shows as-is/no dealer warranty checked. No readable VIN label or dated odometer linkage. Hero scenic background differs from lot views; editing is not proof of deception."
+        },
+        {
+          "id": "P10-license",
+          "kind": "official_dealer_license",
+          "captured_at_utc": "2026-11-24T03:40:00.513Z",
+          "url": "https://codor.mylicense.com/AID_Verification/Search.aspx?facility=Y",
+          "local_file": "evidence/license_details.json",
+          "independent": true,
+          "scope": "DBA, active license and address matched; no calls made; registry and marketing phone numbers can differ."
+        }
+      ],
+      "assessment_status": "First desk-review pass completed; unresolved evidence remains unknown",
+      "reviewer": "Codex assisted desk review; requires independent human review",
+      "checks": {
+        "A1": {
+          "state": "supported",
+          "evidence_ids": [
+            "P10-vpic",
+            "P10-live"
+          ],
+          "reason": "NHTSA clean VIN decode (error 0); year 2024, make SUBARU, model Forester and core powertrain compatible. This validates a claimed VIN/specification combination, not physical VIN authenticity, title or options.",
+          "next_action": "Compare physical dashboard/door VIN and ownership documents before purchase.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00",
+          "primary_event_ids": [
+            "P10-core-identity"
+          ]
+        },
+        "A2": {
+          "state": "supported",
+          "evidence_ids": [
+            "P10-license",
+            "P10-live"
+          ],
+          "reason": "Official active dealer DBA and listed location match. Independent registry contact recorded; no phone call or confirmation of this website operator was performed. Scope is business identity, not transaction authority.",
+          "next_action": "Use the registry contact to independently confirm the specific listing before a transaction.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00",
+          "primary_event_ids": [
+            "P10-business-registry-match"
+          ]
+        },
+        "A3": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P10-live"
+          ],
+          "reason": "No current vehicle title/consignment/authorization chain inspected. Historical dealer-title entries do not establish present authority.",
+          "next_action": "Securely review current title chain and dealer transfer/consignment authorization; do not collect unnecessary personal identifiers.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "A4": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P10-live",
+            "P10-visual"
+          ],
+          "reason": "Dealer-branded photos and a live page do not establish current possession or actual stock availability.",
+          "next_action": "Obtain current vehicle-specific VIN-linked location evidence or inspect in person.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "B1": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P10-live"
+          ],
+          "reason": "No current title or approved-provider NMVTIS report obtained. CARFAX observations, where available, are source-limited; explicit current title/brand disclosure still needed.",
+          "next_action": "Obtain explicit title/brand disclosure and a relevant current title/brand record; use an existing free report if supplied, no automatic purchase.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "B2": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P10-live"
+          ],
+          "reason": "No direct NICB theft/salvage lookup or comprehensive applicable total-loss disclosure comparison completed. Provider clean-title booleans are not sufficient.",
+          "next_action": "Check applicable free insurer records within public usage limits and obtain seller disclosure; record query scope and date. A clean lookup is not a guarantee.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "B3": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P10-live"
+          ],
+          "reason": "CARFAX link labeled $44.99; not opened or purchased. No vehicle history obtained.",
+          "next_action": "Reconcile explicit damage disclosures with report events, repair records and an independent inspection; no-event records cannot prove no damage.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "B4": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P10-live"
+          ],
+          "reason": "Owner-count assertions may match a report estimate, but prior-use disclosures and full rule requirements remain incomplete. Lease history is noted where available; no-owner flag is not a multi-owner finding.",
+          "next_action": "Clarify owner-count methodology and prior lease/rental/commercial use; record exact material claims before awarding this combined check.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "C1": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P10-live"
+          ],
+          "reason": "CARFAX link labeled $44.99; not opened or purchased. No vehicle history obtained.",
+          "next_action": "Obtain sufficiently informative dated mileage evidence; normalize units and reconcile timing or instrument changes.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "C2": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P10-live",
+            "P10-visual"
+          ],
+          "reason": "Ad/snapshot: 18,155 miles; photo 18: 18,271 miles; difference +116. Photo date/vehicle capture chain not authenticated. Small increases may reflect ordinary use or stale text; no rollback established.",
+          "next_action": "Obtain dated VIN-linked current odometer photo and reconcile publication times. No tolerance was predeclared, so do not invent one now.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "C3": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P10-live",
+            "P10-visual"
+          ],
+          "reason": "Core decoder identity has been credited only to A1. Full trim/options claims are not independently verified; visible features cover only a subset.",
+          "next_action": "Compare material trim/options claims against VIN-specific build sheet/window sticker and actual equipment.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "C4": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P10-snapshot",
+            "P10-live"
+          ],
+          "reason": "Snapshot and live seller source were compared, but they are not independent origins. Current availability and multi-source claim completeness are not verified.",
+          "next_action": "Compare appropriately dated origins, separate syndicated copies, and independently confirm availability.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "D1": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P10-live",
+            "P10-visual"
+          ],
+          "reason": "No independent current mechanical/structural/flood inspection obtained. Photos and history reports cannot establish absence of defects.",
+          "next_action": "Obtain independent pre-purchase inspection and diagnostics, with scope and date recorded.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "D2": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P10-live"
+          ],
+          "reason": "No direct dated maintenance invoices substantiating specific claims were inspected. Commercial service entries are informative but not a complete maintenance record.",
+          "next_action": "Obtain dated VIN-linked invoices and compare each specific maintenance claim; do not treat a generic well-maintained assertion as verified.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "D3": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P10-live"
+          ],
+          "reason": "Official NHTSA bulk VIN form submitted, but no completed result was captured before browser-session interruption. Commercial recall summaries are not substituted for current official VIN checks.",
+          "next_action": "Repeat current official VIN-specific recall lookup; save actual result and exclusions. Confirm completion evidence for any claimed repairs.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "D4": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P10-live"
+          ],
+          "reason": "Battery or certification requirements apply where claimed; scope remains unverified. Ordinary combustion cases retained under fixed pilot profile pending applicability review.",
+          "next_action": "Updated VIN-linked dated odometer evidence explaining 116-mile gap.; Dated service history and itemized cash total/discount conditions.; Legible complete Buyers Guide and warranty terms.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "E1": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P10-visual",
+            "P10-live"
+          ],
+          "reason": "Images visually fit the advertised vehicle type, but no authenticated full-vehicle VIN/dated image chain establishes attribution.",
+          "next_action": "Obtain VIN-linked current full-vehicle photos and inspect any copied/mixed-vehicle concern.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "E2": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P10-visual"
+          ],
+          "reason": "30 images reviewed: exterior, cabin/cargo, roof, engine, tires, odometer and Buyers Guide. Image 18 reads 18,271 mi, 116 above ad. Image 30 shows as-is/no dealer warranty checked. No readable VIN label or dated odometer linkage. Hero scenic background differs from lot views; editing is not proof of deception.",
+          "next_action": "Obtain missing views listed in visual review. Required view set was not predeclared in v0.1; do not create a threshold after seeing scores.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "E3": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P10-visual",
+            "P10-live"
+          ],
+          "reason": "Visible color/body/cabin broadly fit description, but full material-claim comparison and attribution limits remain. Mileage discrepancies assigned only to C2.",
+          "next_action": "Verify relevant visible details against exact claims; avoid inferring structural/mechanical health from appearance.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "F1": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P10-live",
+            "P10-snapshot"
+          ],
+          "reason": "Original $34,181 minus $4,293 discount plus $699 handling equals $30,587 net, matching snapshot. Full pricing-disclaimer conditions still require review/quote.",
+          "next_action": "Obtain written itemized cash price, mandatory charges, exclusions and any financing/trade/rebate conditions.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "F2": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P10-live"
+          ],
+          "reason": "No seller interaction conducted; a test-drive or report link is not demonstrated cooperation.",
+          "next_action": "If authorized later, request records and independent-inspection access; record actual responses.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        },
+        "F3": {
+          "state": "unknown",
+          "evidence_ids": [
+            "P10-live"
+          ],
+          "reason": "No proposed payee, escrow, deposit or title-transfer process inspected.",
+          "next_action": "Before payment, independently verify legal payee, transfer authority and proposed payment/escrow process.",
+          "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+        }
+      },
+      "alerts": [
+        {
+          "severity": "review",
+          "primary_rule": "C2",
+          "event_id": "P10-odometer-timing",
+          "reason": "Photo is 116 miles above ad; reconcile dates before any contradiction or rollback conclusion.",
+          "evidence_ids": [
+            "P10-live",
+            "P10-visual"
+          ]
+        }
+      ],
+      "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00",
+      "current_claims": [
+        "Blue AWD Touring, 18,155 advertised miles, leather, heated seats and panoramic roof listed.",
+        "Narrative characterizes the car as well maintained without specific service documentation."
+      ],
+      "visual_review": "30 images reviewed: exterior, cabin/cargo, roof, engine, tires, odometer and Buyers Guide. Image 18 reads 18,271 mi, 116 above ad. Image 30 shows as-is/no dealer warranty checked. No readable VIN label or dated odometer linkage. Hero scenic background differs from lot views; editing is not proof of deception.",
+      "history_review": "CARFAX link labeled $44.99; not opened or purchased. No vehicle history obtained.",
+      "pricing_review": "Original $34,181 minus $4,293 discount plus $699 handling equals $30,587 net, matching snapshot. Full pricing-disclaimer conditions still require review/quote.",
+      "documents_needed": [
+        "Updated VIN-linked dated odometer evidence explaining 116-mile gap.",
+        "Dated service history and itemized cash total/discount conditions.",
+        "Legible complete Buyers Guide and warranty terms."
+      ],
+      "frozen_snapshot_summary": {
+        "price": 30587,
+        "miles": 18155,
+        "heading": "2024 Subaru Forester Touring",
+        "carfax_1_owner": false,
+        "carfax_clean_title": false,
+        "ref_miles": 18155,
+        "ref_miles_dt": 1795070363,
+        "last_seen_at_date": "2026-11-22T06:00:25.000Z"
+      },
+      "current_access": {
+        "accessed_at_utc": "2026-11-24T03:36:19.233Z",
+        "local_date_denver": "2026-11-23T20:36:19.233000-07:00",
+        "url": "https://www.fowlerjeepboulder.com/inventory/used-2024-subaru-forester-touring-jf2skamc8rh468314-in-boulder-co",
+        "status": "Vehicle-specific page rendered; listing existence is not confirmed availability"
+      },
+      "data_quality_notes": [
+        {
+          "field": "provider.build.made_in",
+          "provider_value": "USA",
+          "official_plant_country": "JAPAN",
+          "interpretation": "Provider country field disagrees with official plant country; semantics/provenance need review. No matching seller country claim found; not a seller-deception finding.",
+          "primary_rule": "A1",
+          "scored_as_contradiction": false
+        }
+      ],
+      "applicability": {
+        "profile": "fixed-all-22-development",
+        "excluded_checks": [],
+        "decision": "No weights changed. D4 may be inapplicable to ordinary unmodified non-certified combustion cases, but full claims/applicability protocol is not settled; no missing check reclassified N/A."
+      },
+      "time_log": {
+        "retrieval_minutes_recorded": 0.105,
+        "active_review_minutes": null,
+        "reason": "Review and image comparison were interleaved across cases; no reliable active-time timer was used. Retrieval time is not screening-study time.",
+        "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00"
+      },
+      "unavailable_sources": [
+        "Current title/approved NMVTIS report not obtained; no purchase.",
+        "Direct NICB query not completed; public limits and full applicability require separate lookup.",
+        "Current official VIN recall result not captured.",
+        "Inspection, title authority and seller-interaction/payment evidence unavailable.",
+        "Not opened: listing labels report $44.99"
+      ]
+    }
+  ],
+  "assessment_revision": "desk-review-2026-11-23-r1",
+  "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00",
+  "rubric_changed": false,
+  "limitations": [
+    "One AI-assisted reviewer; no independent human agreement or ground truth.",
+    "Evidence availability differs across vehicles; scores are not validated rankings.",
+    "Live access on Nov23 Denver / Nov24 UTC; frozen snapshot remains separately preserved.",
+    "No paid reports, seller contact, Gemini or MarketCheck requests used in this review.",
+    "Active review minutes were not timed; do not use as user-study results."
+  ]
+}

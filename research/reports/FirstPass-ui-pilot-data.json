@@ -1,0 +1,606 @@
+{
+  "rubric_version": "0.1-development",
+  "definition": "The extent to which available evidence supports a listing’s identity, material claims, disclosures, and proposed transaction.",
+  "review_label": "AI-assisted desk-review pilot • Nov 23, 2026 • unvalidated weights",
+  "rules": [
+    {
+      "id": "A1",
+      "name": "VIN/specification identity",
+      "weight": 6,
+      "support_requirement": "Applicable VIN validation and compatible independently decoded core specifications; decoder limitations respected."
+    },
+    {
+      "id": "A2",
+      "name": "Seller identity",
+      "weight": 6,
+      "support_requirement": "Independently matched contact/business identity, including applicable license check for a dealer."
+    },
+    {
+      "id": "A3",
+      "name": "Authority to sell",
+      "weight": 5,
+      "support_requirement": "Title-owner or documented authorized dealer/agent relationship, evaluated through an appropriate secure verification process."
+    },
+    {
+      "id": "A4",
+      "name": "Possession/location",
+      "weight": 3,
+      "support_requirement": "Current vehicle-specific evidence that connects this seller to the car and stated location."
+    },
+    {
+      "id": "B1",
+      "name": "Title/brand disclosure",
+      "weight": 8,
+      "support_requirement": "Relevant independent title/brand record agrees with an explicit disclosure, including any adverse brand."
+    },
+    {
+      "id": "B2",
+      "name": "Theft/total-loss/salvage disclosure",
+      "weight": 6,
+      "support_requirement": "Applicable checked records agree with disclosure, with query scope and date recorded."
+    },
+    {
+      "id": "B3",
+      "name": "Accident/structural/repair claims",
+      "weight": 7,
+      "support_requirement": "Available relevant history and inspection/repair evidence support material claims; a record with no event is not enough to prove “never damaged.”"
+    },
+    {
+      "id": "B4",
+      "name": "Ownership/prior-use claims",
+      "weight": 4,
+      "support_requirement": "Evidence supports specific owner-count or prior-use claims and material disclosures."
+    },
+    {
+      "id": "C1",
+      "name": "Mileage timeline",
+      "weight": 8,
+      "support_requirement": "Current reading agrees with a sufficiently informative dated history after unit and timing reconciliation."
+    },
+    {
+      "id": "C2",
+      "name": "Current mileage agreement",
+      "weight": 5,
+      "support_requirement": "Structured field, description and a current odometer observation agree."
+    },
+    {
+      "id": "C3",
+      "name": "Equipment/specification claims",
+      "weight": 4,
+      "support_requirement": "Material trim/drivetrain/options claims agree with suitable evidence."
+    },
+    {
+      "id": "C4",
+      "name": "Cross-source/current-listing consistency",
+      "weight": 3,
+      "support_requirement": "Material current claims and availability agree across appropriately dated sources; duplicated origin identified."
+    },
+    {
+      "id": "D1",
+      "name": "Condition disclosure",
+      "weight": 5,
+      "support_requirement": "Relevant inspection/diagnostic evidence agrees with stated defects, repairs and present-condition claims."
+    },
+    {
+      "id": "D2",
+      "name": "Maintenance/repair claims",
+      "weight": 4,
+      "support_requirement": "Specific maintenance or repair claims have dated vehicle-linked supporting records."
+    },
+    {
+      "id": "D3",
+      "name": "Safety/recall disclosure",
+      "weight": 3,
+      "support_requirement": "Applicable current VIN-level checks and relevant repair evidence agree with safety-related claims."
+    },
+    {
+      "id": "D4",
+      "name": "Specialized condition claims",
+      "weight": 3,
+      "support_requirement": "Appropriate evidence supports EV battery, modification, certification or another applicable specialized claim."
+    },
+    {
+      "id": "E1",
+      "name": "Vehicle-specific media",
+      "weight": 4,
+      "support_requirement": "Media can be attributed to this vehicle and no unresolved mixed-vehicle or copied-identity discrepancy remains."
+    },
+    {
+      "id": "E2",
+      "name": "Relevant visual coverage",
+      "weight": 3,
+      "support_requirement": "A predeclared set of views covers the actual claims being assessed, including mileage and disclosed visible defects where relevant."
+    },
+    {
+      "id": "E3",
+      "name": "Media/description agreement",
+      "weight": 3,
+      "support_requirement": "Visible material details agree with the description; limitations of visual assessment recorded."
+    },
+    {
+      "id": "F1",
+      "name": "Price/terms transparency",
+      "weight": 4,
+      "support_requirement": "Written terms clarify actual purchase price, material conditions and required charges consistently with the advertisement."
+    },
+    {
+      "id": "F2",
+      "name": "Verification cooperation",
+      "weight": 3,
+      "support_requirement": "Observed response supports reasonable records/independent-inspection access or a credible documented alternative."
+    },
+    {
+      "id": "F3",
+      "name": "Transaction legitimacy",
+      "weight": 3,
+      "support_requirement": "Proposed payee, authority, payment/escrow and transfer process are independently verifiable and consistent."
+    }
+  ],
+  "cases": [
+    {
+      "case_id": "P01",
+      "vin": "WA1L2BFZ8PP065926",
+      "heading": "Pre-Owned 2023 Audi Q4 e-tron Premium Plus",
+      "listing_url": "https://www.flatironssubaru.com/inventory/used-2023-audi-q4-e-tron-premium-plus-quattro-4d-sport-utility-wa1l2bfz8pp065926/",
+      "snapshot_price": 28399,
+      "snapshot_mileage": 28600,
+      "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00",
+      "supported_ids": [
+        "A1",
+        "A2",
+        "C1",
+        "F1"
+      ],
+      "contradicted_ids": [],
+      "findings": {
+        "C2": "Ad/snapshot: 28,600 miles; photo 13: 28,606 miles; difference +6. Photo date/vehicle capture chain not authenticated. Small increases may reflect ordinary use or stale text; no rollback established.",
+        "B3": "Dated report readings rise from 8 (2023-08-23), 5,047 (2024-04-18), 8,148 (2024-08-16), 19,691 (2025-10-31) to 28,600 (2026-10-09). Report estimates one personal-lease owner; no damage or adverse title brand reported within its scope.",
+        "D4": "VIN-linked battery state-of-health/capacity diagnostic with test conditions; remaining battery warranty confirmation.",
+        "E2": "20 images reviewed: white Audi SUV; exterior, cabin, panoramic roof and cargo views. Image 13 reads 28,606 mi; displayed clock says 10/12/2026, which is not an independently authenticated capture date. No readable VIN label, underbody, battery test or damage close-ups.",
+        "F1": "$27,700 vehicle + $699 handling = $28,399 cash total; applicable tax/title/license excluded. Finance example shown separately."
+      },
+      "alerts": [],
+      "sources": [
+        {
+          "id": "P01-live",
+          "kind": "seller_listing",
+          "url": "https://www.flatironssubaru.com/inventory/used-2023-audi-q4-e-tron-premium-plus-quattro-4d-sport-utility-wa1l2bfz8pp065926/",
+          "captured_at_utc": "2026-11-24T03:35:19.482Z"
+        },
+        {
+          "id": "P01-vpic",
+          "kind": "official_vin_decode",
+          "url": "https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVinValues/WA1L2BFZ8PP065926?format=json&modelyear=2023",
+          "captured_at_utc": "2026-11-24T03:34:22.699788+00:00"
+        },
+        {
+          "id": "P01-history",
+          "kind": "third_party_history_report",
+          "url": "https://www.carfax.com/vehiclehistory/ar20/EgzdnJr1GzEqRT_JBmpHlHSb3r9vqf5v8v-Uvzy5Y_2ORDRqJMLiFzWXp-tQXJiFUe3xu5HzWqtVG-1YfZKDbbimAcqo-_qmkBw",
+          "captured_at_utc": "2026-11-24T03:37:10.143Z"
+        },
+        {
+          "id": "P01-license",
+          "kind": "official_dealer_license",
+          "url": "https://codor.mylicense.com/AID_Verification/Search.aspx?facility=Y",
+          "captured_at_utc": "2026-11-24T03:40:12.857Z"
+        }
+      ]
+    },
+    {
+      "case_id": "P02",
+      "vin": "4S4BTGLD4R3260366",
+      "heading": "Certified Pre-Owned 2024 Subaru Outback Onyx Edition XT",
+      "listing_url": "https://www.flatironssubaru.com/inventory/certified-used-2024-subaru-outback-onyx-edition-xt-awd-4d-sport-utility-4s4btgld4r3260366/",
+      "snapshot_price": 32111,
+      "snapshot_mileage": 28166,
+      "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00",
+      "supported_ids": [
+        "A1",
+        "A2",
+        "C1",
+        "F1"
+      ],
+      "contradicted_ids": [],
+      "findings": {
+        "C2": "Ad/snapshot: 28,166 miles; photo 13: 28,168 miles; difference +2. Photo date/vehicle capture chain not authenticated. Small increases may reflect ordinary use or stale text; no rollback established.",
+        "B3": "Report records front minor damage on 2024-12-26, without an adverse title brand reported. One personal-lease owner estimated. Readings increase from 1 (2024-03-12), 5 (2024-04-08), 5,925 (2024-09-26), 9,346 (2025-02-25), 15,861 (2025-09-29), 20,000 (2026-01-22), 25,032 (2026-07-01) to 28,166 (2026-10-19).",
+        "D4": "Front-damage repair invoice, photos and collision-specialist inspection.; VIN-specific Subaru CPO enrollment, signed 152-point checklist, original in-service date and warranty terms.",
+        "E2": "20 images reviewed: black Outback, exterior/cabin/roof/cargo. Image 13 reads 28,168 mi. No readable VIN label, underbody or repair-detail close-ups.",
+        "F1": "$31,412 vehicle + $699 handling = $32,111 cash total; applicable tax/title/license excluded."
+      },
+      "alerts": [
+        {
+          "severity": "review",
+          "primary_rule": "B3",
+          "reason": "Commercial report records front minor damage dated 2024-12-26; repair scope and adequacy remain unverified. No contrary no-damage claim identified."
+        }
+      ],
+      "sources": [
+        {
+          "id": "P02-live",
+          "kind": "seller_listing",
+          "url": "https://www.flatironssubaru.com/inventory/certified-used-2024-subaru-outback-onyx-edition-xt-awd-4d-sport-utility-4s4btgld4r3260366/",
+          "captured_at_utc": "2026-11-24T03:35:20.346Z"
+        },
+        {
+          "id": "P02-vpic",
+          "kind": "official_vin_decode",
+          "url": "https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVinValues/4S4BTGLD4R3260366?format=json&modelyear=2024",
+          "captured_at_utc": "2026-11-24T03:34:23.044627+00:00"
+        },
+        {
+          "id": "P02-history",
+          "kind": "third_party_history_report",
+          "url": "https://www.carfax.com/vehiclehistory/ar20/p2ySZerWgAJbMV3n9SJGyHsJXmBiwkKEKJWnQ9KKtwC4bbOGTecJtYb0Y_LnHyMzN-2Q66Ayf9JxEtjd5E9MKEYPTGpfLMga-VE",
+          "captured_at_utc": "2026-11-24T03:37:12.244Z"
+        },
+        {
+          "id": "P02-license",
+          "kind": "official_dealer_license",
+          "url": "https://codor.mylicense.com/AID_Verification/Search.aspx?facility=Y",
+          "captured_at_utc": "2026-11-24T03:40:12.857Z"
+        }
+      ]
+    },
+    {
+      "case_id": "P03",
+      "vin": "4S4BTGND4R3168770",
+      "heading": "Pre-Owned 2024 Subaru Outback Limited XT",
+      "listing_url": "https://www.flatironssubaru.com/inventory/used-2024-subaru-outback-limited-xt-awd-4d-sport-utility-4s4btgnd4r3168770/",
+      "snapshot_price": 30971,
+      "snapshot_mileage": 28896,
+      "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00",
+      "supported_ids": [
+        "A1",
+        "A2",
+        "C1",
+        "F1"
+      ],
+      "contradicted_ids": [],
+      "findings": {
+        "C2": "Ad/snapshot: 28,896 miles; photo 13: 28,901 miles; difference +5. Photo date/vehicle capture chain not authenticated. Small increases may reflect ordinary use or stale text; no rollback established.",
+        "B3": "Readings increase: 5 (2023-10-03), 19 (2023-12-11), 3,530 (2024-06-06), 8,231 (2024-08-19), 13,261 (2025-04-04), 28,893 (2026-10-26), 28,895 (2026-11-18), 28,896 (2026-11-19). Estimated one personal-lease owner; title update says dealer took title while in inventory (2026-11-17), which does not independently establish current transfer authority.",
+        "D4": "Current odometer photograph with reliable date and VIN linkage.",
+        "E2": "20 images reviewed: white Outback, cabin, roof and cargo. Image 13 reads 28,901 mi. No readable VIN label or underbody/repair-specific views.",
+        "F1": "$30,272 vehicle + $699 handling = $30,971 cash total; applicable tax/title/license excluded."
+      },
+      "alerts": [],
+      "sources": [
+        {
+          "id": "P03-live",
+          "kind": "seller_listing",
+          "url": "https://www.flatironssubaru.com/inventory/used-2024-subaru-outback-limited-xt-awd-4d-sport-utility-4s4btgnd4r3168770/",
+          "captured_at_utc": "2026-11-24T03:35:34.580Z"
+        },
+        {
+          "id": "P03-vpic",
+          "kind": "official_vin_decode",
+          "url": "https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVinValues/4S4BTGND4R3168770?format=json&modelyear=2024",
+          "captured_at_utc": "2026-11-24T03:34:23.477289+00:00"
+        },
+        {
+          "id": "P03-history",
+          "kind": "third_party_history_report",
+          "url": "https://www.carfax.com/vehiclehistory/ar20/CnIqG97jbgITOJquDafK7qMO25h6WSxEK4X9eIyAI6GTjp4aXSS6hvyTeNFaq7bgSneHRPVjOZ9jtxtgccNUEac9E_hlX2znYVU",
+          "captured_at_utc": "2026-11-24T03:37:13.943Z"
+        },
+        {
+          "id": "P03-license",
+          "kind": "official_dealer_license",
+          "url": "https://codor.mylicense.com/AID_Verification/Search.aspx?facility=Y",
+          "captured_at_utc": "2026-11-24T03:40:12.857Z"
+        }
+      ]
+    },
+    {
+      "case_id": "P04",
+      "vin": "4S4BTACC5R3201136",
+      "heading": "Pre-Owned 2024 Subaru Outback Premium",
+      "listing_url": "https://www.flatironssubaru.com/inventory/used-2024-subaru-outback-premium-awd-4d-sport-utility-4s4btacc5r3201136/",
+      "snapshot_price": 28717,
+      "snapshot_mileage": 29662,
+      "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00",
+      "supported_ids": [
+        "A1",
+        "A2",
+        "F1"
+      ],
+      "contradicted_ids": [],
+      "findings": {
+        "C2": "No readable current vehicle-linked odometer image available.",
+        "B3": "Linked report stopped at a verification screen; no title, ownership or dated mileage records obtained. False/true provider flags are not independent records.",
+        "D4": "Actual exterior, interior, VIN and odometer images.; VIN-specific CPO enrollment, signed 152-point checklist, in-service date and coverage terms.",
+        "E2": "The single photo URL is a malformed coming-soon placeholder and failed retrieval; no vehicle image could be inspected. All relevant actual vehicle views remain unavailable.",
+        "F1": "$28,018 vehicle + $699 handling = $28,717 cash total; applicable tax/title/license excluded."
+      },
+      "alerts": [
+        {
+          "severity": "review",
+          "primary_rule": "D4",
+          "reason": "Pre-owned heading and CPO-benefit description require VIN-specific certification clarification; actual photos unavailable."
+        }
+      ],
+      "sources": [
+        {
+          "id": "P04-live",
+          "kind": "seller_listing",
+          "url": "https://www.flatironssubaru.com/inventory/used-2024-subaru-outback-premium-awd-4d-sport-utility-4s4btacc5r3201136/",
+          "captured_at_utc": "2026-11-24T03:35:36.540Z"
+        },
+        {
+          "id": "P04-vpic",
+          "kind": "official_vin_decode",
+          "url": "https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVinValues/4S4BTACC5R3201136?format=json&modelyear=2024",
+          "captured_at_utc": "2026-11-24T03:34:23.840435+00:00"
+        },
+        {
+          "id": "P04-license",
+          "kind": "official_dealer_license",
+          "url": "https://codor.mylicense.com/AID_Verification/Search.aspx?facility=Y",
+          "captured_at_utc": "2026-11-24T03:40:12.857Z"
+        }
+      ]
+    },
+    {
+      "case_id": "P05",
+      "vin": "1FMCU0KZ2NUB48630",
+      "heading": "2022 Ford Escape SEL Plug-In Hybrid",
+      "listing_url": "https://www.boulderh.com/inventory/2022-ford-escape-sel-plug-in-hybrid/1147361",
+      "snapshot_price": 23988,
+      "snapshot_mileage": 16453,
+      "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00",
+      "supported_ids": [
+        "A1",
+        "A2"
+      ],
+      "contradicted_ids": [],
+      "findings": {
+        "C2": "Ad/snapshot: 16,453 miles; photo 8: 16,461.1 miles; difference +8.1. Photo date/vehicle capture chain not authenticated. Small increases may reflect ordinary use or stale text; no rollback established.",
+        "B3": "No direct report linked in the captured page; ownership and historic mileage claims remain uncorroborated.",
+        "D4": "Dated owner/mileage history report supplied free by seller, if available.; VIN-linked battery diagnostic and documented range-test conditions.; Written cash total, all mandatory fees and current exchange-program eligibility terms.",
+        "E2": "10 images reviewed: blue Ford SUV, cabin/cargo, panoramic roof, charging cable visible. Image 8 reads 16,461.1 mi and 11% charge. No readable VIN label, battery diagnostic or underbody. Charge percentage does not measure battery health.",
+        "F1": "$23,988 asking price displayed; exchange-program savings are described as conditional. No complete itemized fee/total purchase terms obtained. Eligibility and current program funding were not checked."
+      },
+      "alerts": [],
+      "sources": [
+        {
+          "id": "P05-live",
+          "kind": "seller_listing",
+          "url": "https://www.boulderh.com/inventory/2022-ford-escape-sel-plug-in-hybrid/1147361",
+          "captured_at_utc": "2026-11-24T03:35:41.695Z"
+        },
+        {
+          "id": "P05-vpic",
+          "kind": "official_vin_decode",
+          "url": "https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVinValues/1FMCU0KZ2NUB48630?format=json&modelyear=2022",
+          "captured_at_utc": "2026-11-24T03:34:24.583217+00:00"
+        },
+        {
+          "id": "P05-license",
+          "kind": "official_dealer_license",
+          "url": "https://codor.mylicense.com/AID_Verification/Search.aspx?facility=Y",
+          "captured_at_utc": "2026-11-24T03:40:17.580Z"
+        }
+      ]
+    },
+    {
+      "case_id": "P06",
+      "vin": "5FPYK3F70PB012249",
+      "heading": "Pre-Owned 2023 Honda Ridgeline RTL-E",
+      "listing_url": "https://www.fisherhonda.com/inventory/used-2023-honda-ridgeline-rtl-e-awd-4d-crew-cab-5fpyk3f70pb012249/",
+      "snapshot_price": 32990,
+      "snapshot_mileage": 39715,
+      "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00",
+      "supported_ids": [
+        "A1",
+        "A2",
+        "E1"
+      ],
+      "contradicted_ids": [],
+      "findings": {
+        "C2": "Ad/snapshot: 39,715 miles; photo 19: 39,716 miles; difference +1. Photo date/vehicle capture chain not authenticated. Small increases may reflect ordinary use or stale text; no rollback established.",
+        "B3": "Linked free report stopped at a verification screen. No dated mileage timeline obtained.",
+        "D4": "VIN-specific build sheet for climate-control/options wording.; Itemized buyer order and dated vehicle-linked history.",
+        "E2": "28 images reviewed including exterior, cabin, bed/under-bed compartment, roof, rear camera, odometer and VIN label. Image 19 reads 39,716 miles; image 28 label matches listing VIN. No underbody or inspection evidence.",
+        "F1": "$32,291 price and $699 handling displayed separately; their sum is $32,990, matching snapshot. Written confirmation of fee inclusion and full applicable conditions remains needed."
+      },
+      "alerts": [],
+      "sources": [
+        {
+          "id": "P06-live",
+          "kind": "seller_listing",
+          "url": "https://www.fisherhonda.com/inventory/used-2023-honda-ridgeline-rtl-e-awd-4d-crew-cab-5fpyk3f70pb012249/",
+          "captured_at_utc": "2026-11-24T03:35:53.234Z"
+        },
+        {
+          "id": "P06-vpic",
+          "kind": "official_vin_decode",
+          "url": "https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVinValues/5FPYK3F70PB012249?format=json&modelyear=2023",
+          "captured_at_utc": "2026-11-24T03:34:25.004533+00:00"
+        },
+        {
+          "id": "P06-license",
+          "kind": "official_dealer_license",
+          "url": "https://codor.mylicense.com/AID_Verification/Search.aspx?facility=Y",
+          "captured_at_utc": "2026-11-24T03:40:14.475Z"
+        }
+      ]
+    },
+    {
+      "case_id": "P07",
+      "vin": "3CZRZ2H51RM731100",
+      "heading": "Pre-Owned 2024 Honda HR-V Sport",
+      "listing_url": "https://www.fisherhonda.com/inventory/used-2024-honda-hr-v-sport-awd-4d-sport-utility-3czrz2h51rm731100/",
+      "snapshot_price": 25990,
+      "snapshot_mileage": 32406,
+      "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00",
+      "supported_ids": [
+        "A1",
+        "A2"
+      ],
+      "contradicted_ids": [],
+      "findings": {
+        "C2": "No readable current vehicle-linked odometer image available.",
+        "B3": "Report readings rise from 1 (2023-10-24), 50 (2023-11-13), 4,107 (2024-02-29), 8,939 (2024-06-17), 17,115 (2025-05-12) to 23,827 (2026-04-06). Current ad says 32,406; a later, higher ad reading does not indicate rollback, but the seven-month gap lacks current corroboration. Report estimates one personal-lease owner.",
+        "D4": "Current VIN-linked dated odometer photo and missing exterior views.; Itemized buyer order.",
+        "E2": "Four images reviewed: two exterior angles, front cabin and rear seats. No odometer, VIN label, engine bay, underbody or full exterior coverage.",
+        "F1": "$25,291 price and $699 handling sum to snapshot $25,990; full written purchase terms not obtained."
+      },
+      "alerts": [],
+      "sources": [
+        {
+          "id": "P07-live",
+          "kind": "seller_listing",
+          "url": "https://www.fisherhonda.com/inventory/used-2024-honda-hr-v-sport-awd-4d-sport-utility-3czrz2h51rm731100/",
+          "captured_at_utc": "2026-11-24T03:35:56.171Z"
+        },
+        {
+          "id": "P07-vpic",
+          "kind": "official_vin_decode",
+          "url": "https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVinValues/3CZRZ2H51RM731100?format=json&modelyear=2024",
+          "captured_at_utc": "2026-11-24T03:34:25.384817+00:00"
+        },
+        {
+          "id": "P07-history",
+          "kind": "third_party_history_report",
+          "url": "https://www.carfax.com/vehiclehistory/ar20/EynQtM3Qi6_5q8MkHowSEBlmYYIhlMy4R11JDAijH1zM_U1YHUgL69LadiJlbKID_OZHWQql8gyHPuU7lzB2-2eQzqE2JoReq3k",
+          "captured_at_utc": "2026-11-24T03:37:18.303Z"
+        },
+        {
+          "id": "P07-license",
+          "kind": "official_dealer_license",
+          "url": "https://codor.mylicense.com/AID_Verification/Search.aspx?facility=Y",
+          "captured_at_utc": "2026-11-24T03:40:14.475Z"
+        }
+      ]
+    },
+    {
+      "case_id": "P08",
+      "vin": "19UDE4G71PA003492",
+      "heading": "Pre-Owned 2023 Acura Integra A-Spec Tech Package 4D Hatchback",
+      "listing_url": "https://www.fisheracura.com/inventory/used-2023-acura-integra-a-spec-tech-package-fwd-4d-hatchback-19ude4g71pa003492/",
+      "snapshot_price": 28992,
+      "snapshot_mileage": 34618,
+      "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00",
+      "supported_ids": [
+        "A1",
+        "A2",
+        "E1"
+      ],
+      "contradicted_ids": [],
+      "findings": {
+        "C2": "Ad/snapshot: 34,618 miles; photo 16: 34,620 miles; difference +2. Photo date/vehicle capture chain not authenticated. Small increases may reflect ordinary use or stale text; no rollback established.",
+        "B3": "Free report stopped at verification screen; no dated mileage or maintenance history obtained.",
+        "D4": "Dated VIN-linked service records supporting maintenance assertion.; VIN build sheet for exact seating material/options.; Itemized price, handling/destination and accessory charges.",
+        "E2": "25 images reviewed: gray hatchback, cabin/cargo, manual shifter, roof, odometer and VIN label. Image 16 reads 34,620 miles; image 25 VIN matches listing. No underbody or service invoices.",
+        "F1": "$28,293 and $699 handling displayed, summing to snapshot $28,992. Footer says prices include destination/handling, lists other model-level destination figures, and excludes installed accessories. A precise itemized cash quote is needed to reconcile applicability."
+      },
+      "alerts": [],
+      "sources": [
+        {
+          "id": "P08-live",
+          "kind": "seller_listing",
+          "url": "https://www.fisheracura.com/inventory/used-2023-acura-integra-a-spec-tech-package-fwd-4d-hatchback-19ude4g71pa003492/",
+          "captured_at_utc": "2026-11-24T03:36:03.046Z"
+        },
+        {
+          "id": "P08-vpic",
+          "kind": "official_vin_decode",
+          "url": "https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVinValues/19UDE4G71PA003492?format=json&modelyear=2023",
+          "captured_at_utc": "2026-11-24T03:34:25.860947+00:00"
+        },
+        {
+          "id": "P08-license",
+          "kind": "official_dealer_license",
+          "url": "https://codor.mylicense.com/AID_Verification/Search.aspx?facility=Y",
+          "captured_at_utc": "2026-11-24T03:40:15.969Z"
+        }
+      ]
+    },
+    {
+      "case_id": "P09",
+      "vin": "1C4RJKBG4P8816697",
+      "heading": "Pre-Owned 2023 Jeep Grand Cherokee L Limited With Navigation & 4WD",
+      "listing_url": "https://www.fisherauto.com/inventory/2023-jeep-grand-cherokee-l-limited-4wd-4d-sport-utility-1c4rjkbg4p8816697/",
+      "snapshot_price": 32990,
+      "snapshot_mileage": 25267,
+      "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00",
+      "supported_ids": [
+        "A1",
+        "E1"
+      ],
+      "contradicted_ids": [],
+      "findings": {
+        "C2": "Ad/snapshot: 25,267 miles; photo 25: 25,272 miles; difference +5. Photo date/vehicle capture chain not authenticated. Small increases may reflect ordinary use or stale text; no rollback established.",
+        "B3": "Free report stopped at verification screen. No dated mileage/maintenance timeline obtained.",
+        "D4": "Dated VIN-linked service records.; Buyer order identifying the actual licensed Fisher legal seller and all charges.",
+        "E2": "38 images reviewed: exterior, engine bay, cabin/three rows/cargo, navigation, rear camera, odometer and VIN label. Image 25 reads 25,272 mi; image 38 VIN matches listing. No underbody/structural inspection or repair close-ups.",
+        "F1": "$32,291 price + $699 displayed handling sums to snapshot $32,990. Itemized terms required. Group-level seller label is not a unique licensed legal selling entity."
+      },
+      "alerts": [],
+      "sources": [
+        {
+          "id": "P09-live",
+          "kind": "seller_listing",
+          "url": "https://www.fisherauto.com/inventory/2023-jeep-grand-cherokee-l-limited-4wd-4d-sport-utility-1c4rjkbg4p8816697/",
+          "captured_at_utc": "2026-11-24T03:36:13.178Z"
+        },
+        {
+          "id": "P09-vpic",
+          "kind": "official_vin_decode",
+          "url": "https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVinValues/1C4RJKBG4P8816697?format=json&modelyear=2023",
+          "captured_at_utc": "2026-11-24T03:34:26.210388+00:00"
+        }
+      ]
+    },
+    {
+      "case_id": "P10",
+      "vin": "JF2SKAMC8RH468314",
+      "heading": "2024 Subaru Forester Touring",
+      "listing_url": "https://www.fowlerjeepboulder.com/inventory/used-2024-subaru-forester-touring-jf2skamc8rh468314-in-boulder-co",
+      "snapshot_price": 30587,
+      "snapshot_mileage": 18155,
+      "assessed_at_utc": "2026-11-24T06:42:27.343696+00:00",
+      "supported_ids": [
+        "A1",
+        "A2"
+      ],
+      "contradicted_ids": [],
+      "findings": {
+        "C2": "Ad/snapshot: 18,155 miles; photo 18: 18,271 miles; difference +116. Photo date/vehicle capture chain not authenticated. Small increases may reflect ordinary use or stale text; no rollback established.",
+        "B3": "CARFAX link labeled $44.99; not opened or purchased. No vehicle history obtained.",
+        "D4": "Updated VIN-linked dated odometer evidence explaining 116-mile gap.; Dated service history and itemized cash total/discount conditions.; Legible complete Buyers Guide and warranty terms.",
+        "E2": "30 images reviewed: exterior, cabin/cargo, roof, engine, tires, odometer and Buyers Guide. Image 18 reads 18,271 mi, 116 above ad. Image 30 shows as-is/no dealer warranty checked. No readable VIN label or dated odometer linkage. Hero scenic background differs from lot views; editing is not proof of deception.",
+        "F1": "Original $34,181 minus $4,293 discount plus $699 handling equals $30,587 net, matching snapshot. Full pricing-disclaimer conditions still require review/quote."
+      },
+      "alerts": [
+        {
+          "severity": "review",
+          "primary_rule": "C2",
+          "reason": "Photo is 116 miles above ad; reconcile dates before any contradiction or rollback conclusion."
+        }
+      ],
+      "sources": [
+        {
+          "id": "P10-live",
+          "kind": "seller_listing",
+          "url": "https://www.fowlerjeepboulder.com/inventory/used-2024-subaru-forester-touring-jf2skamc8rh468314-in-boulder-co",
+          "captured_at_utc": "2026-11-24T03:36:19.233Z"
+        },
+        {
+          "id": "P10-vpic",
+          "kind": "official_vin_decode",
+          "url": "https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVinValues/JF2SKAMC8RH468314?format=json&modelyear=2024",
+          "captured_at_utc": "2026-11-24T03:34:26.813496+00:00"
+        },
+        {
+          "id": "P10-license",
+          "kind": "official_dealer_license",
+          "url": "https://codor.mylicense.com/AID_Verification/Search.aspx?facility=Y",
+          "captured_at_utc": "2026-11-24T03:40:00.513Z"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "from": "0.1-development",
+  "to": "0.2-development",
+  "weights_changed": false,
+  "base_weights_total": 100,
+  "changes": [
+    "Added all-elements support and explicit contradiction/unknown criteria for every check.",
+    "Added proposed freshness windows and material-change invalidation.",
+    "Added exact mileage/precision/timing reconciliation; no automatic tolerance or rollback finding.",
+    "Required independent seller domain/contact linkage beyond active business registry match.",
+    "Required upstream origin tracing for mileage and syndicated claims.",
+    "Separated owner-count/prior-use requirements within whole-check B4.",
+    "Defined visual coverage checklist and photo-attribution limits.",
+    "Defined full_100 and documented core_97 applicability profiles; forbid mixed-profile rankings.",
+    "Clarified published-price evidence versus ambiguous mandatory-fee disclaimers.",
+    "Added reassessment-pending/no-number display state and validation record schema."
+  ],
+  "existing_ui": "Figma Make 9 still presents v0.1 cached desk-review results. Do not relabel them v0.2.",
+  "validation": "Development rules, not independently validated; no weights fitted to these ten cases."
+}

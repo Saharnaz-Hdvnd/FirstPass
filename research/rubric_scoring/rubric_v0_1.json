@@ -1,0 +1,144 @@
+{
+  "version": "0.1-development",
+  "definition": "The extent to which available evidence supports a listing’s identity, material claims, disclosures, and proposed transaction.",
+  "interpretation": "Evidence-support index; not a probability of honesty, safety, or fraud. Weights are unvalidated design choices.",
+  "states": [
+    "supported",
+    "contradicted",
+    "unknown"
+  ],
+  "rules": [
+    {
+      "id": "A1",
+      "name": "VIN/specification identity",
+      "weight": 6,
+      "support_requirement": "Applicable VIN validation and compatible independently decoded core specifications; decoder limitations respected."
+    },
+    {
+      "id": "A2",
+      "name": "Seller identity",
+      "weight": 6,
+      "support_requirement": "Independently matched contact/business identity, including applicable license check for a dealer."
+    },
+    {
+      "id": "A3",
+      "name": "Authority to sell",
+      "weight": 5,
+      "support_requirement": "Title-owner or documented authorized dealer/agent relationship, evaluated through an appropriate secure verification process."
+    },
+    {
+      "id": "A4",
+      "name": "Possession/location",
+      "weight": 3,
+      "support_requirement": "Current vehicle-specific evidence that connects this seller to the car and stated location."
+    },
+    {
+      "id": "B1",
+      "name": "Title/brand disclosure",
+      "weight": 8,
+      "support_requirement": "Relevant independent title/brand record agrees with an explicit disclosure, including any adverse brand."
+    },
+    {
+      "id": "B2",
+      "name": "Theft/total-loss/salvage disclosure",
+      "weight": 6,
+      "support_requirement": "Applicable checked records agree with disclosure, with query scope and date recorded."
+    },
+    {
+      "id": "B3",
+      "name": "Accident/structural/repair claims",
+      "weight": 7,
+      "support_requirement": "Available relevant history and inspection/repair evidence support material claims; a record with no event is not enough to prove “never damaged.”"
+    },
+    {
+      "id": "B4",
+      "name": "Ownership/prior-use claims",
+      "weight": 4,
+      "support_requirement": "Evidence supports specific owner-count or prior-use claims and material disclosures."
+    },
+    {
+      "id": "C1",
+      "name": "Mileage timeline",
+      "weight": 8,
+      "support_requirement": "Current reading agrees with a sufficiently informative dated history after unit and timing reconciliation."
+    },
+    {
+      "id": "C2",
+      "name": "Current mileage agreement",
+      "weight": 5,
+      "support_requirement": "Structured field, description and a current odometer observation agree."
+    },
+    {
+      "id": "C3",
+      "name": "Equipment/specification claims",
+      "weight": 4,
+      "support_requirement": "Material trim/drivetrain/options claims agree with suitable evidence."
+    },
+    {
+      "id": "C4",
+      "name": "Cross-source/current-listing consistency",
+      "weight": 3,
+      "support_requirement": "Material current claims and availability agree across appropriately dated sources; duplicated origin identified."
+    },
+    {
+      "id": "D1",
+      "name": "Condition disclosure",
+      "weight": 5,
+      "support_requirement": "Relevant inspection/diagnostic evidence agrees with stated defects, repairs and present-condition claims."
+    },
+    {
+      "id": "D2",
+      "name": "Maintenance/repair claims",
+      "weight": 4,
+      "support_requirement": "Specific maintenance or repair claims have dated vehicle-linked supporting records."
+    },
+    {
+      "id": "D3",
+      "name": "Safety/recall disclosure",
+      "weight": 3,
+      "support_requirement": "Applicable current VIN-level checks and relevant repair evidence agree with safety-related claims."
+    },
+    {
+      "id": "D4",
+      "name": "Specialized condition claims",
+      "weight": 3,
+      "support_requirement": "Appropriate evidence supports EV battery, modification, certification or another applicable specialized claim."
+    },
+    {
+      "id": "E1",
+      "name": "Vehicle-specific media",
+      "weight": 4,
+      "support_requirement": "Media can be attributed to this vehicle and no unresolved mixed-vehicle or copied-identity discrepancy remains."
+    },
+    {
+      "id": "E2",
+      "name": "Relevant visual coverage",
+      "weight": 3,
+      "support_requirement": "A predeclared set of views covers the actual claims being assessed, including mileage and disclosed visible defects where relevant."
+    },
+    {
+      "id": "E3",
+      "name": "Media/description agreement",
+      "weight": 3,
+      "support_requirement": "Visible material details agree with the description; limitations of visual assessment recorded."
+    },
+    {
+      "id": "F1",
+      "name": "Price/terms transparency",
+      "weight": 4,
+      "support_requirement": "Written terms clarify actual purchase price, material conditions and required charges consistently with the advertisement."
+    },
+    {
+      "id": "F2",
+      "name": "Verification cooperation",
+      "weight": 3,
+      "support_requirement": "Observed response supports reasonable records/independent-inspection access or a credible documented alternative."
+    },
+    {
+      "id": "F3",
+      "name": "Transaction legitimacy",
+      "weight": 3,
+      "support_requirement": "Proposed payee, authority, payment/escrow and transfer process are independently verifiable and consistent."
+    }
+  ]
+}

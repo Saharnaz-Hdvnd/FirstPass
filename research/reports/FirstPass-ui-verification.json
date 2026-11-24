@@ -1,0 +1,23 @@
+{
+  "figma_make_version": 9,
+  "verified_behaviors": [
+    "P01 score opened: T24 D0 U76",
+    "P02 score opened: front minor-damage review alert shown above details",
+    "22 checks grouped into six categories; individual points and next actions shown",
+    "Original dealer links and dated public sources shown",
+    "Escape closed P01 dialog during manual UI check"
+  ],
+  "reported_checks_from_figma": [
+    "pnpm exec tsc --noEmit passed",
+    "pnpm build passed",
+    "pnpm test:mocked passed (existing and evidence tests)"
+  ],
+  "publication": "not published",
+  "scope": "Frozen ten-case desk-review gallery plus cached exact-match score controls; no automatic ongoing history/inspection verification",
+  "limitations": [
+    "One AI-assisted reviewer; unvalidated weights",
+    "No independently timed active-review minutes",
+    "Official recall completion not captured; NICB/NMVTIS not completed",
+    "Figma account displayed daily AI-credit limit; no upgrade or purchase made"
+  ]
+}

@@ -1,0 +1,11 @@
+node_modules/
+dist/
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.env.local
+.env.*.local
+.ipynb_checkpoints/
+search_exports/
+.DS_Store

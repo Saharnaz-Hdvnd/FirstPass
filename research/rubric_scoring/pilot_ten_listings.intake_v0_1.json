@@ -1,0 +1,1589 @@
+{
+  "rubric_version": "0.1-development",
+  "source_snapshot": "/Users/YOUR_USERNAME/Documents/Codex/FirstPass/search_exports/search_20261124T030455638068Z_4e7ea727eca14874b64d99b427930cdc.json",
+  "source_sha256": "974cb92ddb22998135eeccd9fd7d5d0ed8fd71962748181f3b280c7552506705",
+  "sampling": "Purposive development sample: first four consecutive listings plus six covering all other seller labels and sparse media. Not representative or held out. Seller labels may refer to related businesses.",
+  "profile": "All 22 checks retained pending manual applicability review; no automatic N/A decisions.",
+  "cases": [
+    {
+      "case_id": "P01",
+      "selection_reason": "EV; specialized battery evidence needed",
+      "source_listing_index_zero_based": 0,
+      "vin": "WA1L2BFZ8PP065926",
+      "provider_listing_id": "WA1L2BFZ8PP065926-14c61094-441b",
+      "heading": "Pre-Owned 2023 Audi Q4 e-tron Premium Plus",
+      "listing_url": "https://www.flatironssubaru.com/inventory/used-2023-audi-q4-e-tron-premium-plus-quattro-4d-sport-utility-wa1l2bfz8pp065926/",
+      "dealer": "Flatirons Subaru",
+      "photo_url_count": 20,
+      "evidence": [
+        {
+          "id": "P01-snapshot",
+          "kind": "provider_snapshot",
+          "captured_at_utc": "2026-11-24T03:04:55.560262+00:00",
+          "source_path": "/Users/YOUR_USERNAME/Documents/Codex/FirstPass/search_exports/search_20261124T030455638068Z_4e7ea727eca14874b64d99b427930cdc.json",
+          "listing_index": 0,
+          "independent": false
+        }
+      ],
+      "assessment_status": "intake reviewed; corroboration pending",
+      "reviewer": null,
+      "checks": {
+        "A1": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Applicable VIN validation and compatible independently decoded core specifications; decoder limitations respected."
+        },
+        "A2": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Independently matched contact/business identity, including applicable license check for a dealer."
+        },
+        "A3": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Title-owner or documented authorized dealer/agent relationship, evaluated through an appropriate secure verification process."
+        },
+        "A4": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Current vehicle-specific evidence that connects this seller to the car and stated location."
+        },
+        "B1": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Relevant independent title/brand record agrees with an explicit disclosure, including any adverse brand."
+        },
+        "B2": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Applicable checked records agree with disclosure, with query scope and date recorded."
+        },
+        "B3": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Available relevant history and inspection/repair evidence support material claims; a record with no event is not enough to prove “never damaged.”"
+        },
+        "B4": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Evidence supports specific owner-count or prior-use claims and material disclosures."
+        },
+        "C1": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Current reading agrees with a sufficiently informative dated history after unit and timing reconciliation."
+        },
+        "C2": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Structured field, description and a current odometer observation agree."
+        },
+        "C3": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Material trim/drivetrain/options claims agree with suitable evidence."
+        },
+        "C4": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Material current claims and availability agree across appropriately dated sources; duplicated origin identified."
+        },
+        "D1": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Relevant inspection/diagnostic evidence agrees with stated defects, repairs and present-condition claims."
+        },
+        "D2": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Specific maintenance or repair claims have dated vehicle-linked supporting records."
+        },
+        "D3": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Applicable current VIN-level checks and relevant repair evidence agree with safety-related claims."
+        },
+        "D4": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Appropriate evidence supports EV battery, modification, certification or another applicable specialized claim."
+        },
+        "E1": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Media can be attributed to this vehicle and no unresolved mixed-vehicle or copied-identity discrepancy remains."
+        },
+        "E2": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "A predeclared set of views covers the actual claims being assessed, including mileage and disclosed visible defects where relevant."
+        },
+        "E3": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Visible material details agree with the description; limitations of visual assessment recorded."
+        },
+        "F1": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Written terms clarify actual purchase price, material conditions and required charges consistently with the advertisement."
+        },
+        "F2": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Observed response supports reasonable records/independent-inspection access or a credible documented alternative."
+        },
+        "F3": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Proposed payee, authority, payment/escrow and transfer process are independently verifiable and consistent."
+        }
+      },
+      "alerts": []
+    },
+    {
+      "case_id": "P02",
+      "selection_reason": "Certification claim; verify scope",
+      "source_listing_index_zero_based": 1,
+      "vin": "4S4BTGLD4R3260366",
+      "provider_listing_id": "4S4BTGLD4R3260366-0ffd194e-86c4",
+      "heading": "Certified Pre-Owned 2024 Subaru Outback Onyx Edition XT",
+      "listing_url": "https://www.flatironssubaru.com/inventory/certified-used-2024-subaru-outback-onyx-edition-xt-awd-4d-sport-utility-4s4btgld4r3260366/",
+      "dealer": "Flatirons Subaru",
+      "photo_url_count": 20,
+      "evidence": [
+        {
+          "id": "P02-snapshot",
+          "kind": "provider_snapshot",
+          "captured_at_utc": "2026-11-24T03:04:55.560262+00:00",
+          "source_path": "/Users/YOUR_USERNAME/Documents/Codex/FirstPass/search_exports/search_20261124T030455638068Z_4e7ea727eca14874b64d99b427930cdc.json",
+          "listing_index": 1,
+          "independent": false
+        }
+      ],
+      "assessment_status": "intake reviewed; corroboration pending",
+      "reviewer": null,
+      "checks": {
+        "A1": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Applicable VIN validation and compatible independently decoded core specifications; decoder limitations respected."
+        },
+        "A2": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Independently matched contact/business identity, including applicable license check for a dealer."
+        },
+        "A3": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Title-owner or documented authorized dealer/agent relationship, evaluated through an appropriate secure verification process."
+        },
+        "A4": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Current vehicle-specific evidence that connects this seller to the car and stated location."
+        },
+        "B1": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Relevant independent title/brand record agrees with an explicit disclosure, including any adverse brand."
+        },
+        "B2": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Applicable checked records agree with disclosure, with query scope and date recorded."
+        },
+        "B3": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Available relevant history and inspection/repair evidence support material claims; a record with no event is not enough to prove “never damaged.”"
+        },
+        "B4": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Evidence supports specific owner-count or prior-use claims and material disclosures."
+        },
+        "C1": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Current reading agrees with a sufficiently informative dated history after unit and timing reconciliation."
+        },
+        "C2": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Structured field, description and a current odometer observation agree."
+        },
+        "C3": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Material trim/drivetrain/options claims agree with suitable evidence."
+        },
+        "C4": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Material current claims and availability agree across appropriately dated sources; duplicated origin identified."
+        },
+        "D1": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Relevant inspection/diagnostic evidence agrees with stated defects, repairs and present-condition claims."
+        },
+        "D2": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Specific maintenance or repair claims have dated vehicle-linked supporting records."
+        },
+        "D3": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Applicable current VIN-level checks and relevant repair evidence agree with safety-related claims."
+        },
+        "D4": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Appropriate evidence supports EV battery, modification, certification or another applicable specialized claim."
+        },
+        "E1": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Media can be attributed to this vehicle and no unresolved mixed-vehicle or copied-identity discrepancy remains."
+        },
+        "E2": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "A predeclared set of views covers the actual claims being assessed, including mileage and disclosed visible defects where relevant."
+        },
+        "E3": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Visible material details agree with the description; limitations of visual assessment recorded."
+        },
+        "F1": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Written terms clarify actual purchase price, material conditions and required charges consistently with the advertisement."
+        },
+        "F2": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Observed response supports reasonable records/independent-inspection access or a credible documented alternative."
+        },
+        "F3": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Proposed payee, authority, payment/escrow and transfer process are independently verifiable and consistent."
+        }
+      },
+      "alerts": []
+    },
+    {
+      "case_id": "P03",
+      "selection_reason": "Consecutive baseline listing",
+      "source_listing_index_zero_based": 2,
+      "vin": "4S4BTGND4R3168770",
+      "provider_listing_id": "4S4BTGND4R3168770-9e75237d-2700",
+      "heading": "Pre-Owned 2024 Subaru Outback Limited XT",
+      "listing_url": "https://www.flatironssubaru.com/inventory/used-2024-subaru-outback-limited-xt-awd-4d-sport-utility-4s4btgnd4r3168770/",
+      "dealer": "Flatirons Subaru",
+      "photo_url_count": 20,
+      "evidence": [
+        {
+          "id": "P03-snapshot",
+          "kind": "provider_snapshot",
+          "captured_at_utc": "2026-11-24T03:04:55.560262+00:00",
+          "source_path": "/Users/YOUR_USERNAME/Documents/Codex/FirstPass/search_exports/search_20261124T030455638068Z_4e7ea727eca14874b64d99b427930cdc.json",
+          "listing_index": 2,
+          "independent": false
+        }
+      ],
+      "assessment_status": "intake reviewed; corroboration pending",
+      "reviewer": null,
+      "checks": {
+        "A1": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Applicable VIN validation and compatible independently decoded core specifications; decoder limitations respected."
+        },
+        "A2": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Independently matched contact/business identity, including applicable license check for a dealer."
+        },
+        "A3": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Title-owner or documented authorized dealer/agent relationship, evaluated through an appropriate secure verification process."
+        },
+        "A4": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Current vehicle-specific evidence that connects this seller to the car and stated location."
+        },
+        "B1": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Relevant independent title/brand record agrees with an explicit disclosure, including any adverse brand."
+        },
+        "B2": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Applicable checked records agree with disclosure, with query scope and date recorded."
+        },
+        "B3": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Available relevant history and inspection/repair evidence support material claims; a record with no event is not enough to prove “never damaged.”"
+        },
+        "B4": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Evidence supports specific owner-count or prior-use claims and material disclosures."
+        },
+        "C1": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Current reading agrees with a sufficiently informative dated history after unit and timing reconciliation."
+        },
+        "C2": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Structured field, description and a current odometer observation agree."
+        },
+        "C3": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Material trim/drivetrain/options claims agree with suitable evidence."
+        },
+        "C4": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Material current claims and availability agree across appropriately dated sources; duplicated origin identified."
+        },
+        "D1": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Relevant inspection/diagnostic evidence agrees with stated defects, repairs and present-condition claims."
+        },
+        "D2": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Specific maintenance or repair claims have dated vehicle-linked supporting records."
+        },
+        "D3": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Applicable current VIN-level checks and relevant repair evidence agree with safety-related claims."
+        },
+        "D4": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Appropriate evidence supports EV battery, modification, certification or another applicable specialized claim."
+        },
+        "E1": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Media can be attributed to this vehicle and no unresolved mixed-vehicle or copied-identity discrepancy remains."
+        },
+        "E2": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "A predeclared set of views covers the actual claims being assessed, including mileage and disclosed visible defects where relevant."
+        },
+        "E3": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Visible material details agree with the description; limitations of visual assessment recorded."
+        },
+        "F1": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Written terms clarify actual purchase price, material conditions and required charges consistently with the advertisement."
+        },
+        "F2": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Observed response supports reasonable records/independent-inspection access or a credible documented alternative."
+        },
+        "F3": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Proposed payee, authority, payment/escrow and transfer process are independently verifiable and consistent."
+        }
+      },
+      "alerts": []
+    },
+    {
+      "case_id": "P04",
+      "selection_reason": "Sparse photo set: only one URL",
+      "source_listing_index_zero_based": 3,
+      "vin": "4S4BTACC5R3201136",
+      "provider_listing_id": "4S4BTACC5R3201136-0ff9df07-2b7c",
+      "heading": "Pre-Owned 2024 Subaru Outback Premium",
+      "listing_url": "https://www.flatironssubaru.com/inventory/used-2024-subaru-outback-premium-awd-4d-sport-utility-4s4btacc5r3201136/",
+      "dealer": "Flatirons Subaru",
+      "photo_url_count": 1,
+      "evidence": [
+        {
+          "id": "P04-snapshot",
+          "kind": "provider_snapshot",
+          "captured_at_utc": "2026-11-24T03:04:55.560262+00:00",
+          "source_path": "/Users/YOUR_USERNAME/Documents/Codex/FirstPass/search_exports/search_20261124T030455638068Z_4e7ea727eca14874b64d99b427930cdc.json",
+          "listing_index": 3,
+          "independent": false
+        }
+      ],
+      "assessment_status": "intake reviewed; corroboration pending",
+      "reviewer": null,
+      "checks": {
+        "A1": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Applicable VIN validation and compatible independently decoded core specifications; decoder limitations respected."
+        },
+        "A2": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Independently matched contact/business identity, including applicable license check for a dealer."
+        },
+        "A3": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Title-owner or documented authorized dealer/agent relationship, evaluated through an appropriate secure verification process."
+        },
+        "A4": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Current vehicle-specific evidence that connects this seller to the car and stated location."
+        },
+        "B1": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Relevant independent title/brand record agrees with an explicit disclosure, including any adverse brand."
+        },
+        "B2": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Applicable checked records agree with disclosure, with query scope and date recorded."
+        },
+        "B3": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Available relevant history and inspection/repair evidence support material claims; a record with no event is not enough to prove “never damaged.”"
+        },
+        "B4": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Evidence supports specific owner-count or prior-use claims and material disclosures."
+        },
+        "C1": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Current reading agrees with a sufficiently informative dated history after unit and timing reconciliation."
+        },
+        "C2": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Structured field, description and a current odometer observation agree."
+        },
+        "C3": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Material trim/drivetrain/options claims agree with suitable evidence."
+        },
+        "C4": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Material current claims and availability agree across appropriately dated sources; duplicated origin identified."
+        },
+        "D1": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Relevant inspection/diagnostic evidence agrees with stated defects, repairs and present-condition claims."
+        },
+        "D2": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Specific maintenance or repair claims have dated vehicle-linked supporting records."
+        },
+        "D3": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Applicable current VIN-level checks and relevant repair evidence agree with safety-related claims."
+        },
+        "D4": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Appropriate evidence supports EV battery, modification, certification or another applicable specialized claim."
+        },
+        "E1": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Media can be attributed to this vehicle and no unresolved mixed-vehicle or copied-identity discrepancy remains."
+        },
+        "E2": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "A predeclared set of views covers the actual claims being assessed, including mileage and disclosed visible defects where relevant."
+        },
+        "E3": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Visible material details agree with the description; limitations of visual assessment recorded."
+        },
+        "F1": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Written terms clarify actual purchase price, material conditions and required charges consistently with the advertisement."
+        },
+        "F2": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Observed response supports reasonable records/independent-inspection access or a credible documented alternative."
+        },
+        "F3": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Proposed payee, authority, payment/escrow and transfer process are independently verifiable and consistent."
+        }
+      },
+      "alerts": []
+    },
+    {
+      "case_id": "P05",
+      "selection_reason": "Plug-in hybrid; different seller",
+      "source_listing_index_zero_based": 38,
+      "vin": "1FMCU0KZ2NUB48630",
+      "provider_listing_id": "1FMCU0KZ2NUB48630-330c6aa6-b51c",
+      "heading": "2022 Ford Escape SEL Plug-In Hybrid",
+      "listing_url": "https://www.boulderh.com/inventory/2022-ford-escape-sel-plug-in-hybrid/1147361",
+      "dealer": "Boulder Hybrids",
+      "photo_url_count": 10,
+      "evidence": [
+        {
+          "id": "P05-snapshot",
+          "kind": "provider_snapshot",
+          "captured_at_utc": "2026-11-24T03:04:55.560262+00:00",
+          "source_path": "/Users/YOUR_USERNAME/Documents/Codex/FirstPass/search_exports/search_20261124T030455638068Z_4e7ea727eca14874b64d99b427930cdc.json",
+          "listing_index": 38,
+          "independent": false
+        }
+      ],
+      "assessment_status": "intake reviewed; corroboration pending",
+      "reviewer": null,
+      "checks": {
+        "A1": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Applicable VIN validation and compatible independently decoded core specifications; decoder limitations respected."
+        },
+        "A2": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Independently matched contact/business identity, including applicable license check for a dealer."
+        },
+        "A3": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Title-owner or documented authorized dealer/agent relationship, evaluated through an appropriate secure verification process."
+        },
+        "A4": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Current vehicle-specific evidence that connects this seller to the car and stated location."
+        },
+        "B1": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Relevant independent title/brand record agrees with an explicit disclosure, including any adverse brand."
+        },
+        "B2": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Applicable checked records agree with disclosure, with query scope and date recorded."
+        },
+        "B3": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Available relevant history and inspection/repair evidence support material claims; a record with no event is not enough to prove “never damaged.”"
+        },
+        "B4": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Evidence supports specific owner-count or prior-use claims and material disclosures."
+        },
+        "C1": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Current reading agrees with a sufficiently informative dated history after unit and timing reconciliation."
+        },
+        "C2": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Structured field, description and a current odometer observation agree."
+        },
+        "C3": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Material trim/drivetrain/options claims agree with suitable evidence."
+        },
+        "C4": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Material current claims and availability agree across appropriately dated sources; duplicated origin identified."
+        },
+        "D1": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Relevant inspection/diagnostic evidence agrees with stated defects, repairs and present-condition claims."
+        },
+        "D2": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Specific maintenance or repair claims have dated vehicle-linked supporting records."
+        },
+        "D3": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Applicable current VIN-level checks and relevant repair evidence agree with safety-related claims."
+        },
+        "D4": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Appropriate evidence supports EV battery, modification, certification or another applicable specialized claim."
+        },
+        "E1": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Media can be attributed to this vehicle and no unresolved mixed-vehicle or copied-identity discrepancy remains."
+        },
+        "E2": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "A predeclared set of views covers the actual claims being assessed, including mileage and disclosed visible defects where relevant."
+        },
+        "E3": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Visible material details agree with the description; limitations of visual assessment recorded."
+        },
+        "F1": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Written terms clarify actual purchase price, material conditions and required charges consistently with the advertisement."
+        },
+        "F2": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Observed response supports reasonable records/independent-inspection access or a credible documented alternative."
+        },
+        "F3": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Proposed payee, authority, payment/escrow and transfer process are independently verifiable and consistent."
+        }
+      },
+      "alerts": []
+    },
+    {
+      "case_id": "P06",
+      "selection_reason": "Additional dealer and vehicle type",
+      "source_listing_index_zero_based": 39,
+      "vin": "5FPYK3F70PB012249",
+      "provider_listing_id": "5FPYK3F70PB012249-87d46610-4b42",
+      "heading": "Pre-Owned 2023 Honda Ridgeline RTL-E",
+      "listing_url": "https://www.fisherhonda.com/inventory/used-2023-honda-ridgeline-rtl-e-awd-4d-crew-cab-5fpyk3f70pb012249/",
+      "dealer": "Fisher Honda",
+      "photo_url_count": 28,
+      "evidence": [
+        {
+          "id": "P06-snapshot",
+          "kind": "provider_snapshot",
+          "captured_at_utc": "2026-11-24T03:04:55.560262+00:00",
+          "source_path": "/Users/YOUR_USERNAME/Documents/Codex/FirstPass/search_exports/search_20261124T030455638068Z_4e7ea727eca14874b64d99b427930cdc.json",
+          "listing_index": 39,
+          "independent": false
+        }
+      ],
+      "assessment_status": "intake reviewed; corroboration pending",
+      "reviewer": null,
+      "checks": {
+        "A1": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Applicable VIN validation and compatible independently decoded core specifications; decoder limitations respected."
+        },
+        "A2": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Independently matched contact/business identity, including applicable license check for a dealer."
+        },
+        "A3": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Title-owner or documented authorized dealer/agent relationship, evaluated through an appropriate secure verification process."
+        },
+        "A4": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Current vehicle-specific evidence that connects this seller to the car and stated location."
+        },
+        "B1": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Relevant independent title/brand record agrees with an explicit disclosure, including any adverse brand."
+        },
+        "B2": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Applicable checked records agree with disclosure, with query scope and date recorded."
+        },
+        "B3": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Available relevant history and inspection/repair evidence support material claims; a record with no event is not enough to prove “never damaged.”"
+        },
+        "B4": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Evidence supports specific owner-count or prior-use claims and material disclosures."
+        },
+        "C1": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Current reading agrees with a sufficiently informative dated history after unit and timing reconciliation."
+        },
+        "C2": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Structured field, description and a current odometer observation agree."
+        },
+        "C3": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Material trim/drivetrain/options claims agree with suitable evidence."
+        },
+        "C4": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Material current claims and availability agree across appropriately dated sources; duplicated origin identified."
+        },
+        "D1": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Relevant inspection/diagnostic evidence agrees with stated defects, repairs and present-condition claims."
+        },
+        "D2": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Specific maintenance or repair claims have dated vehicle-linked supporting records."
+        },
+        "D3": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Applicable current VIN-level checks and relevant repair evidence agree with safety-related claims."
+        },
+        "D4": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Appropriate evidence supports EV battery, modification, certification or another applicable specialized claim."
+        },
+        "E1": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Media can be attributed to this vehicle and no unresolved mixed-vehicle or copied-identity discrepancy remains."
+        },
+        "E2": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "A predeclared set of views covers the actual claims being assessed, including mileage and disclosed visible defects where relevant."
+        },
+        "E3": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Visible material details agree with the description; limitations of visual assessment recorded."
+        },
+        "F1": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Written terms clarify actual purchase price, material conditions and required charges consistently with the advertisement."
+        },
+        "F2": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Observed response supports reasonable records/independent-inspection access or a credible documented alternative."
+        },
+        "F3": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Proposed payee, authority, payment/escrow and transfer process are independently verifiable and consistent."
+        }
+      },
+      "alerts": []
+    },
+    {
+      "case_id": "P07",
+      "selection_reason": "Four photo URLs; coverage must be inspected",
+      "source_listing_index_zero_based": 42,
+      "vin": "3CZRZ2H51RM731100",
+      "provider_listing_id": "3CZRZ2H51RM731100-c753a2db-3349",
+      "heading": "Pre-Owned 2024 Honda HR-V Sport",
+      "listing_url": "https://www.fisherhonda.com/inventory/used-2024-honda-hr-v-sport-awd-4d-sport-utility-3czrz2h51rm731100/",
+      "dealer": "Fisher Honda",
+      "photo_url_count": 4,
+      "evidence": [
+        {
+          "id": "P07-snapshot",
+          "kind": "provider_snapshot",
+          "captured_at_utc": "2026-11-24T03:04:55.560262+00:00",
+          "source_path": "/Users/YOUR_USERNAME/Documents/Codex/FirstPass/search_exports/search_20261124T030455638068Z_4e7ea727eca14874b64d99b427930cdc.json",
+          "listing_index": 42,
+          "independent": false
+        }
+      ],
+      "assessment_status": "intake reviewed; corroboration pending",
+      "reviewer": null,
+      "checks": {
+        "A1": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Applicable VIN validation and compatible independently decoded core specifications; decoder limitations respected."
+        },
+        "A2": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Independently matched contact/business identity, including applicable license check for a dealer."
+        },
+        "A3": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Title-owner or documented authorized dealer/agent relationship, evaluated through an appropriate secure verification process."
+        },
+        "A4": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Current vehicle-specific evidence that connects this seller to the car and stated location."
+        },
+        "B1": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Relevant independent title/brand record agrees with an explicit disclosure, including any adverse brand."
+        },
+        "B2": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Applicable checked records agree with disclosure, with query scope and date recorded."
+        },
+        "B3": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Available relevant history and inspection/repair evidence support material claims; a record with no event is not enough to prove “never damaged.”"
+        },
+        "B4": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Evidence supports specific owner-count or prior-use claims and material disclosures."
+        },
+        "C1": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Current reading agrees with a sufficiently informative dated history after unit and timing reconciliation."
+        },
+        "C2": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Structured field, description and a current odometer observation agree."
+        },
+        "C3": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Material trim/drivetrain/options claims agree with suitable evidence."
+        },
+        "C4": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Material current claims and availability agree across appropriately dated sources; duplicated origin identified."
+        },
+        "D1": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Relevant inspection/diagnostic evidence agrees with stated defects, repairs and present-condition claims."
+        },
+        "D2": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Specific maintenance or repair claims have dated vehicle-linked supporting records."
+        },
+        "D3": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Applicable current VIN-level checks and relevant repair evidence agree with safety-related claims."
+        },
+        "D4": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Appropriate evidence supports EV battery, modification, certification or another applicable specialized claim."
+        },
+        "E1": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Media can be attributed to this vehicle and no unresolved mixed-vehicle or copied-identity discrepancy remains."
+        },
+        "E2": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "A predeclared set of views covers the actual claims being assessed, including mileage and disclosed visible defects where relevant."
+        },
+        "E3": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Visible material details agree with the description; limitations of visual assessment recorded."
+        },
+        "F1": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Written terms clarify actual purchase price, material conditions and required charges consistently with the advertisement."
+        },
+        "F2": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Observed response supports reasonable records/independent-inspection access or a credible documented alternative."
+        },
+        "F3": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Proposed payee, authority, payment/escrow and transfer process are independently verifiable and consistent."
+        }
+      },
+      "alerts": []
+    },
+    {
+      "case_id": "P08",
+      "selection_reason": "Additional seller and vehicle type",
+      "source_listing_index_zero_based": 44,
+      "vin": "19UDE4G71PA003492",
+      "provider_listing_id": "19UDE4G71PA003492-c947dc1e-aeae",
+      "heading": "Pre-Owned 2023 Acura Integra A-Spec Tech Package 4D Hatchback",
+      "listing_url": "https://www.fisheracura.com/inventory/used-2023-acura-integra-a-spec-tech-package-fwd-4d-hatchback-19ude4g71pa003492/",
+      "dealer": "Fisher Acura",
+      "photo_url_count": 25,
+      "evidence": [
+        {
+          "id": "P08-snapshot",
+          "kind": "provider_snapshot",
+          "captured_at_utc": "2026-11-24T03:04:55.560262+00:00",
+          "source_path": "/Users/YOUR_USERNAME/Documents/Codex/FirstPass/search_exports/search_20261124T030455638068Z_4e7ea727eca14874b64d99b427930cdc.json",
+          "listing_index": 44,
+          "independent": false
+        }
+      ],
+      "assessment_status": "intake reviewed; corroboration pending",
+      "reviewer": null,
+      "checks": {
+        "A1": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Applicable VIN validation and compatible independently decoded core specifications; decoder limitations respected."
+        },
+        "A2": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Independently matched contact/business identity, including applicable license check for a dealer."
+        },
+        "A3": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Title-owner or documented authorized dealer/agent relationship, evaluated through an appropriate secure verification process."
+        },
+        "A4": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Current vehicle-specific evidence that connects this seller to the car and stated location."
+        },
+        "B1": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Relevant independent title/brand record agrees with an explicit disclosure, including any adverse brand."
+        },
+        "B2": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Applicable checked records agree with disclosure, with query scope and date recorded."
+        },
+        "B3": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Available relevant history and inspection/repair evidence support material claims; a record with no event is not enough to prove “never damaged.”"
+        },
+        "B4": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Evidence supports specific owner-count or prior-use claims and material disclosures."
+        },
+        "C1": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Current reading agrees with a sufficiently informative dated history after unit and timing reconciliation."
+        },
+        "C2": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Structured field, description and a current odometer observation agree."
+        },
+        "C3": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Material trim/drivetrain/options claims agree with suitable evidence."
+        },
+        "C4": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Material current claims and availability agree across appropriately dated sources; duplicated origin identified."
+        },
+        "D1": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Relevant inspection/diagnostic evidence agrees with stated defects, repairs and present-condition claims."
+        },
+        "D2": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Specific maintenance or repair claims have dated vehicle-linked supporting records."
+        },
+        "D3": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Applicable current VIN-level checks and relevant repair evidence agree with safety-related claims."
+        },
+        "D4": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Appropriate evidence supports EV battery, modification, certification or another applicable specialized claim."
+        },
+        "E1": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Media can be attributed to this vehicle and no unresolved mixed-vehicle or copied-identity discrepancy remains."
+        },
+        "E2": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "A predeclared set of views covers the actual claims being assessed, including mileage and disclosed visible defects where relevant."
+        },
+        "E3": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Visible material details agree with the description; limitations of visual assessment recorded."
+        },
+        "F1": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Written terms clarify actual purchase price, material conditions and required charges consistently with the advertisement."
+        },
+        "F2": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Observed response supports reasonable records/independent-inspection access or a credible documented alternative."
+        },
+        "F3": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Proposed payee, authority, payment/escrow and transfer process are independently verifiable and consistent."
+        }
+      },
+      "alerts": []
+    },
+    {
+      "case_id": "P09",
+      "selection_reason": "Additional seller; equipment claims",
+      "source_listing_index_zero_based": 45,
+      "vin": "1C4RJKBG4P8816697",
+      "provider_listing_id": "1C4RJKBG4P8816697-ddd6b024-a6fb",
+      "heading": "Pre-Owned 2023 Jeep Grand Cherokee L Limited With Navigation & 4WD",
+      "listing_url": "https://www.fisherauto.com/inventory/2023-jeep-grand-cherokee-l-limited-4wd-4d-sport-utility-1c4rjkbg4p8816697/",
+      "dealer": "Fisher Auto Group Dealership",
+      "photo_url_count": 38,
+      "evidence": [
+        {
+          "id": "P09-snapshot",
+          "kind": "provider_snapshot",
+          "captured_at_utc": "2026-11-24T03:04:55.560262+00:00",
+          "source_path": "/Users/YOUR_USERNAME/Documents/Codex/FirstPass/search_exports/search_20261124T030455638068Z_4e7ea727eca14874b64d99b427930cdc.json",
+          "listing_index": 45,
+          "independent": false
+        }
+      ],
+      "assessment_status": "intake reviewed; corroboration pending",
+      "reviewer": null,
+      "checks": {
+        "A1": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Applicable VIN validation and compatible independently decoded core specifications; decoder limitations respected."
+        },
+        "A2": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Independently matched contact/business identity, including applicable license check for a dealer."
+        },
+        "A3": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Title-owner or documented authorized dealer/agent relationship, evaluated through an appropriate secure verification process."
+        },
+        "A4": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Current vehicle-specific evidence that connects this seller to the car and stated location."
+        },
+        "B1": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Relevant independent title/brand record agrees with an explicit disclosure, including any adverse brand."
+        },
+        "B2": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Applicable checked records agree with disclosure, with query scope and date recorded."
+        },
+        "B3": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Available relevant history and inspection/repair evidence support material claims; a record with no event is not enough to prove “never damaged.”"
+        },
+        "B4": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Evidence supports specific owner-count or prior-use claims and material disclosures."
+        },
+        "C1": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Current reading agrees with a sufficiently informative dated history after unit and timing reconciliation."
+        },
+        "C2": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Structured field, description and a current odometer observation agree."
+        },
+        "C3": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Material trim/drivetrain/options claims agree with suitable evidence."
+        },
+        "C4": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Material current claims and availability agree across appropriately dated sources; duplicated origin identified."
+        },
+        "D1": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Relevant inspection/diagnostic evidence agrees with stated defects, repairs and present-condition claims."
+        },
+        "D2": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Specific maintenance or repair claims have dated vehicle-linked supporting records."
+        },
+        "D3": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Applicable current VIN-level checks and relevant repair evidence agree with safety-related claims."
+        },
+        "D4": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Appropriate evidence supports EV battery, modification, certification or another applicable specialized claim."
+        },
+        "E1": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Media can be attributed to this vehicle and no unresolved mixed-vehicle or copied-identity discrepancy remains."
+        },
+        "E2": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "A predeclared set of views covers the actual claims being assessed, including mileage and disclosed visible defects where relevant."
+        },
+        "E3": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Visible material details agree with the description; limitations of visual assessment recorded."
+        },
+        "F1": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Written terms clarify actual purchase price, material conditions and required charges consistently with the advertisement."
+        },
+        "F2": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Observed response supports reasonable records/independent-inspection access or a credible documented alternative."
+        },
+        "F3": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Proposed payee, authority, payment/escrow and transfer process are independently verifiable and consistent."
+        }
+      },
+      "alerts": []
+    },
+    {
+      "case_id": "P10",
+      "selection_reason": "Additional seller; compare ordinary baseline",
+      "source_listing_index_zero_based": 49,
+      "vin": "JF2SKAMC8RH468314",
+      "provider_listing_id": "JF2SKAMC8RH468314-0ce81f0b-f152",
+      "heading": "2024 Subaru Forester Touring",
+      "listing_url": "https://www.fowlerjeepboulder.com/inventory/used-2024-subaru-forester-touring-jf2skamc8rh468314-in-boulder-co",
+      "dealer": "Fowler Jeep Of Boulder",
+      "photo_url_count": 30,
+      "evidence": [
+        {
+          "id": "P10-snapshot",
+          "kind": "provider_snapshot",
+          "captured_at_utc": "2026-11-24T03:04:55.560262+00:00",
+          "source_path": "/Users/YOUR_USERNAME/Documents/Codex/FirstPass/search_exports/search_20261124T030455638068Z_4e7ea727eca14874b64d99b427930cdc.json",
+          "listing_index": 49,
+          "independent": false
+        }
+      ],
+      "assessment_status": "intake reviewed; corroboration pending",
+      "reviewer": null,
+      "checks": {
+        "A1": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Applicable VIN validation and compatible independently decoded core specifications; decoder limitations respected."
+        },
+        "A2": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Independently matched contact/business identity, including applicable license check for a dealer."
+        },
+        "A3": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Title-owner or documented authorized dealer/agent relationship, evaluated through an appropriate secure verification process."
+        },
+        "A4": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Current vehicle-specific evidence that connects this seller to the car and stated location."
+        },
+        "B1": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Relevant independent title/brand record agrees with an explicit disclosure, including any adverse brand."
+        },
+        "B2": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Applicable checked records agree with disclosure, with query scope and date recorded."
+        },
+        "B3": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Available relevant history and inspection/repair evidence support material claims; a record with no event is not enough to prove “never damaged.”"
+        },
+        "B4": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Evidence supports specific owner-count or prior-use claims and material disclosures."
+        },
+        "C1": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Current reading agrees with a sufficiently informative dated history after unit and timing reconciliation."
+        },
+        "C2": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Structured field, description and a current odometer observation agree."
+        },
+        "C3": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Material trim/drivetrain/options claims agree with suitable evidence."
+        },
+        "C4": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Material current claims and availability agree across appropriately dated sources; duplicated origin identified."
+        },
+        "D1": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Relevant inspection/diagnostic evidence agrees with stated defects, repairs and present-condition claims."
+        },
+        "D2": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Specific maintenance or repair claims have dated vehicle-linked supporting records."
+        },
+        "D3": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Applicable current VIN-level checks and relevant repair evidence agree with safety-related claims."
+        },
+        "D4": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Appropriate evidence supports EV battery, modification, certification or another applicable specialized claim."
+        },
+        "E1": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Media can be attributed to this vehicle and no unresolved mixed-vehicle or copied-identity discrepancy remains."
+        },
+        "E2": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "A predeclared set of views covers the actual claims being assessed, including mileage and disclosed visible defects where relevant."
+        },
+        "E3": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Visible material details agree with the description; limitations of visual assessment recorded."
+        },
+        "F1": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Written terms clarify actual purchase price, material conditions and required charges consistently with the advertisement."
+        },
+        "F2": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Observed response supports reasonable records/independent-inspection access or a credible documented alternative."
+        },
+        "F3": {
+          "state": "unknown",
+          "evidence_ids": [],
+          "reason": "Provider fields alone do not meet the support requirement.",
+          "next_action": "Proposed payee, authority, payment/escrow and transfer process are independently verifiable and consistent."
+        }
+      },
+      "alerts": []
+    }
+  ]
+}
