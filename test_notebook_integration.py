@@ -25,7 +25,7 @@ class Integration(unittest.TestCase):
    app=ns['make_conversation_api'](authenticate=lambda request:'fixture-owner',provider=object(),allowed_origins=['https://fixture.example'])
    with TestClient(app)as c:
     sess=c.post('/sessions').json()
-    result=c.post('/sessions/'+sess['session_id']+'/search',headers={'X-Conversation-Token':sess['session_token']},json={'zip_code':'80303','radius':50,'price_min':0,'price_max':50000,'year_min':2020,'year_max':2026,'mileage_min':0,'mileage_max':50000,'max_owners':None})
+    result=c.post('/sessions/'+sess['session_id']+'/search',headers={'X-Conversation-Token':sess['session_token']},json={'search_description':'','zip_code':'80303','radius':50,'price_min':0,'price_max':50000,'year_min':2020,'year_max':2026,'mileage_min':0,'mileage_max':50000,'max_owners':None})
     self.assertEqual(result.status_code,200,result.text)
     body=result.json();a=body['exact'][0]['trustworthiness']
     self.assertEqual(a['coverage'],6);self.assertIsNone(a['score']);self.assertEqual(a['status'],'insufficient_evidence')

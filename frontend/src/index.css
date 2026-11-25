@@ -17,7 +17,7 @@
 @layer base {
   * { box-sizing: border-box; }
   body { margin: 0; background: var(--canvas); color: var(--ink); font-family: 'DM Sans', sans-serif; }
-  button, input, select { font: inherit; }
+  button, input, select, textarea { font: inherit; }
   button, a, select { -webkit-tap-highlight-color: transparent; }
   button { cursor: pointer; }
   a { color: inherit; text-decoration: none; }
@@ -69,6 +69,11 @@ select { appearance: auto; }
 .tolerance-toggle span:last-child { transition: transform .2s; }
 .tolerance-toggle .rotate { transform: rotate(180deg); }
 .tolerance-fields { border-top: 1px solid var(--line); padding: 10px; display: flex; flex-direction: column; gap: 10px; }
+.preference-field { display: flex; flex-direction: column; gap: 6px; }
+.preference-field > span { color: #47534f; font-size: 11px; font-weight: 700; letter-spacing: .15px; }
+.preference-field textarea { width: 100%; min-height: 92px; padding: 9px 10px; resize: vertical; border: 1px solid #ced7d4; border-radius: 8px; outline: none; background: white; color: var(--ink); font-size: 12px; line-height: 1.45; }
+.preference-field textarea:focus { border-color: var(--green); box-shadow: 0 0 0 3px var(--green-soft); }
+.preference-field small { color: var(--muted); font-size: 9px; line-height: 1.4; }
 .search-button { height: 44px; border: 0; border-radius: 9px; background: var(--green); color: white; display: flex; align-items: center; justify-content: center; gap: 8px; font-weight: 700; font-size: 13px; box-shadow: 0 5px 12px rgba(15,107,85,.18); }
 .search-button:hover { background: var(--green-dark); }
 .search-button:disabled { opacity: .7; }
@@ -86,6 +91,17 @@ h2 { margin: 0; font: 700 25px 'Manrope'; letter-spacing: -.8px; }
 .tabs button.selected { color: var(--green); border-color: var(--green); }
 .tabs span { display: inline-grid; place-items: center; min-width: 21px; height: 20px; padding: 0 5px; margin-left: 5px; border-radius: 10px; background: #e7ecea; color: #56615e; font-size: 10px; }
 .tabs .selected span { background: var(--green-soft); color: var(--green); }
+.preference-summary { margin-top: 14px; padding: 13px 15px; border: 1px solid #c9dcd6; border-left: 4px solid var(--green); border-radius: 9px; background: #f2f8f6; }
+.preference-summary.failed { border-color: #e4b49d; border-left-color: var(--orange); background: var(--orange-soft); }
+.preference-summary > strong { font-size: 12px; }
+.preference-summary > p { margin: 3px 0 0; color: var(--muted); font-size: 10px; line-height: 1.45; }
+.preference-summary dl { margin: 10px 0 0; display: grid; gap: 6px; }
+.preference-summary dl div { display: grid; grid-template-columns: 105px 1fr; gap: 8px; font-size: 10px; }
+.preference-summary dt { color: var(--green-dark); font-weight: 800; }
+.preference-summary dd { margin: 0; color: #42504c; overflow-wrap: anywhere; }
+.preference-warnings { margin-top: 10px; padding-top: 9px; border-top: 1px solid rgba(20,38,34,.12); font-size: 10px; }
+.preference-warnings > strong { font-size: 10px; }
+.preference-warnings ul { margin: 5px 0 0; padding-left: 17px; color: #5a4840; line-height: 1.45; }
 .cards { display: flex; flex-direction: column; gap: 14px; padding-top: 18px; }
 .vehicle-card { min-height: 218px; display: grid; grid-template-columns: 260px 1fr; background: white; border: 1px solid var(--line); border-radius: 13px; overflow: hidden; transition: transform .2s, box-shadow .2s; }
 .vehicle-card:hover { transform: translateY(-2px); box-shadow: 0 10px 25px rgba(20,38,34,.08); }
@@ -240,7 +256,7 @@ h3 { margin: 0; font: 700 20px 'Manrope'; letter-spacing: -.5px; }
   aside { display: none; position: static; }
   aside.open { display: block; }
   .filters { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); }
-  .filter-title, .tolerance, .search-button { grid-column: 1 / -1; }
+  .filter-title, .tolerance, .preference-field, .search-button { grid-column: 1 / -1; }
   .mobile-filter { display: flex; align-items: center; gap: 7px; border: 1px solid var(--line); background: white; border-radius: 8px; padding: 9px 12px; font-size: 12px; font-weight: 700; }
   .sort { display: none; }
 }
@@ -254,7 +270,7 @@ h3 { margin: 0; font: 700 20px 'Manrope'; letter-spacing: -.5px; }
   .hero > p { font-size: 13px; }
   main { padding-inline: 14px; }
   .filters { grid-template-columns: 1fr; }
-  .filter-title, .tolerance, .search-button { grid-column: 1; }
+  .filter-title, .tolerance, .preference-field, .search-button { grid-column: 1; }
   .results-head { align-items: end; }
   .vehicle-card { grid-template-columns: 1fr; }
   .car-image { min-height: 0; aspect-ratio: 16 / 9; }

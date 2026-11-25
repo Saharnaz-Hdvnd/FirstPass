@@ -37,3 +37,10 @@ npm run build
 ```
 
 This is a class research prototype, not a validated fraud probability or a mechanical inspection.
+
+## Latest integration fixes
+
+- Live API results carry assessments through to clickable frontend explanations.
+- Strict HTTPS Figma Make preview-host matching handles rotating preview URLs while retaining password/session authentication.
+- The newer search-description field no longer causes validation failures. Equipment-preference extraction is not implemented; non-empty descriptions return an explicit manual-filters-only warning.
+- Historical pilot records remain in the research archive, outside the buyer results.

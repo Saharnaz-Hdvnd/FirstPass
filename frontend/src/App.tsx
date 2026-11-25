@@ -1,7 +1,8 @@
 import { FormEvent, KeyboardEvent, MutableRefObject, ReactNode, useEffect, useRef, useState } from 'react'
-import { ApiCar, ApiError, CatalogField, SessionCredentials, API_BASE_URL, checkBackendConnection, clearCatalogCache, setAppLoginTokenProvider, createSession, getCatalogValues, isBackendConfigured, recoverSession, searchSession, sendChat } from './services/api'
+import { ApiCar, ApiError, CatalogField, SearchPreferenceMetadata, SessionCredentials, API_BASE_URL, checkBackendConnection, clearCatalogCache, setAppLoginTokenProvider, createSession, getCatalogValues, isBackendConfigured, recoverSession, searchSession, sendChat } from './services/api'
 import { CATALOG_PARENT_DEBOUNCE_MS, CatalogSelection, createRequestTracker, nextVehicleImageIndex, normalizeVehicleImages, scheduleCatalogLoad, updateCatalogSelection } from './vehicle-utils'
 import { EvidenceButton, EvidenceDialog, EvidenceSubject } from './evidence/EvidenceReview'
+import { getResetPreferenceState, trimSearchDescription } from './search-preferences'
 
 type Vehicle = {
   id: number
@@ -19,8 +20,8 @@ type Vehicle = {
   miss?: string[]
   listingUrl?: string
   sample?: boolean
-  historyUnknown?: boolean
   trustworthiness?: unknown
+  historyUnknown?: boolean
 }
 
 const exact: Vehicle[] = [
@@ -151,17 +152,21 @@ function CatalogInput({ field, label, value, make = '', model = '', connected, d
   </Field>
 }
 
-function Filters({ onSearch, loading, disabled, connected }: { onSearch: (e: FormEvent<HTMLFormElement>) => void; loading: boolean; disabled: boolean; connected: boolean }) {
+function Filters({ onSearch, onReset, loading, disabled, connected }: { onSearch: (e: FormEvent<HTMLFormElement>) => void; onReset: () => void; loading: boolean; disabled: boolean; connected: boolean }) {
   const [more, setMore] = useState(false)
   const [catalog, setCatalog] = useState<CatalogSelection>({ make: '', model: '', trim: '' })
+  const [description, setDescription] = useState('')
   const { make, model, trim } = catalog
 
-  function resetCatalog() {
+  function resetFilters() {
+    const reset = getResetPreferenceState()
     setCatalog({ make: '', model: '', trim: '' })
+    setDescription(reset.description)
+    onReset()
   }
 
   return (
-    <form className="filters" onSubmit={onSearch} onReset={resetCatalog}>
+    <form className="filters" onSubmit={onSearch} onReset={resetFilters}>
       <div className="filter-title"><div><Icon name="sliders"/><strong>Filters</strong></div><button type="reset">Reset</button></div>
       <div className="location-row">
         <Field label="ZIP code"><input name="zip" defaultValue="98101" inputMode="numeric"/></Field>
@@ -184,9 +189,43 @@ function Filters({ onSearch, loading, disabled, connected }: { onSearch: (e: For
           <Field label="Distance"><select name="distanceTolerance"><option>Up to 25 mi farther</option><option>Up to 50 mi farther</option></select></Field>
         </div>}
       </div>
+      <label className="preference-field">
+        <span>What else are you looking for? (optional)</span>
+        <textarea
+          name="searchDescription"
+          value={description}
+          onChange={event => setDescription(event.target.value)}
+          placeholder="I would like heated seats and a sunroof, but no leather seats."
+          maxLength={2000}
+          rows={4}
+        />
+        <small>Gemini adds equipment preferences to your selected filters when you search.</small>
+      </label>
       <button className="search-button" type="submit" disabled={loading || disabled}><Icon name="search"/>{loading ? 'Searching…' : 'Search vehicles'}</button>
     </form>
   )
+}
+
+function PreferenceSummary({ metadata }: { metadata: SearchPreferenceMetadata }) {
+  const added = metadata.applied_keyword_filters?.high_value_features
+  const excluded = metadata.applied_keyword_filters?.exclude_high_value_features
+  return <section className={`preference-summary ${metadata.preference_status}`} aria-live="polite">
+    <strong>{metadata.preference_status === 'processed'
+      ? 'Equipment preferences processed'
+      : metadata.preference_status === 'failed'
+        ? 'Equipment preferences weren’t applied'
+        : 'No optional equipment preferences requested'}</strong>
+    <p>{metadata.preference_status === 'failed'
+      ? 'Preference extraction failed, so only your manual filters were applied.'
+      : metadata.preference_status === 'processed'
+        ? 'These equipment preferences were added without replacing your selected filters.'
+        : 'Your manual filters were used for this search.'}</p>
+    {(added || excluded) && metadata.preference_status !== 'failed' && <dl>
+      {added && <div><dt>Added features</dt><dd>{added}</dd></div>}
+      {excluded && <div><dt>Excluded features</dt><dd>{excluded}</dd></div>}
+    </dl>}
+    {metadata.warnings.length > 0 && <div className="preference-warnings"><strong>Search notes</strong><ul>{metadata.warnings.map((warning, index) => <li key={`${index}-${warning}`}>{warning}</li>)}</ul></div>}
+  </section>
 }
 
 function VehiclePhoto({ car, compact = false }: { car: Vehicle; compact?: boolean }) {
@@ -215,9 +254,9 @@ function evidenceSubjectForVehicle(car: Vehicle): EvidenceSubject {
     price: car.price,
     mileage: car.mileage,
     demo: car.sample ? [
-      { score: 81, reasons: ['10 points: ownership and inspection claims conflict with the records.', '9 points: certification and transaction details are inconsistent.'] },
-      { score: 65, reasons: ['25 points: title, damage and previous-use claims conflict with the records.', '10 points: ownership and inspection claims conflict with the records.'] },
-      { score: 74, reasons: ['15 points: title and damage claims conflict with the records.', '5 points: inspection claims conflict with the records.', '6 points: inspection-access and payment claims conflict with the records.'] },
+      { score: 81, reasons: ['10 points: ownership authority and inspection evidence are missing.', '9 points: specialized checks and transaction arrangements remain unverified.'] },
+      { score: 65, reasons: ['25 points: title, damage and previous-use records are incomplete.', '10 points: ownership authority and inspection evidence are missing.'] },
+      { score: 74, reasons: ['15 points: title and damage records need verification.', '5 points: no independent inspection is documented.', '6 points: inspection access and payment arrangements are unverified.'] },
     ][Math.abs(car.id - 1) % 3] : undefined,
   }
 }
@@ -382,6 +421,7 @@ export default function App() {
   const [searchError, setSearchError] = useState('')
   const [demoResults, setDemoResults] = useState(true)
   const [recovering, setRecovering] = useState(false)
+  const [preferenceSummary, setPreferenceSummary] = useState<SearchPreferenceMetadata | null>(null)
   const [evidenceSubject, setEvidenceSubject] = useState<EvidenceSubject>()
   const operationLock = useRef(false)
 
@@ -401,6 +441,7 @@ export default function App() {
     setDemoResults(true)
     setStatus('ready')
     setSearchError('')
+    setPreferenceSummary(null)
     clearCatalogCache()
   }
 
@@ -441,7 +482,6 @@ export default function App() {
     return {
       id: car.id,
       vin: car.vin,
-      trustworthiness: (car as ApiCar & { trustworthiness?: unknown }).trustworthiness,
       year: car.year,
       name: car.name,
       trim: car.trim,
@@ -454,6 +494,7 @@ export default function App() {
       owners: car.owners,
       miss: car.miss,
       listingUrl: car.listing_url,
+      trustworthiness: (car as ApiCar & { trustworthiness?: unknown }).trustworthiness,
       historyUnknown: car.history.title_status === null || car.history.accidents === null,
     }
   }
@@ -466,6 +507,7 @@ export default function App() {
     const form = Object.fromEntries(new FormData(e.currentTarget))
     setContextReady(false)
     setSearchError('')
+    setPreferenceSummary(null)
     try {
       const activeSession = session ?? await createSession()
       if (!session) setSession(activeSession)
@@ -485,8 +527,14 @@ export default function App() {
         tol_miles: numberValue(form.mileageTolerance ?? 5000),
         tol_radius: numberValue(form.distanceTolerance ?? 25),
         max_owners: null,
+        search_description: trimSearchDescription(form.searchDescription),
       })
       setResults({ exact: data.exact.map(toVehicle), near: data.near.map(toVehicle) })
+      setPreferenceSummary({
+        applied_keyword_filters: data.applied_keyword_filters ?? {},
+        preference_status: data.preference_status,
+        warnings: Array.isArray(data.warnings) ? data.warnings : [],
+      })
       setDemoResults(false)
       setSelectedCar(undefined)
       setContextReady(true)
@@ -536,7 +584,7 @@ export default function App() {
       </section>
 
       <main>
-        <aside className={mobileFilters ? 'open' : ''}><Filters onSearch={search} connected={connectionReady} disabled={!connectionReady || connecting} loading={status === 'loading' || recovering}/></aside>
+        <aside className={mobileFilters ? 'open' : ''}><Filters onSearch={search} onReset={() => setPreferenceSummary(null)} connected={connectionReady} disabled={!connectionReady || connecting} loading={status === 'loading' || recovering}/></aside>
         <section className="results">
           <div className="results-head">
             <div>{demoResults && <div className="sample-badge">DEMO · SAMPLE DATA</div>}<h2>Vehicles near Seattle, WA</h2><p>Based on your preferred criteria</p></div>
@@ -548,6 +596,7 @@ export default function App() {
             <button className={tab === 'exact' ? 'selected' : ''} onClick={() => setTab('exact')}>Exact matches <span>{results.exact.length}</span></button>
             <button className={tab === 'near' ? 'selected' : ''} onClick={() => setTab('near')}>Near misses <span>{results.near.length}</span></button>
           </div>
+          {preferenceSummary && <PreferenceSummary metadata={preferenceSummary}/>}
 
           {status === 'loading' && <div className="state"><div className="spinner"/><h3>Searching every listing…</h3><p>Comparing vehicles against your exact preferences.</p></div>}
           {status === 'error' && <div className="state error"><div className="state-icon">!</div><h3>We couldn’t complete that search</h3><p>{searchError || 'The search service is unavailable. Your sample listings are still available.'}</p><button onClick={() => setStatus('ready')}>Show sample results</button></div>}

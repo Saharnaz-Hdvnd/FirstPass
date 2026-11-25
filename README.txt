@@ -47,7 +47,7 @@ The frontend folder contains the complete React/Vite app source.
 For local development: install Node 22+; in frontend run npm ci, copy
 .env.example to .env.local, put your backend URL in VITE_API_BASE_URL, then
 run npm run dev. Allow that exact frontend origin in your backend configuration;
-the notebook's default origin prompt expects an HTTPS Figma preview origin.
+the notebook's origin prompt expects an HTTPS Figma preview origin. HTTPS app-*.makeproxy-c.figma.site preview hosts matching the strict pattern are also allowed because Figma rotates them; password/session authentication stays required.
 
 For an existing Figma Make project, back up its source first. Copy these files
 from frontend into the same paths in that project:
@@ -103,3 +103,6 @@ From frontend:
 All included tests use mocked provider data. Run backend tests after installing
 requirements. UI fixtures test numerical aggregation and low-coverage handling;
 they do not establish real-world accuracy or validate the rubric weights.
+
+NOVEMBER 24 CONNECTION/SCORING UPDATE
+The notebook accepts search_description from the newer frontend. Non-empty optional preferences currently produce a warning: only manual filters are applied. This version does not implement Gemini equipment extraction. Live results carry trustworthiness assessments; click their button for explanations. Figma rotating preview CORS is supported without removing backend authentication. Download the entire repository and rerun the notebook to use these fixes.

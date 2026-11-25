@@ -60,6 +60,24 @@ export type SearchPayload = {
   tol_miles: number
   tol_radius: number
   max_owners: null
+  search_description: string
+}
+
+export type PreferenceStatus = 'not_requested' | 'processed' | 'failed'
+export type SearchPreferenceMetadata = {
+  applied_keyword_filters: {
+    high_value_features?: string
+    exclude_high_value_features?: string
+  }
+  preference_status: PreferenceStatus
+  warnings: string[]
+}
+
+export type SearchResponse = SearchPreferenceMetadata & {
+  session_id: string
+  context_version: number
+  exact: ApiCar[]
+  near: ApiCar[]
 }
 
 export type SessionHistoryEntry = {
@@ -200,7 +218,7 @@ export async function createSession(): Promise<SessionCredentials> {
 }
 
 export function searchSession(session: SessionCredentials, payload: SearchPayload) {
-  return request<{ session_id: string; context_version: number; exact: ApiCar[]; near: ApiCar[]; warnings: string[] }>(
+  return request<SearchResponse>(
     `/sessions/${encodeURIComponent(session.sessionId)}/search`,
     { method: 'POST', session, body: payload },
   )

@@ -13,6 +13,7 @@ import {
   scheduleCatalogLoad,
   updateCatalogSelection,
 } from '../src/vehicle-utils.ts'
+import { getResetPreferenceState, trimSearchDescription } from '../src/search-preferences.ts'
 
 setAppLoginTokenProvider(async () => 'mock-login-token')
 
@@ -152,12 +153,23 @@ assert.equal(deferredCall, 2)
 let submittedBody: Record<string, unknown> | undefined
 globalThis.fetch = (async (_input, init) => {
   submittedBody = JSON.parse(String(init?.body))
-  return new Response(JSON.stringify({ session_id: 'session', context_version: 1, exact: [], near: [], warnings: [] }), {
+  return new Response(JSON.stringify({
+    session_id: 'session',
+    context_version: 1,
+    exact: [],
+    near: [],
+    applied_keyword_filters: {
+      high_value_features: 'heated seats, sunroof',
+      exclude_high_value_features: 'leather seats',
+    },
+    preference_status: 'processed',
+    warnings: ['Feature matching uses listing text.'],
+  }), {
     status: 200,
     headers: { 'Content-Type': 'application/json' },
   })
 }) as typeof fetch
-await searchSession({ sessionId: 'session', sessionToken: 'conversation', expiresInSeconds: 300 }, {
+const searchPayload = {
   zip_code: '98101',
   radius: 50,
   make: '',
@@ -173,10 +185,38 @@ await searchSession({ sessionId: 'session', sessionToken: 'conversation', expire
   tol_miles: 5000,
   tol_radius: 25,
   max_owners: null,
-})
+  search_description: trimSearchDescription('  heated seats and a sunroof, but no leather seats  '),
+}
+const searchResponse = await searchSession({ sessionId: 'session', sessionToken: 'conversation', expiresInSeconds: 300 }, searchPayload)
 assert.equal(submittedBody?.make, '')
 assert.equal(submittedBody?.model, '')
 assert.equal(submittedBody?.trim, '')
+assert.equal(submittedBody?.search_description, 'heated seats and a sunroof, but no leather seats')
+assert.deepEqual(searchResponse.applied_keyword_filters, {
+  high_value_features: 'heated seats, sunroof',
+  exclude_high_value_features: 'leather seats',
+})
+assert.equal(searchResponse.preference_status, 'processed')
+assert.deepEqual(searchResponse.warnings, ['Feature matching uses listing text.'])
+
+assert.equal(trimSearchDescription('   '), '', 'blank preference text sends an empty string')
+assert.deepEqual(getResetPreferenceState(), { description: '', summary: null }, 'reset clears comment and stale summary')
+
+globalThis.fetch = (async () => new Response(JSON.stringify({
+  session_id: 'session',
+  context_version: 2,
+  exact: [],
+  near: [],
+  applied_keyword_filters: {},
+  preference_status: 'failed',
+  warnings: ['Equipment preferences could not be extracted; manual filters were applied.'],
+}), { status: 200, headers: { 'Content-Type': 'application/json' } })) as typeof fetch
+const failedPreferenceResponse = await searchSession(
+  { sessionId: 'session', sessionToken: 'conversation', expiresInSeconds: 300 },
+  { ...searchPayload, search_description: 'heated seats' },
+)
+assert.equal(failedPreferenceResponse.preference_status, 'failed')
+assert.deepEqual(failedPreferenceResponse.warnings, ['Equipment preferences could not be extracted; manual filters were applied.'])
 
 globalThis.fetch = originalFetch
 console.log('Mocked catalog, reset, broad-filter, and photo checks passed.')
